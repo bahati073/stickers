@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>表情包库 · 408 张</title>
+<title>表情包库 · 465 张</title>
 <style>
- body{font-family:"Microsoft YaHei",system-ui,sans-serif;margin:0;background:#f6f7f9;color:#222}
+ body{font-family:"Microsoft YaHei",system-ui,sans-serif;margin:0;background:#f6f7f9;color:#222;padding-bottom:70px}
  header{position:sticky;top:0;background:#fff;padding:14px 20px;box-shadow:0 1px 6px #0001;z-index:9}
  h1{margin:0 0 8px;font-size:19px}
  input{width:100%;max-width:420px;padding:8px 12px;border:1px solid #ddd;border-radius:8px;font-size:14px}
@@ -11,428 +11,497 @@
  .chip{background:#eef1f6;border-radius:20px;padding:3px 11px;font-size:12px;cursor:pointer}
  .chip.on{background:#1a6bc0;color:#fff}
  main{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;padding:16px}
- figure{margin:0;background:#fff;border-radius:10px;padding:8px;text-align:center;
-        box-shadow:0 1px 4px #0001;display:flex;flex-direction:column;justify-content:space-between}
+ figure{margin:0;background:#fff;border-radius:10px;padding:8px;text-align:center;cursor:pointer;
+        box-shadow:0 1px 4px #0001;display:flex;flex-direction:column;justify-content:space-between;
+        border:3px solid transparent}
+ figure.del{border-color:#e33;background:#fff2f2}
  img{max-width:100%;height:120px;object-fit:contain}
  figcaption{font-size:11px;color:#666;margin-top:6px;line-height:1.4;word-break:break-all}
+ .id{color:#1a6bc0;font-family:Consolas,monospace}
  .t{color:#1a6bc0}
+ #bar{position:fixed;right:16px;bottom:16px;background:#fff;border-radius:12px;padding:10px 14px;
+      box-shadow:0 2px 14px #0002;display:flex;align-items:center;gap:10px;font-size:14px}
+ #bar b{color:#e33}
+ #bar button{background:#1a6bc0;color:#fff;border:0;border-radius:8px;padding:7px 13px;font-size:13px;cursor:pointer}
+ #bar button.gray{background:#98a2b3}
+ #toast{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);background:#222d;color:#fff;
+        padding:12px 20px;border-radius:10px;font-size:14px;display:none}
 </style></head><body>
 <header>
- <h1>表情包库 · 共 408 张</h1>
+ <h1>表情包库 · 共 465 张</h1>
  <input id="q" placeholder="搜描述 / 系列 / 情绪，例如：无语、猫、生气…">
  <div class="chips" id="chips"></div>
 </header>
-<main id="g"><figure data-e="震惊" data-s="北方栖姬"><img loading="lazy" src="stickers/beifang_01.jpg" alt="那个世界居然有如此美丽的人"><figcaption><b>北方栖姬</b><br>那个世界居然有如此美丽的人<br><span class="t">震惊</span></figcaption></figure>
-<figure data-e="日常" data-s="北方栖姬"><img loading="lazy" src="stickers/beifang_02.jpg" alt="开黑吗我很卡也很坑"><figcaption><b>北方栖姬</b><br>开黑吗我很卡也很坑<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="北方栖姬"><img loading="lazy" src="stickers/beifang_03.jpg" alt="你个坏家伙"><figcaption><b>北方栖姬</b><br>你个坏家伙<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="北方栖姬"><img loading="lazy" src="stickers/beifang_04.jpg" alt="这些锅我背了"><figcaption><b>北方栖姬</b><br>这些锅我背了<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="北方栖姬"><img loading="lazy" src="stickers/beifang_05.jpg" alt="拿MVP很难"><figcaption><b>北方栖姬</b><br>拿MVP很难<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="北方栖姬"><img loading="lazy" src="stickers/beifang_06.jpg" alt="哦"><figcaption><b>北方栖姬</b><br>哦<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="钱" data-s="北方栖姬"><img loading="lazy" src="stickers/beifang_07.jpg" alt="多少钱说吧今晚包了你"><figcaption><b>北方栖姬</b><br>多少钱说吧今晚包了你<br><span class="t">钱</span></figcaption></figure>
-<figure data-e="干饭 吃瓜" data-s="北方栖姬"><img loading="lazy" src="stickers/beifang_08.jpg" alt="不明真相的吃瓜群众围观"><figcaption><b>北方栖姬</b><br>不明真相的吃瓜群众围观<br><span class="t">干饭 吃瓜</span></figcaption></figure>
-<figure data-e="难过 摆烂 喜欢" data-s="北方栖姬"><img loading="lazy" src="stickers/beifang_09.jpg" alt="心好累"><figcaption><b>北方栖姬</b><br>心好累<br><span class="t">难过 摆烂 喜欢</span></figcaption></figure>
-<figure data-e="夸奖" data-s="北方栖姬"><img loading="lazy" src="stickers/beifang_10.jpg" alt="世界那么大为何偏偏最帅是我"><figcaption><b>北方栖姬</b><br>世界那么大为何偏偏最帅是我<br><span class="t">夸奖</span></figcaption></figure>
-<figure data-e="日常" data-s="北方栖姬"><img loading="lazy" src="stickers/beifang_11.jpg" alt="无聊啊"><figcaption><b>北方栖姬</b><br>无聊啊<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="北方栖姬"><img loading="lazy" src="stickers/beifang_12.jpg" alt="滑稽"><figcaption><b>北方栖姬</b><br>滑稽<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="求助 钱" data-s="喵星人"><img loading="lazy" src="stickers/cat_01.jpg" alt="给我5块钱猫"><figcaption><b>喵星人</b><br>给我5块钱猫<br><span class="t">求助 钱</span></figcaption></figure>
-<figure data-e="难过" data-s="喵星人"><img loading="lazy" src="stickers/cat_02.jpg" alt="我是不是马上要死了猫"><figcaption><b>喵星人</b><br>我是不是马上要死了猫<br><span class="t">难过</span></figcaption></figure>
-<figure data-e="日常" data-s="喵星人"><img loading="lazy" src="stickers/cat_03.gif" alt="开车猫"><figcaption><b>喵星人</b><br>开车猫<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="喵星人"><img loading="lazy" src="stickers/cat_04.jpg" alt="汤姆的情人猫"><figcaption><b>喵星人</b><br>汤姆的情人猫<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="喵星人"><img loading="lazy" src="stickers/cat_05.jpg" alt="嚯好大的口气猫"><figcaption><b>喵星人</b><br>嚯好大的口气猫<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="喵星人"><img loading="lazy" src="stickers/cat_06.jpg" alt="歪头看猫"><figcaption><b>喵星人</b><br>歪头看猫<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="开心" data-s="喵星人"><img loading="lazy" src="stickers/cat_07.jpg" alt="行叭猫"><figcaption><b>喵星人</b><br>行叭猫<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="开心 难过" data-s="喵星人"><img loading="lazy" src="stickers/cat_08.jpg" alt="我的快乐已经死了-在我精神涣散智力低下羞愧又按钮的十七岁这年猫"><figcaption><b>喵星人</b><br>我的快乐已经死了-在我精神涣散智力低下羞愧又按钮的十七岁这年猫<br><span class="t">开心 难过</span></figcaption></figure>
-<figure data-e="生气" data-s="喵星人"><img loading="lazy" src="stickers/cat_09.jpg" alt="接下来你是不是要凶我了猫"><figcaption><b>喵星人</b><br>接下来你是不是要凶我了猫<br><span class="t">生气</span></figcaption></figure>
-<figure data-e="日常" data-s="喵星人"><img loading="lazy" src="stickers/cat_11.jpg" alt="拽猫"><figcaption><b>喵星人</b><br>拽猫<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="开心 嘲讽" data-s="喵星人"><img loading="lazy" src="stickers/cat_12.jpg" alt="脸上泛起了婊里婊气的笑容猫"><figcaption><b>喵星人</b><br>脸上泛起了婊里婊气的笑容猫<br><span class="t">开心 嘲讽</span></figcaption></figure>
-<figure data-e="可爱 撒娇" data-s="小幺鸡"><img loading="lazy" src="stickers/chicken_01.gif" alt="（小幺鸡表情）"><figcaption><b>小幺鸡</b><br>（小幺鸡表情）<br><span class="t">可爱 撒娇</span></figcaption></figure>
-<figure data-e="尴尬" data-s="小幺鸡"><img loading="lazy" src="stickers/chicken_02.jpg" alt="（小幺鸡表情）"><figcaption><b>小幺鸡</b><br>（小幺鸡表情）<br><span class="t">尴尬</span></figcaption></figure>
-<figure data-e="可爱 害羞" data-s="小幺鸡"><img loading="lazy" src="stickers/chicken_03.gif" alt="（小幺鸡表情）"><figcaption><b>小幺鸡</b><br>（小幺鸡表情）<br><span class="t">可爱 害羞</span></figcaption></figure>
-<figure data-e="震惊" data-s="小幺鸡"><img loading="lazy" src="stickers/chicken_04.jpg" alt="（小幺鸡表情）"><figcaption><b>小幺鸡</b><br>（小幺鸡表情）<br><span class="t">震惊</span></figcaption></figure>
-<figure data-e="难过" data-s="小幺鸡"><img loading="lazy" src="stickers/chicken_05.jpg" alt="（小幺鸡表情）"><figcaption><b>小幺鸡</b><br>（小幺鸡表情）<br><span class="t">难过</span></figcaption></figure>
-<figure data-e="开心" data-s="小幺鸡"><img loading="lazy" src="stickers/chicken_06.jpg" alt="（小幺鸡表情）"><figcaption><b>小幺鸡</b><br>（小幺鸡表情）<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="开心 搞笑" data-s="小幺鸡"><img loading="lazy" src="stickers/chicken_07.jpg" alt="（小幺鸡表情）"><figcaption><b>小幺鸡</b><br>（小幺鸡表情）<br><span class="t">开心 搞笑</span></figcaption></figure>
-<figure data-e="沙雕 开心" data-s="小幺鸡"><img loading="lazy" src="stickers/chicken_08.jpg" alt="13"><figcaption><b>小幺鸡</b><br>13<br><span class="t">沙雕 开心</span></figcaption></figure>
-<figure data-e="沙雕 开心" data-s="小幺鸡"><img loading="lazy" src="stickers/chicken_09.jpg" alt="2"><figcaption><b>小幺鸡</b><br>2<br><span class="t">沙雕 开心</span></figcaption></figure>
-<figure data-e="沙雕 开心" data-s="小幺鸡"><img loading="lazy" src="stickers/chicken_10.jpg" alt="4"><figcaption><b>小幺鸡</b><br>4<br><span class="t">沙雕 开心</span></figcaption></figure>
-<figure data-e="问候" data-s="春节"><img loading="lazy" src="stickers/cny_01.jpg" alt="给您拜年了"><figcaption><b>春节</b><br>给您拜年了<br><span class="t">问候</span></figcaption></figure>
-<figure data-e="开心 钱 问候" data-s="春节"><img loading="lazy" src="stickers/cny_02.jpg" alt="新年快乐祝在新的一年里您的钱比您的表情包还多"><figcaption><b>春节</b><br>新年快乐祝在新的一年里您的钱比您的表情包还多<br><span class="t">开心 钱 问候</span></figcaption></figure>
-<figure data-e="求助 拒绝 摆烂 钱" data-s="春节"><img loading="lazy" src="stickers/cny_03.jpg" alt="别废话了红包呢"><figcaption><b>春节</b><br>别废话了红包呢<br><span class="t">求助 拒绝 摆烂 钱</span></figcaption></figure>
-<figure data-e="求助 钱" data-s="春节"><img loading="lazy" src="stickers/cny_04.jpg" alt="红包"><figcaption><b>春节</b><br>红包<br><span class="t">求助 钱</span></figcaption></figure>
-<figure data-e="钱" data-s="春节"><img loading="lazy" src="stickers/cny_05.png" alt="能者多梦我呀一夜暴富君需百年光阴"><figcaption><b>春节</b><br>能者多梦我呀一夜暴富君需百年光阴<br><span class="t">钱</span></figcaption></figure>
-<figure data-e="日常" data-s="春节"><img loading="lazy" src="stickers/cny_06.png" alt="明年一定是个好年"><figcaption><b>春节</b><br>明年一定是个好年<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="程序员"><img loading="lazy" src="stickers/coder_01.png" alt="其实我觉得吧压力也没那么大"><figcaption><b>程序员</b><br>其实我觉得吧压力也没那么大<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="疑问" data-s="程序员"><img loading="lazy" src="stickers/coder_02.png" alt="妈妈说你什么都好就不该是个程序员"><figcaption><b>程序员</b><br>妈妈说你什么都好就不该是个程序员<br><span class="t">疑问</span></figcaption></figure>
-<figure data-e="自嘲" data-s="程序员"><img loading="lazy" src="stickers/coder_03.jpg" alt="产品经理说让App根据用户秃顶程度来控制手机刘海"><figcaption><b>程序员</b><br>产品经理说让App根据用户秃顶程度来控制手机刘海<br><span class="t">自嘲</span></figcaption></figure>
-<figure data-e="自嘲" data-s="程序员"><img loading="lazy" src="stickers/coder_04.jpg" alt="你胡说我才没脱发"><figcaption><b>程序员</b><br>你胡说我才没脱发<br><span class="t">自嘲</span></figcaption></figure>
-<figure data-e="拒绝 加油" data-s="程序员"><img loading="lazy" src="stickers/coder_05.jpg" alt="你别急等我剪完这个头发再修BUG"><figcaption><b>程序员</b><br>你别急等我剪完这个头发再修BUG<br><span class="t">拒绝 加油</span></figcaption></figure>
-<figure data-e="难过 自嘲" data-s="程序员"><img loading="lazy" src="stickers/coder_06.jpg" alt="留下了没技术的泪水"><figcaption><b>程序员</b><br>留下了没技术的泪水<br><span class="t">难过 自嘲</span></figcaption></figure>
-<figure data-e="日常" data-s="程序员"><img loading="lazy" src="stickers/coder_07.jpg" alt="Star皆空"><figcaption><b>程序员</b><br>Star皆空<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="程序员"><img loading="lazy" src="stickers/coder_08.jpg" alt="AiIfElse"><figcaption><b>程序员</b><br>AiIfElse<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="程序员"><img loading="lazy" src="stickers/coder_10.png" alt="骚年出招吧哥让你三行代码"><figcaption><b>程序员</b><br>骚年出招吧哥让你三行代码<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="黑人抬棺"><img loading="lazy" src="stickers/coffin_01.gif" alt="可以请你跳支舞吗"><figcaption><b>黑人抬棺</b><br>可以请你跳支舞吗<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="摆烂" data-s="黑人抬棺"><img loading="lazy" src="stickers/coffin_02.jpg" alt="躺好"><figcaption><b>黑人抬棺</b><br>躺好<br><span class="t">摆烂</span></figcaption></figure>
-<figure data-e="威胁" data-s="黑人抬棺"><img loading="lazy" src="stickers/coffin_03.jpg" alt="坐地抬棺"><figcaption><b>黑人抬棺</b><br>坐地抬棺<br><span class="t">威胁</span></figcaption></figure>
-<figure data-e="威胁" data-s="黑人抬棺"><img loading="lazy" src="stickers/coffin_05.jpg" alt="医生抬不抬给个准信儿"><figcaption><b>黑人抬棺</b><br>医生抬不抬给个准信儿<br><span class="t">威胁</span></figcaption></figure>
-<figure data-e="威胁" data-s="黑人抬棺"><img loading="lazy" src="stickers/coffin_06.gif" alt="黑人和棺材都为你准备好了"><figcaption><b>黑人抬棺</b><br>黑人和棺材都为你准备好了<br><span class="t">威胁</span></figcaption></figure>
-<figure data-e="开心 喜欢 自嘲" data-s="狗"><img loading="lazy" src="stickers/dog_01.gif" alt="全世界都充满了恋爱的酸臭味只有我散发着单身狗的清香"><figcaption><b>狗</b><br>全世界都充满了恋爱的酸臭味只有我散发着单身狗的清香<br><span class="t">开心 喜欢 自嘲</span></figcaption></figure>
-<figure data-e="日常" data-s="狗"><img loading="lazy" src="stickers/dog_02.png" alt="大家都听我说-我们都是狗"><figcaption><b>狗</b><br>大家都听我说-我们都是狗<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="撒娇" data-s="狗"><img loading="lazy" src="stickers/dog_03.png" alt="壁咚"><figcaption><b>狗</b><br>壁咚<br><span class="t">撒娇</span></figcaption></figure>
-<figure data-e="撒娇" data-s="狗"><img loading="lazy" src="stickers/dog_04.png" alt="捏脸"><figcaption><b>狗</b><br>捏脸<br><span class="t">撒娇</span></figcaption></figure>
-<figure data-e="开心" data-s="狗"><img loading="lazy" src="stickers/dog_05.jpg" alt="微笑"><figcaption><b>狗</b><br>微笑<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="日常" data-s="狗"><img loading="lazy" src="stickers/dog_06.jpg" alt="裹紧我俩的小被子"><figcaption><b>狗</b><br>裹紧我俩的小被子<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="狗"><img loading="lazy" src="stickers/dog_07.jpg" alt="我被咬到了"><figcaption><b>狗</b><br>我被咬到了<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="拒绝" data-s="狗"><img loading="lazy" src="stickers/dog_08.jpg" alt="好了你不要再说了"><figcaption><b>狗</b><br>好了你不要再说了<br><span class="t">拒绝</span></figcaption></figure>
-<figure data-e="自嘲" data-s="狗"><img loading="lazy" src="stickers/dog_09.jpg" alt="被命运卡住喉咙"><figcaption><b>狗</b><br>被命运卡住喉咙<br><span class="t">自嘲</span></figcaption></figure>
-<figure data-e="日常" data-s="狗"><img loading="lazy" src="stickers/dog_10.jpg" alt="真让人头大"><figcaption><b>狗</b><br>真让人头大<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="无语" data-s="狗"><img loading="lazy" src="stickers/dog_11.jpg" alt="愣住"><figcaption><b>狗</b><br>愣住<br><span class="t">无语</span></figcaption></figure>
-<figure data-e="日常" data-s="狗"><img loading="lazy" src="stickers/dog_12.jpg" alt="我来啦-接住"><figcaption><b>狗</b><br>我来啦-接住<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="开心鸭"><img loading="lazy" src="stickers/duck2_01.gif" alt="翻车了鸭"><figcaption><b>开心鸭</b><br>翻车了鸭<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="喜欢" data-s="开心鸭"><img loading="lazy" src="stickers/duck2_02.gif" alt="今天也要开心鸭"><figcaption><b>开心鸭</b><br>今天也要开心鸭<br><span class="t">喜欢</span></figcaption></figure>
-<figure data-e="日常" data-s="开心鸭"><img loading="lazy" src="stickers/duck2_03.gif" alt="你在干嘛鸭"><figcaption><b>开心鸭</b><br>你在干嘛鸭<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="撒娇" data-s="开心鸭"><img loading="lazy" src="stickers/duck2_04.gif" alt="亲我一口鸭"><figcaption><b>开心鸭</b><br>亲我一口鸭<br><span class="t">撒娇</span></figcaption></figure>
-<figure data-e="日常" data-s="开心鸭"><img loading="lazy" src="stickers/duck2_05.jpg" alt="哎鸭"><figcaption><b>开心鸭</b><br>哎鸭<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="开心鸭"><img loading="lazy" src="stickers/duck2_06.jpg" alt="对不起鸭"><figcaption><b>开心鸭</b><br>对不起鸭<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="自嘲" data-s="开心鸭"><img loading="lazy" src="stickers/duck_01.jpg" alt="来自底层的仰望"><figcaption><b>开心鸭</b><br>来自底层的仰望<br><span class="t">自嘲</span></figcaption></figure>
-<figure data-e="开心" data-s="开心鸭"><img loading="lazy" src="stickers/duck_02.jpg" alt="爽翻了"><figcaption><b>开心鸭</b><br>爽翻了<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="日常" data-s="开心鸭"><img loading="lazy" src="stickers/duck_03.jpg" alt="你在干嘛鸭"><figcaption><b>开心鸭</b><br>你在干嘛鸭<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="开心鸭"><img loading="lazy" src="stickers/duck_04.jpg" alt="你是魔鬼吗"><figcaption><b>开心鸭</b><br>你是魔鬼吗<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="开心鸭"><img loading="lazy" src="stickers/duck_05.jpg" alt="大坏蛋咬死你"><figcaption><b>开心鸭</b><br>大坏蛋咬死你<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="钱" data-s="开心鸭"><img loading="lazy" src="stickers/duck_06.jpg" alt="多年的积蓄"><figcaption><b>开心鸭</b><br>多年的积蓄<br><span class="t">钱</span></figcaption></figure>
-<figure data-e="喜欢" data-s="开心鸭"><img loading="lazy" src="stickers/duck_07.jpg" alt="今天也要开心鸭"><figcaption><b>开心鸭</b><br>今天也要开心鸭<br><span class="t">喜欢</span></figcaption></figure>
-<figure data-e="干饭" data-s="开心鸭"><img loading="lazy" src="stickers/duck_08.jpg" alt="吃太撑了鸭"><figcaption><b>开心鸭</b><br>吃太撑了鸭<br><span class="t">干饭</span></figcaption></figure>
-<figure data-e="疑问" data-s="开心鸭"><img loading="lazy" src="stickers/duck_09.jpg" alt="为什么这样对鸭鸭"><figcaption><b>开心鸭</b><br>为什么这样对鸭鸭<br><span class="t">疑问</span></figcaption></figure>
-<figure data-e="日常" data-s="开心鸭"><img loading="lazy" src="stickers/duck_10.jpg" alt="又胖了鸭"><figcaption><b>开心鸭</b><br>又胖了鸭<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="拒绝" data-s="Emoji"><img loading="lazy" src="stickers/emoji_01.jpg" alt="公共场所禁止呲牙咧嘴"><figcaption><b>Emoji</b><br>公共场所禁止呲牙咧嘴<br><span class="t">拒绝</span></figcaption></figure>
-<figure data-e="日常" data-s="Emoji"><img loading="lazy" src="stickers/emoji_02.jpg" alt="能饮一杯么"><figcaption><b>Emoji</b><br>能饮一杯么<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="Emoji"><img loading="lazy" src="stickers/emoji_03.jpg" alt="A罩杯"><figcaption><b>Emoji</b><br>A罩杯<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="无语" data-s="Emoji"><img loading="lazy" src="stickers/emoji_06.jpg" alt="让人怪不好意思的"><figcaption><b>Emoji</b><br>让人怪不好意思的<br><span class="t">无语</span></figcaption></figure>
-<figure data-e="日常" data-s="Emoji"><img loading="lazy" src="stickers/emoji_07.jpg" alt="你送我的帽子真好看"><figcaption><b>Emoji</b><br>你送我的帽子真好看<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="开心" data-s="Emoji"><img loading="lazy" src="stickers/emoji_08.jpg" alt="行吧"><figcaption><b>Emoji</b><br>行吧<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="开心" data-s="Emoji"><img loading="lazy" src="stickers/emoji_09.jpg" alt="要我一直笑吗"><figcaption><b>Emoji</b><br>要我一直笑吗<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="生气 喜欢" data-s="Emoji"><img loading="lazy" src="stickers/emoji_10.jpg" alt="你对我越凶我就越喜欢"><figcaption><b>Emoji</b><br>你对我越凶我就越喜欢<br><span class="t">生气 喜欢</span></figcaption></figure>
-<figure data-e="开心 撒娇 喜欢 得意" data-s="Emoji"><img loading="lazy" src="stickers/emoji_11.jpg" alt="好可爱不愧是我最喜欢的人"><figcaption><b>Emoji</b><br>好可爱不愧是我最喜欢的人<br><span class="t">开心 撒娇 喜欢 得意</span></figcaption></figure>
-<figure data-e="拒绝" data-s="Emoji"><img loading="lazy" src="stickers/emoji_15.gif" alt="不听不听王八念经"><figcaption><b>Emoji</b><br>不听不听王八念经<br><span class="t">拒绝</span></figcaption></figure>
-<figure data-e="开心" data-s="Emoji"><img loading="lazy" src="stickers/emoji_16.jpg" alt="相视一笑"><figcaption><b>Emoji</b><br>相视一笑<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="嘲讽" data-s="滑稽"><img loading="lazy" src="stickers/huaji_01.gif" alt="360度鄙视你"><figcaption><b>滑稽</b><br>360度鄙视你<br><span class="t">嘲讽</span></figcaption></figure>
-<figure data-e="日常" data-s="滑稽"><img loading="lazy" src="stickers/huaji_02.gif" alt="打不着-打不到"><figcaption><b>滑稽</b><br>打不着-打不到<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="干饭" data-s="滑稽"><img loading="lazy" src="stickers/huaji_03.jpg" alt="喝咖啡-咖啡"><figcaption><b>滑稽</b><br>喝咖啡-咖啡<br><span class="t">干饭</span></figcaption></figure>
-<figure data-e="日常" data-s="滑稽"><img loading="lazy" src="stickers/huaji_04.gif" alt="浪里个浪"><figcaption><b>滑稽</b><br>浪里个浪<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="滑稽"><img loading="lazy" src="stickers/huaji_05.gif" alt="扭屁股-变色-内裤"><figcaption><b>滑稽</b><br>扭屁股-变色-内裤<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="滑稽"><img loading="lazy" src="stickers/huaji_06.jpg" alt="投降"><figcaption><b>滑稽</b><br>投降<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="滑稽"><img loading="lazy" src="stickers/huaji_07.jpg" alt="妖孽看法宝"><figcaption><b>滑稽</b><br>妖孽看法宝<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="滑稽"><img loading="lazy" src="stickers/huaji_08.jpg" alt="警察是不会听你解释的"><figcaption><b>滑稽</b><br>警察是不会听你解释的<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="滑稽"><img loading="lazy" src="stickers/huaji_09.jpg" alt="送给你"><figcaption><b>滑稽</b><br>送给你<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="吃瓜" data-s="滑稽"><img loading="lazy" src="stickers/huaji_10.jpg" alt="暗中观察"><figcaption><b>滑稽</b><br>暗中观察<br><span class="t">吃瓜</span></figcaption></figure>
-<figure data-e="震惊" data-s="滑稽"><img loading="lazy" src="stickers/huaji_11.jpg" alt="我开始慌了"><figcaption><b>滑稽</b><br>我开始慌了<br><span class="t">震惊</span></figcaption></figure>
-<figure data-e="夸奖" data-s="滑稽"><img loading="lazy" src="stickers/huaji_12.jpg" alt="萌新拿起了搬准备和大佬肛道理"><figcaption><b>滑稽</b><br>萌新拿起了搬准备和大佬肛道理<br><span class="t">夸奖</span></figcaption></figure>
-<figure data-e="震惊" data-s="滑稽"><img loading="lazy" src="stickers/huaji_13.jpg" alt="滑稽震惊"><figcaption><b>滑稽</b><br>滑稽震惊<br><span class="t">震惊</span></figcaption></figure>
-<figure data-e="无语" data-s="滑稽"><img loading="lazy" src="stickers/huaji_14.jpg" alt="不是很懂"><figcaption><b>滑稽</b><br>不是很懂<br><span class="t">无语</span></figcaption></figure>
-<figure data-e="日常" data-s="滑稽"><img loading="lazy" src="stickers/huaji_15.jpg" alt="拽走小被几"><figcaption><b>滑稽</b><br>拽走小被几<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="滑稽"><img loading="lazy" src="stickers/huaji_16.jpg" alt="滑稽遗照"><figcaption><b>滑稽</b><br>滑稽遗照<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="威胁 拒绝" data-s="滑稽"><img loading="lazy" src="stickers/huaji_17.jpg" alt="队长别开枪是我"><figcaption><b>滑稽</b><br>队长别开枪是我<br><span class="t">威胁 拒绝</span></figcaption></figure>
-<figure data-e="生气 威胁" data-s="滑稽"><img loading="lazy" src="stickers/huaji_18.jpg" alt="你完蛋了"><figcaption><b>滑稽</b><br>你完蛋了<br><span class="t">生气 威胁</span></figcaption></figure>
-<figure data-e="日常" data-s="熊本熊"><img loading="lazy" src="stickers/kumamoto_01.gif" alt="我们去哪里"><figcaption><b>熊本熊</b><br>我们去哪里<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="开心 干饭" data-s="熊本熊"><img loading="lazy" src="stickers/kumamoto_02.gif" alt="次饱了-吃饱了"><figcaption><b>熊本熊</b><br>次饱了-吃饱了<br><span class="t">开心 干饭</span></figcaption></figure>
-<figure data-e="日常" data-s="熊本熊"><img loading="lazy" src="stickers/kumamoto_03.gif" alt="你在哪"><figcaption><b>熊本熊</b><br>你在哪<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="熊本熊"><img loading="lazy" src="stickers/kumamoto_04.gif" alt="马上来"><figcaption><b>熊本熊</b><br>马上来<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="生气" data-s="熊本熊"><img loading="lazy" src="stickers/kumamoto_05.gif" alt="我打死你-哎呀"><figcaption><b>熊本熊</b><br>我打死你-哎呀<br><span class="t">生气</span></figcaption></figure>
-<figure data-e="求助 钱" data-s="熊本熊"><img loading="lazy" src="stickers/kumamoto_06.gif" alt="大红包呢"><figcaption><b>熊本熊</b><br>大红包呢<br><span class="t">求助 钱</span></figcaption></figure>
-<figure data-e="疑问" data-s="熊本熊"><img loading="lazy" src="stickers/kumamoto_07.gif" alt="起床是什么"><figcaption><b>熊本熊</b><br>起床是什么<br><span class="t">疑问</span></figcaption></figure>
-<figure data-e="开心 喜欢" data-s="熊本熊"><img loading="lazy" src="stickers/kumamoto_08.gif" alt="嘴上笑嘻嘻-心中MMP-脸上笑嘻嘻-心里妈卖批"><figcaption><b>熊本熊</b><br>嘴上笑嘻嘻-心中MMP-脸上笑嘻嘻-心里妈卖批<br><span class="t">开心 喜欢</span></figcaption></figure>
-<figure data-e="嘲讽" data-s="罗翔"><img loading="lazy" src="stickers/luoxiang_01.png" alt="你在干嘛你是在丢我们性犯罪人的脸"><figcaption><b>罗翔</b><br>你在干嘛你是在丢我们性犯罪人的脸<br><span class="t">嘲讽</span></figcaption></figure>
-<figure data-e="疑问" data-s="罗翔"><img loading="lazy" src="stickers/luoxiang_02.png" alt="是这样嘛"><figcaption><b>罗翔</b><br>是这样嘛<br><span class="t">疑问</span></figcaption></figure>
-<figure data-e="日常" data-s="罗翔"><img loading="lazy" src="stickers/luoxiang_03.png" alt="那个女的不是一般的女的她是一个阴阳人"><figcaption><b>罗翔</b><br>那个女的不是一般的女的她是一个阴阳人<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="问候" data-s="罗翔"><img loading="lazy" src="stickers/luoxiang_04.png" alt="你好狗啊"><figcaption><b>罗翔</b><br>你好狗啊<br><span class="t">问候</span></figcaption></figure>
-<figure data-e="日常" data-s="罗翔"><img loading="lazy" src="stickers/luoxiang_05.jpg" alt="青春型精神病俗称花痴"><figcaption><b>罗翔</b><br>青春型精神病俗称花痴<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="生气" data-s="罗翔"><img loading="lazy" src="stickers/luoxiang_06.jpg" alt="我觉得你唯一回复就是滚"><figcaption><b>罗翔</b><br>我觉得你唯一回复就是滚<br><span class="t">生气</span></figcaption></figure>
-<figure data-e="开心 嘲讽" data-s="罗翔"><img loading="lazy" src="stickers/luoxiang_07.jpg" alt="我不是针对谁我是说在座的各位都是乐色"><figcaption><b>罗翔</b><br>我不是针对谁我是说在座的各位都是乐色<br><span class="t">开心 嘲讽</span></figcaption></figure>
-<figure data-e="日常" data-s="罗翔"><img loading="lazy" src="stickers/luoxiang_08.jpg" alt="总有一天会出事"><figcaption><b>罗翔</b><br>总有一天会出事<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="罗翔"><img loading="lazy" src="stickers/luoxiang_09.jpg" alt="我说也可以也不是完全不可以"><figcaption><b>罗翔</b><br>我说也可以也不是完全不可以<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="生气 威胁" data-s="罗翔"><img loading="lazy" src="stickers/luoxiang_10.jpeg" alt="我准备放火把宿舍楼烧了"><figcaption><b>罗翔</b><br>我准备放火把宿舍楼烧了<br><span class="t">生气 威胁</span></figcaption></figure>
-<figure data-e="生气 威胁" data-s="罗翔"><img loading="lazy" src="stickers/luoxiang_11.jpg" alt="老子拿砖砸他头"><figcaption><b>罗翔</b><br>老子拿砖砸他头<br><span class="t">生气 威胁</span></figcaption></figure>
-<figure data-e="日常" data-s="罗翔"><img loading="lazy" src="stickers/luoxiang_12.jpg" alt="一点都不怕 直接把坟给挖了"><figcaption><b>罗翔</b><br>一点都不怕 直接把坟给挖了<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="鲁迅"><img loading="lazy" src="stickers/luxun_01.jpg" alt="我确实说过这句话"><figcaption><b>鲁迅</b><br>我确实说过这句话<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="鲁迅"><img loading="lazy" src="stickers/luxun_02.jpg" alt="我没说过这句话"><figcaption><b>鲁迅</b><br>我没说过这句话<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="开心" data-s="鲁迅"><img loading="lazy" src="stickers/luxun_03.jpg" alt="那你很棒棒啊"><figcaption><b>鲁迅</b><br>那你很棒棒啊<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="自嘲" data-s="鲁迅"><img loading="lazy" src="stickers/luxun_04.jpg" alt="我用生命写文章后人却用它来留作业"><figcaption><b>鲁迅</b><br>我用生命写文章后人却用它来留作业<br><span class="t">自嘲</span></figcaption></figure>
-<figure data-e="日常" data-s="鲁迅"><img loading="lazy" src="stickers/luxun_05.jpg" alt="我他妈的没说过这句话"><figcaption><b>鲁迅</b><br>我他妈的没说过这句话<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="鲁迅"><img loading="lazy" src="stickers/luxun_06.jpg" alt="网上百分之九十五的名人名言都是瞎掰的"><figcaption><b>鲁迅</b><br>网上百分之九十五的名人名言都是瞎掰的<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="鲁迅"><img loading="lazy" src="stickers/luxun_07.jpg" alt="妮可妮可妮"><figcaption><b>鲁迅</b><br>妮可妮可妮<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="拒绝" data-s="鲁迅"><img loading="lazy" src="stickers/luxun_08.jpg" alt="我实在没有说过这样一句话"><figcaption><b>鲁迅</b><br>我实在没有说过这样一句话<br><span class="t">拒绝</span></figcaption></figure>
-<figure data-e="日常" data-s="奇妙猫"><img loading="lazy" src="stickers/murcat_01.jpg" alt="宇宙数学猫"><figcaption><b>奇妙猫</b><br>宇宙数学猫<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="震惊 疑问" data-s="奇妙猫"><img loading="lazy" src="stickers/murcat_02.jpg" alt="问号"><figcaption><b>奇妙猫</b><br>问号<br><span class="t">震惊 疑问</span></figcaption></figure>
-<figure data-e="日常" data-s="奇妙猫"><img loading="lazy" src="stickers/murcat_03.gif" alt="眼中星河"><figcaption><b>奇妙猫</b><br>眼中星河<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="奇妙猫"><img loading="lazy" src="stickers/murcat_04.jpg" alt="暗夜黑猫"><figcaption><b>奇妙猫</b><br>暗夜黑猫<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="奇妙猫"><img loading="lazy" src="stickers/murcat_05.jpg" alt="思维升华"><figcaption><b>奇妙猫</b><br>思维升华<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="奇妙猫"><img loading="lazy" src="stickers/murcat_06.jpg" alt="奇怪的知识增加了"><figcaption><b>奇妙猫</b><br>奇怪的知识增加了<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="奇妙猫"><img loading="lazy" src="stickers/murcat_07.jpg" alt="防御和特防上升了"><figcaption><b>奇妙猫</b><br>防御和特防上升了<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_01.png" alt="玩蛋去"><figcaption><b>金馆长熊猫</b><br>玩蛋去<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="拒绝 疑问" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_02.jpg" alt="别艾特我了我TM一个敲代码的我拿知道阳痿怎么治"><figcaption><b>金馆长熊猫</b><br>别艾特我了我TM一个敲代码的我拿知道阳痿怎么治<br><span class="t">拒绝 疑问</span></figcaption></figure>
-<figure data-e="日常" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_03.gif" alt="摸头耳朵"><figcaption><b>金馆长熊猫</b><br>摸头耳朵<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="无语" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_04.jpg" alt="无语"><figcaption><b>金馆长熊猫</b><br>无语<br><span class="t">无语</span></figcaption></figure>
-<figure data-e="干饭 疑问" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_05.jpg" alt="直男又咋了喝水呀"><figcaption><b>金馆长熊猫</b><br>直男又咋了喝水呀<br><span class="t">干饭 疑问</span></figcaption></figure>
-<figure data-e="日常" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_06.gif" alt="眼神朦胧"><figcaption><b>金馆长熊猫</b><br>眼神朦胧<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_07.gif" alt="挠头"><figcaption><b>金馆长熊猫</b><br>挠头<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_08.gif" alt="读书人"><figcaption><b>金馆长熊猫</b><br>读书人<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_09.gif" alt="你有个缺点缺点我"><figcaption><b>金馆长熊猫</b><br>你有个缺点缺点我<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_10.gif" alt="西天取经-我娶你"><figcaption><b>金馆长熊猫</b><br>西天取经-我娶你<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="开心 拒绝" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_11.gif" alt="哈哈哈哈哈哈没有啦"><figcaption><b>金馆长熊猫</b><br>哈哈哈哈哈哈没有啦<br><span class="t">开心 拒绝</span></figcaption></figure>
-<figure data-e="难过" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_12.gif" alt="进入委屈模式"><figcaption><b>金馆长熊猫</b><br>进入委屈模式<br><span class="t">难过</span></figcaption></figure>
-<figure data-e="得意" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_13.gif" alt="我这个人看人很准的-你这个人-我一看就是知道是我的人"><figcaption><b>金馆长熊猫</b><br>我这个人看人很准的-你这个人-我一看就是知道是我的人<br><span class="t">得意</span></figcaption></figure>
-<figure data-e="日常" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_15.gif" alt="真真好"><figcaption><b>金馆长熊猫</b><br>真真好<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_16.gif" alt="太刺激了"><figcaption><b>金馆长熊猫</b><br>太刺激了<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="撒娇" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_17.gif" alt="我偏无理取闹除非你抱抱"><figcaption><b>金馆长熊猫</b><br>我偏无理取闹除非你抱抱<br><span class="t">撒娇</span></figcaption></figure>
-<figure data-e="开心 撒娇" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_18.gif" alt="你要是不高兴-完全可以亲我啊"><figcaption><b>金馆长熊猫</b><br>你要是不高兴-完全可以亲我啊<br><span class="t">开心 撒娇</span></figcaption></figure>
-<figure data-e="开心 干饭" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_19.jpg" alt="提醒喝可乐小助手"><figcaption><b>金馆长熊猫</b><br>提醒喝可乐小助手<br><span class="t">开心 干饭</span></figcaption></figure>
-<figure data-e="日常" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_20.jpg" alt="双手挠头"><figcaption><b>金馆长熊猫</b><br>双手挠头<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="疑问" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_21.png" alt="能说的再详细点吗我没见过世面"><figcaption><b>金馆长熊猫</b><br>能说的再详细点吗我没见过世面<br><span class="t">疑问</span></figcaption></figure>
-<figure data-e="嘲讽" data-s="金馆长熊猫"><img loading="lazy" src="stickers/panda_22.jpg" alt="垃圾"><figcaption><b>金馆长熊猫</b><br>垃圾<br><span class="t">嘲讽</span></figcaption></figure>
-<figure data-e="沙雕" data-s="沙雕企鹅"><img loading="lazy" src="stickers/penguin_01.gif" alt="（沙雕企鹅表情）"><figcaption><b>沙雕企鹅</b><br>（沙雕企鹅表情）<br><span class="t">沙雕</span></figcaption></figure>
-<figure data-e="搞笑" data-s="沙雕企鹅"><img loading="lazy" src="stickers/penguin_02.gif" alt="（沙雕企鹅表情）"><figcaption><b>沙雕企鹅</b><br>（沙雕企鹅表情）<br><span class="t">搞笑</span></figcaption></figure>
-<figure data-e="尴尬" data-s="沙雕企鹅"><img loading="lazy" src="stickers/penguin_03.gif" alt="（沙雕企鹅表情）"><figcaption><b>沙雕企鹅</b><br>（沙雕企鹅表情）<br><span class="t">尴尬</span></figcaption></figure>
-<figure data-e="震惊" data-s="沙雕企鹅"><img loading="lazy" src="stickers/penguin_04.gif" alt="（沙雕企鹅表情）"><figcaption><b>沙雕企鹅</b><br>（沙雕企鹅表情）<br><span class="t">震惊</span></figcaption></figure>
-<figure data-e="吃瓜" data-s="沙雕企鹅"><img loading="lazy" src="stickers/penguin_05.gif" alt="（沙雕企鹅表情）"><figcaption><b>沙雕企鹅</b><br>（沙雕企鹅表情）<br><span class="t">吃瓜</span></figcaption></figure>
-<figure data-e="开心" data-s="沙雕企鹅"><img loading="lazy" src="stickers/penguin_06.gif" alt="（沙雕企鹅表情）"><figcaption><b>沙雕企鹅</b><br>（沙雕企鹅表情）<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="睡觉" data-s="沙雕企鹅"><img loading="lazy" src="stickers/penguin_07.gif" alt="（沙雕企鹅表情）"><figcaption><b>沙雕企鹅</b><br>（沙雕企鹅表情）<br><span class="t">睡觉</span></figcaption></figure>
-<figure data-e="加油" data-s="沙雕企鹅"><img loading="lazy" src="stickers/penguin_08.gif" alt="（沙雕企鹅表情）"><figcaption><b>沙雕企鹅</b><br>（沙雕企鹅表情）<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="日常" data-s="沙雕企鹅"><img loading="lazy" src="stickers/penguin_09.gif" alt="（沙雕企鹅表情）"><figcaption><b>沙雕企鹅</b><br>（沙雕企鹅表情）<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="开心" data-s="沙雕企鹅"><img loading="lazy" src="stickers/penguin_10.gif" alt="（沙雕企鹅表情）"><figcaption><b>沙雕企鹅</b><br>（沙雕企鹅表情）<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="无语" data-s="猪"><img loading="lazy" src="stickers/pig_01.jpg" alt="emmm"><figcaption><b>猪</b><br>emmm<br><span class="t">无语</span></figcaption></figure>
-<figure data-e="日常" data-s="猪"><img loading="lazy" src="stickers/pig_02.jpg" alt="盯"><figcaption><b>猪</b><br>盯<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="摆烂" data-s="猪"><img loading="lazy" src="stickers/pig_03.jpg" alt="我是一只猪我办不到"><figcaption><b>猪</b><br>我是一只猪我办不到<br><span class="t">摆烂</span></figcaption></figure>
-<figure data-e="睡觉" data-s="猪"><img loading="lazy" src="stickers/pig_04.jpg" alt="晚安睡了"><figcaption><b>猪</b><br>晚安睡了<br><span class="t">睡觉</span></figcaption></figure>
-<figure data-e="生气 威胁" data-s="猪"><img loading="lazy" src="stickers/pig_05.jpg" alt="打你"><figcaption><b>猪</b><br>打你<br><span class="t">生气 威胁</span></figcaption></figure>
-<figure data-e="撒娇" data-s="猪"><img loading="lazy" src="stickers/pig_06.jpg" alt="黑白猪mua"><figcaption><b>猪</b><br>黑白猪mua<br><span class="t">撒娇</span></figcaption></figure>
-<figure data-e="喜欢" data-s="猪"><img loading="lazy" src="stickers/pig_07.jpg" alt="你是我全世界最喜欢的猪"><figcaption><b>猪</b><br>你是我全世界最喜欢的猪<br><span class="t">喜欢</span></figcaption></figure>
-<figure data-e="生气" data-s="猪"><img loading="lazy" src="stickers/pig_08.jpg" alt="你住口"><figcaption><b>猪</b><br>你住口<br><span class="t">生气</span></figcaption></figure>
-<figure data-e="疑问" data-s="鸽子"><img loading="lazy" src="stickers/pigeon_01.jpg" alt="当鸽的怎么能骗你呢"><figcaption><b>鸽子</b><br>当鸽的怎么能骗你呢<br><span class="t">疑问</span></figcaption></figure>
-<figure data-e="日常" data-s="鸽子"><img loading="lazy" src="stickers/pigeon_02.jpg" alt="我在鸽的边缘试探"><figcaption><b>鸽子</b><br>我在鸽的边缘试探<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="吃瓜" data-s="鸽子"><img loading="lazy" src="stickers/pigeon_03.jpg" alt="一位冷酷的鸽子路过"><figcaption><b>鸽子</b><br>一位冷酷的鸽子路过<br><span class="t">吃瓜</span></figcaption></figure>
-<figure data-e="日常" data-s="鸽子"><img loading="lazy" src="stickers/pigeon_04.png" alt="小鸽子"><figcaption><b>鸽子</b><br>小鸽子<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="夸奖" data-s="鸽子"><img loading="lazy" src="stickers/pigeon_05.jpg" alt="不愧是你"><figcaption><b>鸽子</b><br>不愧是你<br><span class="t">夸奖</span></figcaption></figure>
-<figure data-e="日常" data-s="鸽子"><img loading="lazy" src="stickers/pigeon_06.jpg" alt="好的-ok-OK-Ok"><figcaption><b>鸽子</b><br>好的-ok-OK-Ok<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="加油" data-s="鸽子"><img loading="lazy" src="stickers/pigeon_07.jpg" alt="好的一定来-ok好哒"><figcaption><b>鸽子</b><br>好的一定来-ok好哒<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="加油" data-s="鸽子"><img loading="lazy" src="stickers/pigeon_08.png" alt="准时参加好的我一定来-说好了哟不来不是人"><figcaption><b>鸽子</b><br>准时参加好的我一定来-说好了哟不来不是人<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="日常" data-s="演奏"><img loading="lazy" src="stickers/play_01.gif" alt="弹琴"><figcaption><b>演奏</b><br>弹琴<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="演奏"><img loading="lazy" src="stickers/play_02.gif" alt="敲鼓"><figcaption><b>演奏</b><br>敲鼓<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="演奏"><img loading="lazy" src="stickers/play_03.gif" alt="弹竖琴"><figcaption><b>演奏</b><br>弹竖琴<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="演奏"><img loading="lazy" src="stickers/play_04.gif" alt="吹葫芦丝"><figcaption><b>演奏</b><br>吹葫芦丝<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="演奏"><img loading="lazy" src="stickers/play_05.gif" alt="蒙眼二泉映月"><figcaption><b>演奏</b><br>蒙眼二泉映月<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="演奏"><img loading="lazy" src="stickers/play_06.gif" alt="二泉映月"><figcaption><b>演奏</b><br>二泉映月<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="演奏"><img loading="lazy" src="stickers/play_07.gif" alt="红发葫芦丝"><figcaption><b>演奏</b><br>红发葫芦丝<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="演奏"><img loading="lazy" src="stickers/play_08.gif" alt="弹棉花"><figcaption><b>演奏</b><br>弹棉花<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="莲蓬头男孩"><img loading="lazy" src="stickers/shower_01.gif" alt="全都一起上吧"><figcaption><b>莲蓬头男孩</b><br>全都一起上吧<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="莲蓬头男孩"><img loading="lazy" src="stickers/shower_02.gif" alt="摊手"><figcaption><b>莲蓬头男孩</b><br>摊手<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="喜欢" data-s="莲蓬头男孩"><img loading="lazy" src="stickers/shower_03.gif" alt="你现在不喜欢我"><figcaption><b>莲蓬头男孩</b><br>你现在不喜欢我<br><span class="t">喜欢</span></figcaption></figure>
-<figure data-e="离开" data-s="莲蓬头男孩"><img loading="lazy" src="stickers/shower_04.gif" alt="我在下个村等你"><figcaption><b>莲蓬头男孩</b><br>我在下个村等你<br><span class="t">离开</span></figcaption></figure>
-<figure data-e="摆烂" data-s="莲蓬头男孩"><img loading="lazy" src="stickers/shower_05.jpg" alt="关机下班80到手"><figcaption><b>莲蓬头男孩</b><br>关机下班80到手<br><span class="t">摆烂</span></figcaption></figure>
-<figure data-e="拒绝" data-s="莲蓬头男孩"><img loading="lazy" src="stickers/shower_06.jpg" alt="没有下一个"><figcaption><b>莲蓬头男孩</b><br>没有下一个<br><span class="t">拒绝</span></figcaption></figure>
-<figure data-e="日常" data-s="莲蓬头男孩"><img loading="lazy" src="stickers/shower_07.png" alt="事实就是这样"><figcaption><b>莲蓬头男孩</b><br>事实就是这样<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="莲蓬头男孩"><img loading="lazy" src="stickers/shower_08.jpg" alt="转圈圈"><figcaption><b>莲蓬头男孩</b><br>转圈圈<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="加油" data-s="喷雾"><img loading="lazy" src="stickers/spray_01.jpg" alt="变傻喷雾"><figcaption><b>喷雾</b><br>变傻喷雾<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="加油" data-s="喷雾"><img loading="lazy" src="stickers/spray_02.gif" alt="变美喷雾"><figcaption><b>喷雾</b><br>变美喷雾<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="加油" data-s="喷雾"><img loading="lazy" src="stickers/spray_03.gif" alt="满分喷雾"><figcaption><b>喷雾</b><br>满分喷雾<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="加油" data-s="喷雾"><img loading="lazy" src="stickers/spray_04.gif" alt="去污喷雾"><figcaption><b>喷雾</b><br>去污喷雾<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="加油" data-s="喷雾"><img loading="lazy" src="stickers/spray_05.gif" alt="蒙的全对喷雾"><figcaption><b>喷雾</b><br>蒙的全对喷雾<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="加油" data-s="喷雾"><img loading="lazy" src="stickers/spray_06.gif" alt="没bug喷雾"><figcaption><b>喷雾</b><br>没bug喷雾<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="加油" data-s="喷雾"><img loading="lazy" src="stickers/spray_07.gif" alt="变傻喷雾"><figcaption><b>喷雾</b><br>变傻喷雾<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="搞笑" data-s="喷雾"><img loading="lazy" src="stickers/spray_08.gif" alt="（喷雾表情）"><figcaption><b>喷雾</b><br>（喷雾表情）<br><span class="t">搞笑</span></figcaption></figure>
-<figure data-e="震惊" data-s="杰尼龟"><img loading="lazy" src="stickers/squirtle_01.jpg" alt="给爷整懵了"><figcaption><b>杰尼龟</b><br>给爷整懵了<br><span class="t">震惊</span></figcaption></figure>
-<figure data-e="夸奖" data-s="杰尼龟"><img loading="lazy" src="stickers/squirtle_02.jpg" alt="好兄弟"><figcaption><b>杰尼龟</b><br>好兄弟<br><span class="t">夸奖</span></figcaption></figure>
-<figure data-e="加油" data-s="杰尼龟"><img loading="lazy" src="stickers/squirtle_03.jpg" alt="给我冲"><figcaption><b>杰尼龟</b><br>给我冲<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="摆烂" data-s="杰尼龟"><img loading="lazy" src="stickers/squirtle_04.jpg" alt="就是TM的扛不住哇"><figcaption><b>杰尼龟</b><br>就是TM的扛不住哇<br><span class="t">摆烂</span></figcaption></figure>
-<figure data-e="开心 生气 拒绝" data-s="杰尼龟"><img loading="lazy" src="stickers/squirtle_05.jpg" alt="不要试图和爷叫嚣可笑"><figcaption><b>杰尼龟</b><br>不要试图和爷叫嚣可笑<br><span class="t">开心 生气 拒绝</span></figcaption></figure>
-<figure data-e="无语 摆烂" data-s="杰尼龟"><img loading="lazy" src="stickers/squirtle_06.jpg" alt="我都不想说我认识你"><figcaption><b>杰尼龟</b><br>我都不想说我认识你<br><span class="t">无语 摆烂</span></figcaption></figure>
-<figure data-e="日常" data-s="杰尼龟"><img loading="lazy" src="stickers/squirtle_07.jpg" alt="憨憨的春天"><figcaption><b>杰尼龟</b><br>憨憨的春天<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="疑问" data-s="杰尼龟"><img loading="lazy" src="stickers/squirtle_08.jpg" alt="我哪敢说话呀"><figcaption><b>杰尼龟</b><br>我哪敢说话呀<br><span class="t">疑问</span></figcaption></figure>
-<figure data-e="开心 得意" data-s="杰尼龟"><img loading="lazy" src="stickers/squirtle_09.jpg" alt="爷又快乐咯"><figcaption><b>杰尼龟</b><br>爷又快乐咯<br><span class="t">开心 得意</span></figcaption></figure>
-<figure data-e="自嘲" data-s="杰尼龟"><img loading="lazy" src="stickers/squirtle_10.jpg" alt="冷冷的狗粮胡乱往嘴里塞"><figcaption><b>杰尼龟</b><br>冷冷的狗粮胡乱往嘴里塞<br><span class="t">自嘲</span></figcaption></figure>
-<figure data-e="吃瓜" data-s="苏大强"><img loading="lazy" src="stickers/sudq_01.gif" alt="暗中观察"><figcaption><b>苏大强</b><br>暗中观察<br><span class="t">吃瓜</span></figcaption></figure>
-<figure data-e="难过" data-s="苏大强"><img loading="lazy" src="stickers/sudq_02.gif" alt="委屈"><figcaption><b>苏大强</b><br>委屈<br><span class="t">难过</span></figcaption></figure>
-<figure data-e="生气" data-s="苏大强"><img loading="lazy" src="stickers/sudq_03.gif" alt="嘻嘻你个小兔崽子"><figcaption><b>苏大强</b><br>嘻嘻你个小兔崽子<br><span class="t">生气</span></figcaption></figure>
-<figure data-e="夸奖 生气" data-s="苏大强"><img loading="lazy" src="stickers/sudq_04.gif" alt="苏大强的愤怒"><figcaption><b>苏大强</b><br>苏大强的愤怒<br><span class="t">夸奖 生气</span></figcaption></figure>
-<figure data-e="夸奖" data-s="苏大强"><img loading="lazy" src="stickers/sudq_05.gif" alt="苏大强的凝视"><figcaption><b>苏大强</b><br>苏大强的凝视<br><span class="t">夸奖</span></figcaption></figure>
-<figure data-e="震惊" data-s="苏大强"><img loading="lazy" src="stickers/sudq_06.gif" alt="吓懵了"><figcaption><b>苏大强</b><br>吓懵了<br><span class="t">震惊</span></figcaption></figure>
-<figure data-e="震惊" data-s="苏大强"><img loading="lazy" src="stickers/sudq_07.gif" alt="不妙不妙不妙"><figcaption><b>苏大强</b><br>不妙不妙不妙<br><span class="t">震惊</span></figcaption></figure>
-<figure data-e="干饭" data-s="苏大强"><img loading="lazy" src="stickers/sudq_08.gif" alt="我想喝手磨咖啡"><figcaption><b>苏大强</b><br>我想喝手磨咖啡<br><span class="t">干饭</span></figcaption></figure>
-<figure data-e="得意" data-s="胖虎"><img loading="lazy" src="stickers/tiger_01.gif" alt="意气风发"><figcaption><b>胖虎</b><br>意气风发<br><span class="t">得意</span></figcaption></figure>
-<figure data-e="得意" data-s="胖虎"><img loading="lazy" src="stickers/tiger_02.gif" alt="我真的很不错"><figcaption><b>胖虎</b><br>我真的很不错<br><span class="t">得意</span></figcaption></figure>
-<figure data-e="威胁 搞笑" data-s="胖虎"><img loading="lazy" src="stickers/tiger_03.gif" alt="（胖虎表情）"><figcaption><b>胖虎</b><br>（胖虎表情）<br><span class="t">威胁 搞笑</span></figcaption></figure>
-<figure data-e="搞笑 得意" data-s="胖虎"><img loading="lazy" src="stickers/tiger_04.gif" alt="胖虎射线biubiu"><figcaption><b>胖虎</b><br>胖虎射线biubiu<br><span class="t">搞笑 得意</span></figcaption></figure>
-<figure data-e="生气 威胁" data-s="胖虎"><img loading="lazy" src="stickers/tiger_05.gif" alt="我胖虎经不起刁难-你刁难我-我就打你"><figcaption><b>胖虎</b><br>我胖虎经不起刁难-你刁难我-我就打你<br><span class="t">生气 威胁</span></figcaption></figure>
-<figure data-e="生气 威胁" data-s="胖虎"><img loading="lazy" src="stickers/tiger_06.gif" alt="你要跟我胖虎作对吗"><figcaption><b>胖虎</b><br>你要跟我胖虎作对吗<br><span class="t">生气 威胁</span></figcaption></figure>
-<figure data-e="搞笑 得意" data-s="胖虎"><img loading="lazy" src="stickers/tiger_07.gif" alt="看我干不干你就完事了"><figcaption><b>胖虎</b><br>看我干不干你就完事了<br><span class="t">搞笑 得意</span></figcaption></figure>
-<figure data-e="生气 威胁 求助 钱" data-s="胖虎"><img loading="lazy" src="stickers/tiger_08.gif" alt="我胖虎出去抽根烟-回来要看见八个红包，不然锤死在座各位"><figcaption><b>胖虎</b><br>我胖虎出去抽根烟-回来要看见八个红包，不然锤死在座各位<br><span class="t">生气 威胁 求助 钱</span></figcaption></figure>
-<figure data-e="撒娇 喜欢" data-s="胖虎"><img loading="lazy" src="stickers/tiger_09.gif" alt="我是你的双马尾小宝贝吗"><figcaption><b>胖虎</b><br>我是你的双马尾小宝贝吗<br><span class="t">撒娇 喜欢</span></figcaption></figure>
-<figure data-e="生气" data-s="胖虎"><img loading="lazy" src="stickers/tiger_10.gif" alt="我看-你他妈就是刁难我胖虎"><figcaption><b>胖虎</b><br>我看-你他妈就是刁难我胖虎<br><span class="t">生气</span></figcaption></figure>
-<figure data-e="疑问" data-s="胖虎"><img loading="lazy" src="stickers/tiger_11.gif" alt="你胖虎算什么东西-我是你爸爸"><figcaption><b>胖虎</b><br>你胖虎算什么东西-我是你爸爸<br><span class="t">疑问</span></figcaption></figure>
-<figure data-e="搞笑 得意" data-s="胖虎"><img loading="lazy" src="stickers/tiger_12.gif" alt="胖你妈的虎-老子叫刚田武"><figcaption><b>胖虎</b><br>胖你妈的虎-老子叫刚田武<br><span class="t">搞笑 得意</span></figcaption></figure>
-<figure data-e="喜欢" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_01.jpg" alt="比心给你"><figcaption><b>猫和老鼠</b><br>比心给你<br><span class="t">喜欢</span></figcaption></figure>
-<figure data-e="撒娇 喜欢" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_02.jpg" alt="妈妈爱你"><figcaption><b>猫和老鼠</b><br>妈妈爱你<br><span class="t">撒娇 喜欢</span></figcaption></figure>
-<figure data-e="睡觉 离开" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_03.jpg" alt="我先睡了"><figcaption><b>猫和老鼠</b><br>我先睡了<br><span class="t">睡觉 离开</span></figcaption></figure>
-<figure data-e="难过" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_04.jpg" alt="没脸见人了"><figcaption><b>猫和老鼠</b><br>没脸见人了<br><span class="t">难过</span></figcaption></figure>
-<figure data-e="日常" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_05.jpg" alt="达成共识"><figcaption><b>猫和老鼠</b><br>达成共识<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="拒绝" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_06.jpg" alt="别打扰我学习"><figcaption><b>猫和老鼠</b><br>别打扰我学习<br><span class="t">拒绝</span></figcaption></figure>
-<figure data-e="睡觉" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_07.jpg" alt="你看吧我睡了"><figcaption><b>猫和老鼠</b><br>你看吧我睡了<br><span class="t">睡觉</span></figcaption></figure>
-<figure data-e="生气" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_08.jpg" alt="气成个锤子"><figcaption><b>猫和老鼠</b><br>气成个锤子<br><span class="t">生气</span></figcaption></figure>
-<figure data-e="震惊 疑问" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_09.jpg" alt="疑问问号"><figcaption><b>猫和老鼠</b><br>疑问问号<br><span class="t">震惊 疑问</span></figcaption></figure>
-<figure data-e="生气 威胁" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_10.jpg" alt="老子毒死你"><figcaption><b>猫和老鼠</b><br>老子毒死你<br><span class="t">生气 威胁</span></figcaption></figure>
-<figure data-e="开心 难过" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_11.jpg" alt="哇哇大哭"><figcaption><b>猫和老鼠</b><br>哇哇大哭<br><span class="t">开心 难过</span></figcaption></figure>
-<figure data-e="威胁" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_12.jpg" alt="不服你顺着网线来打我啊"><figcaption><b>猫和老鼠</b><br>不服你顺着网线来打我啊<br><span class="t">威胁</span></figcaption></figure>
-<figure data-e="日常" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_13.jpg" alt="送你小花花"><figcaption><b>猫和老鼠</b><br>送你小花花<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="撒娇 自嘲" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_14.gif" alt="我命令你现在亲我脸"><figcaption><b>猫和老鼠</b><br>我命令你现在亲我脸<br><span class="t">撒娇 自嘲</span></figcaption></figure>
-<figure data-e="震惊" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_15.gif" alt="害怕"><figcaption><b>猫和老鼠</b><br>害怕<br><span class="t">震惊</span></figcaption></figure>
-<figure data-e="自嘲" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_16.gif" alt="这就是命吧"><figcaption><b>猫和老鼠</b><br>这就是命吧<br><span class="t">自嘲</span></figcaption></figure>
-<figure data-e="吃瓜 疑问" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_17.gif" alt="你瞅啥瞅你咋滴"><figcaption><b>猫和老鼠</b><br>你瞅啥瞅你咋滴<br><span class="t">吃瓜 疑问</span></figcaption></figure>
-<figure data-e="嘲讽" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_18.gif" alt="他真像个傻逼"><figcaption><b>猫和老鼠</b><br>他真像个傻逼<br><span class="t">嘲讽</span></figcaption></figure>
-<figure data-e="威胁" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_19.gif" alt="来打我呀"><figcaption><b>猫和老鼠</b><br>来打我呀<br><span class="t">威胁</span></figcaption></figure>
-<figure data-e="嘲讽" data-s="猫和老鼠"><img loading="lazy" src="stickers/tom_20.gif" alt="啧啧啧"><figcaption><b>猫和老鼠</b><br>啧啧啧<br><span class="t">嘲讽</span></figcaption></figure>
-<figure data-e="夸奖 嘲讽 拒绝" data-s="同福客栈"><img loading="lazy" src="stickers/tongfu_01.jpg" alt="不要叫我大佬"><figcaption><b>同福客栈</b><br>不要叫我大佬<br><span class="t">夸奖 嘲讽 拒绝</span></figcaption></figure>
-<figure data-e="无语 生气" data-s="同福客栈"><img loading="lazy" src="stickers/tongfu_02.jpg" alt="算了生气伤身体"><figcaption><b>同福客栈</b><br>算了生气伤身体<br><span class="t">无语 生气</span></figcaption></figure>
-<figure data-e="生气" data-s="同福客栈"><img loading="lazy" src="stickers/tongfu_03.jpg" alt="气死本仙女了"><figcaption><b>同福客栈</b><br>气死本仙女了<br><span class="t">生气</span></figcaption></figure>
-<figure data-e="吃瓜" data-s="同福客栈"><img loading="lazy" src="stickers/tongfu_04.jpg" alt="八卦的眼神"><figcaption><b>同福客栈</b><br>八卦的眼神<br><span class="t">吃瓜</span></figcaption></figure>
-<figure data-e="开心 嘲讽" data-s="同福客栈"><img loading="lazy" src="stickers/tongfu_05.jpg" alt="亲切而猥琐的笑容"><figcaption><b>同福客栈</b><br>亲切而猥琐的笑容<br><span class="t">开心 嘲讽</span></figcaption></figure>
-<figure data-e="拒绝" data-s="同福客栈"><img loading="lazy" src="stickers/tongfu_06.jpg" alt="你是不是脑子出了问题啊要不要紧啊"><figcaption><b>同福客栈</b><br>你是不是脑子出了问题啊要不要紧啊<br><span class="t">拒绝</span></figcaption></figure>
-<figure data-e="拒绝 疑问" data-s="同福客栈"><img loading="lazy" src="stickers/tongfu_07.jpg" alt="她咋不去死啊"><figcaption><b>同福客栈</b><br>她咋不去死啊<br><span class="t">拒绝 疑问</span></figcaption></figure>
-<figure data-e="开心 钱" data-s="同福客栈"><img loading="lazy" src="stickers/tongfu_08.jpg" alt="我原本可以过得很快乐是没钱害了我"><figcaption><b>同福客栈</b><br>我原本可以过得很快乐是没钱害了我<br><span class="t">开心 钱</span></figcaption></figure>
-<figure data-e="生气" data-s="同福客栈"><img loading="lazy" src="stickers/tongfu_09.jpg" alt="您这边滚"><figcaption><b>同福客栈</b><br>您这边滚<br><span class="t">生气</span></figcaption></figure>
-<figure data-e="吃瓜" data-s="同福客栈"><img loading="lazy" src="stickers/tongfu_10.jpg" alt="真是一场好戏"><figcaption><b>同福客栈</b><br>真是一场好戏<br><span class="t">吃瓜</span></figcaption></figure>
-<figure data-e="无语 摆烂" data-s="同福客栈"><img loading="lazy" src="stickers/tongfu_11.jpg" alt="我不困"><figcaption><b>同福客栈</b><br>我不困<br><span class="t">无语 摆烂</span></figcaption></figure>
-<figure data-e="难过" data-s="同福客栈"><img loading="lazy" src="stickers/tongfu_12.jpg" alt="我受点委屈没关系"><figcaption><b>同福客栈</b><br>我受点委屈没关系<br><span class="t">难过</span></figcaption></figure>
-<figure data-e="夸奖" data-s="汪蛋"><img loading="lazy" src="stickers/wangdan_01.gif" alt="鼓掌"><figcaption><b>汪蛋</b><br>鼓掌<br><span class="t">夸奖</span></figcaption></figure>
-<figure data-e="日常" data-s="汪蛋"><img loading="lazy" src="stickers/wangdan_02.gif" alt="扮鬼脸略略略"><figcaption><b>汪蛋</b><br>扮鬼脸略略略<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="汪蛋"><img loading="lazy" src="stickers/wangdan_03.gif" alt="嗷"><figcaption><b>汪蛋</b><br>嗷<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="汪蛋"><img loading="lazy" src="stickers/wangdan_05.gif" alt="掏耳朵"><figcaption><b>汪蛋</b><br>掏耳朵<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="问候" data-s="汪蛋"><img loading="lazy" src="stickers/wangdan_06.gif" alt="早上好"><figcaption><b>汪蛋</b><br>早上好<br><span class="t">问候</span></figcaption></figure>
-<figure data-e="震惊" data-s="汪蛋"><img loading="lazy" src="stickers/wangdan_07.gif" alt="惊恐"><figcaption><b>汪蛋</b><br>惊恐<br><span class="t">震惊</span></figcaption></figure>
-<figure data-e="日常" data-s="汪蛋"><img loading="lazy" src="stickers/wangdan_08.gif" alt="揉脸"><figcaption><b>汪蛋</b><br>揉脸<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="汪蛋"><img loading="lazy" src="stickers/wangdan_09.gif" alt="左右摇晃"><figcaption><b>汪蛋</b><br>左右摇晃<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="震惊" data-s="汪蛋"><img loading="lazy" src="stickers/wangdan_10.gif" alt="震惊"><figcaption><b>汪蛋</b><br>震惊<br><span class="t">震惊</span></figcaption></figure>
-<figure data-e="撒娇" data-s="汪蛋"><img loading="lazy" src="stickers/wangdan_11.gif" alt="亲亲"><figcaption><b>汪蛋</b><br>亲亲<br><span class="t">撒娇</span></figcaption></figure>
-<figure data-e="日常" data-s="汪蛋"><img loading="lazy" src="stickers/wangdan_12.gif" alt="你走不走"><figcaption><b>汪蛋</b><br>你走不走<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="可爱" data-s="白色小人"><img loading="lazy" src="stickers/white_01.png" alt="（白色小人表情）"><figcaption><b>白色小人</b><br>（白色小人表情）<br><span class="t">可爱</span></figcaption></figure>
-<figure data-e="生气" data-s="白色小人"><img loading="lazy" src="stickers/white_02.png" alt="（白色小人表情）"><figcaption><b>白色小人</b><br>（白色小人表情）<br><span class="t">生气</span></figcaption></figure>
-<figure data-e="开心" data-s="白色小人"><img loading="lazy" src="stickers/white_03.png" alt="（白色小人表情）"><figcaption><b>白色小人</b><br>（白色小人表情）<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="开心" data-s="白色小人"><img loading="lazy" src="stickers/white_04.png" alt="（白色小人表情）"><figcaption><b>白色小人</b><br>（白色小人表情）<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="摆烂" data-s="白色小人"><img loading="lazy" src="stickers/white_05.jpg" alt="（白色小人表情）"><figcaption><b>白色小人</b><br>（白色小人表情）<br><span class="t">摆烂</span></figcaption></figure>
-<figure data-e="撒娇" data-s="白色小人"><img loading="lazy" src="stickers/white_06.gif" alt="（白色小人表情）"><figcaption><b>白色小人</b><br>（白色小人表情）<br><span class="t">撒娇</span></figcaption></figure>
-<figure data-e="得意" data-s="白色小人"><img loading="lazy" src="stickers/white_07.jpg" alt="（白色小人表情）"><figcaption><b>白色小人</b><br>（白色小人表情）<br><span class="t">得意</span></figcaption></figure>
-<figure data-e="无语" data-s="白色小人"><img loading="lazy" src="stickers/white_08.gif" alt="（白色小人表情）"><figcaption><b>白色小人</b><br>（白色小人表情）<br><span class="t">无语</span></figcaption></figure>
-<figure data-e="开心" data-s="白色小人"><img loading="lazy" src="stickers/white_09.png" alt="（白色小人表情）"><figcaption><b>白色小人</b><br>（白色小人表情）<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="开心" data-s="白色小人"><img loading="lazy" src="stickers/white_10.gif" alt="（白色小人表情）"><figcaption><b>白色小人</b><br>（白色小人表情）<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="嘲讽" data-s="甄嬛传"><img loading="lazy" src="stickers/zhenhuan_01.jpeg" alt="你这个毒妇"><figcaption><b>甄嬛传</b><br>你这个毒妇<br><span class="t">嘲讽</span></figcaption></figure>
-<figure data-e="日常" data-s="甄嬛传"><img loading="lazy" src="stickers/zhenhuan_02.jpg" alt="你我母子之间不必说这些"><figcaption><b>甄嬛传</b><br>你我母子之间不必说这些<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="求助 钱" data-s="甄嬛传"><img loading="lazy" src="stickers/zhenhuan_03.jpg" alt="只求荣华富贵不求一丝真情"><figcaption><b>甄嬛传</b><br>只求荣华富贵不求一丝真情<br><span class="t">求助 钱</span></figcaption></figure>
-<figure data-e="嘲讽" data-s="甄嬛传"><img loading="lazy" src="stickers/zhenhuan_04.jpg" alt="你也配"><figcaption><b>甄嬛传</b><br>你也配<br><span class="t">嘲讽</span></figcaption></figure>
-<figure data-e="日常" data-s="甄嬛传"><img loading="lazy" src="stickers/zhenhuan_05.jpg" alt="死的透透的了"><figcaption><b>甄嬛传</b><br>死的透透的了<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="日常" data-s="甄嬛传"><img loading="lazy" src="stickers/zhenhuan_06.jpeg" alt="退骚药"><figcaption><b>甄嬛传</b><br>退骚药<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="难过 喜欢" data-s="甄嬛传"><img loading="lazy" src="stickers/zhenhuan_07.jpeg" alt="男人都会让女人伤心的"><figcaption><b>甄嬛传</b><br>男人都会让女人伤心的<br><span class="t">难过 喜欢</span></figcaption></figure>
-<figure data-e="嘲讽 喜欢" data-s="甄嬛传"><img loading="lazy" src="stickers/zhenhuan_08.jpeg" alt="都让我觉得无比恶心"><figcaption><b>甄嬛传</b><br>都让我觉得无比恶心<br><span class="t">嘲讽 喜欢</span></figcaption></figure>
-<figure data-e="开心" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_01.png" alt="小狗抱着生日蛋糕"><figcaption><b>手机微信表情包</b><br>小狗抱着生日蛋糕<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="加油" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_02.png" alt="小狗「好～」"><figcaption><b>手机微信表情包</b><br>小狗「好～」<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="开心" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_03.png" alt="小狗生日快乐小旗"><figcaption><b>手机微信表情包</b><br>小狗生日快乐小旗<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="摆烂" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_04.png" alt="小狗听完躺平"><figcaption><b>手机微信表情包</b><br>小狗听完躺平<br><span class="t">摆烂</span></figcaption></figure>
-<figure data-e="搞笑 求助" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_05.png" alt="「呐 拿去」它说它想去你家"><figcaption><b>手机微信表情包</b><br>「呐 拿去」它说它想去你家<br><span class="t">搞笑 求助</span></figcaption></figure>
-<figure data-e="加油" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_06.png" alt="偶像小狗开始工作"><figcaption><b>手机微信表情包</b><br>偶像小狗开始工作<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="加油" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_07.png" alt="小狗「就快好了」"><figcaption><b>手机微信表情包</b><br>小狗「就快好了」<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="喜欢" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_08.png" alt="猫咪抱爱心"><figcaption><b>手机微信表情包</b><br>猫咪抱爱心<br><span class="t">喜欢</span></figcaption></figure>
-<figure data-e="开心" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_09.png" alt="白猫抱着礼物"><figcaption><b>手机微信表情包</b><br>白猫抱着礼物<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="可爱" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_10.png" alt="揉揉小脸蛋"><figcaption><b>手机微信表情包</b><br>揉揉小脸蛋<br><span class="t">可爱</span></figcaption></figure>
-<figure data-e="夸奖" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_11.png" alt="猫天使"><figcaption><b>手机微信表情包</b><br>猫天使<br><span class="t">夸奖</span></figcaption></figure>
-<figure data-e="加油" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_12.png" alt="小狗期待的眼神"><figcaption><b>手机微信表情包</b><br>小狗期待的眼神<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="加油" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_13.png" alt="小狗奔跑"><figcaption><b>手机微信表情包</b><br>小狗奔跑<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="喜欢" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_14.png" alt="兔兔抱爱心"><figcaption><b>手机微信表情包</b><br>兔兔抱爱心<br><span class="t">喜欢</span></figcaption></figure>
-<figure data-e="尴尬" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_15.png" alt="小狗「sorry」"><figcaption><b>手机微信表情包</b><br>小狗「sorry」<br><span class="t">尴尬</span></figcaption></figure>
-<figure data-e="撒娇" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_16.png" alt="小狗抱着枕头"><figcaption><b>手机微信表情包</b><br>小狗抱着枕头<br><span class="t">撒娇</span></figcaption></figure>
-<figure data-e="得意" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_17.png" alt="小狗「骄傲」"><figcaption><b>手机微信表情包</b><br>小狗「骄傲」<br><span class="t">得意</span></figcaption></figure>
-<figure data-e="难过" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_18.png" alt="小狗跪地大哭"><figcaption><b>手机微信表情包</b><br>小狗跪地大哭<br><span class="t">难过</span></figcaption></figure>
-<figure data-e="摆烂" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_19.png" alt="小狗「已归西」"><figcaption><b>手机微信表情包</b><br>小狗「已归西」<br><span class="t">摆烂</span></figcaption></figure>
-<figure data-e="求助" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_20.png" alt="小狗双手合十祈祷"><figcaption><b>手机微信表情包</b><br>小狗双手合十祈祷<br><span class="t">求助</span></figcaption></figure>
-<figure data-e="日常" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_21.png" alt="小狗「刷牙！」"><figcaption><b>手机微信表情包</b><br>小狗「刷牙！」<br><span class="t">日常</span></figcaption></figure>
-<figure data-e="无语" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_22.png" alt="小狗「蓝的盆」"><figcaption><b>手机微信表情包</b><br>小狗「蓝的盆」<br><span class="t">无语</span></figcaption></figure>
-<figure data-e="得意" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_23.png" alt="小狗得意洋洋"><figcaption><b>手机微信表情包</b><br>小狗得意洋洋<br><span class="t">得意</span></figcaption></figure>
-<figure data-e="加油" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_24.png" alt="小狗「期待的眼神」"><figcaption><b>手机微信表情包</b><br>小狗「期待的眼神」<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="生气" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_25.png" alt="小狗生气咬人"><figcaption><b>手机微信表情包</b><br>小狗生气咬人<br><span class="t">生气</span></figcaption></figure>
-<figure data-e="加油" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_26.png" alt="小狗往前冲"><figcaption><b>手机微信表情包</b><br>小狗往前冲<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="干饭" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_27.png" alt="小狗抱奶茶"><figcaption><b>手机微信表情包</b><br>小狗抱奶茶<br><span class="t">干饭</span></figcaption></figure>
-<figure data-e="搞笑" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_28.png" alt="「耳洞打这里对么」"><figcaption><b>手机微信表情包</b><br>「耳洞打这里对么」<br><span class="t">搞笑</span></figcaption></figure>
-<figure data-e="沙雕" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_29.png" alt="小狗「咻哒」"><figcaption><b>手机微信表情包</b><br>小狗「咻哒」<br><span class="t">沙雕</span></figcaption></figure>
-<figure data-e="撒娇" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_30.png" alt="猫咪「PrPr」"><figcaption><b>手机微信表情包</b><br>猫咪「PrPr」<br><span class="t">撒娇</span></figcaption></figure>
-<figure data-e="得意" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_31.png" alt="小狗「我有1个good idea」"><figcaption><b>手机微信表情包</b><br>小狗「我有1个good idea」<br><span class="t">得意</span></figcaption></figure>
-<figure data-e="求助" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_32.png" alt="「求求你了哇哇哇 就当喂狗了」"><figcaption><b>手机微信表情包</b><br>「求求你了哇哇哇 就当喂狗了」<br><span class="t">求助</span></figcaption></figure>
-<figure data-e="无语" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_33.png" alt="白猫无语"><figcaption><b>手机微信表情包</b><br>白猫无语<br><span class="t">无语</span></figcaption></figure>
-<figure data-e="撒娇" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_34.png" alt="「贴贴」"><figcaption><b>手机微信表情包</b><br>「贴贴」<br><span class="t">撒娇</span></figcaption></figure>
-<figure data-e="求助" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_35.png" alt="「老师，问问进度」"><figcaption><b>手机微信表情包</b><br>「老师，问问进度」<br><span class="t">求助</span></figcaption></figure>
-<figure data-e="尴尬" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_36.png" alt="小狗捂脸"><figcaption><b>手机微信表情包</b><br>小狗捂脸<br><span class="t">尴尬</span></figcaption></figure>
-<figure data-e="搞笑" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_37.png" alt="「Oiii 我走了，回去拉粑粑了」"><figcaption><b>手机微信表情包</b><br>「Oiii 我走了，回去拉粑粑了」<br><span class="t">搞笑</span></figcaption></figure>
-<figure data-e="搞笑" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_38.png" alt="「你是一只小狗」"><figcaption><b>手机微信表情包</b><br>「你是一只小狗」<br><span class="t">搞笑</span></figcaption></figure>
-<figure data-e="求助" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_39.png" alt="「别时！看看我！」"><figcaption><b>手机微信表情包</b><br>「别时！看看我！」<br><span class="t">求助</span></figcaption></figure>
-<figure data-e="喜欢" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_40.png" alt="小狗「请和我约会」"><figcaption><b>手机微信表情包</b><br>小狗「请和我约会」<br><span class="t">喜欢</span></figcaption></figure>
-<figure data-e="无语" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_41.png" alt="小狗发呆"><figcaption><b>手机微信表情包</b><br>小狗发呆<br><span class="t">无语</span></figcaption></figure>
-<figure data-e="摆烂" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_42.png" alt="「躲进下水道」"><figcaption><b>手机微信表情包</b><br>「躲进下水道」<br><span class="t">摆烂</span></figcaption></figure>
-<figure data-e="得意" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_43.png" alt="小狗眯眼坏笑"><figcaption><b>手机微信表情包</b><br>小狗眯眼坏笑<br><span class="t">得意</span></figcaption></figure>
-<figure data-e="得意" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_44.png" alt="小狗戴墨镜"><figcaption><b>手机微信表情包</b><br>小狗戴墨镜<br><span class="t">得意</span></figcaption></figure>
-<figure data-e="生气" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_45.png" alt="小狗伸手「给我。」"><figcaption><b>手机微信表情包</b><br>小狗伸手「给我。」<br><span class="t">生气</span></figcaption></figure>
-<figure data-e="搞笑" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_46.png" alt="「拿吧我偷老大钱养你」"><figcaption><b>手机微信表情包</b><br>「拿吧我偷老大钱养你」<br><span class="t">搞笑</span></figcaption></figure>
-<figure data-e="开心" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_47.png" alt="小狗「一起玩！」"><figcaption><b>手机微信表情包</b><br>小狗「一起玩！」<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="生气" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_48.png" alt="小狗「啊啊啊！」"><figcaption><b>手机微信表情包</b><br>小狗「啊啊啊！」<br><span class="t">生气</span></figcaption></figure>
-<figure data-e="撒娇" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_49.png" alt="白猫抱着小狗"><figcaption><b>手机微信表情包</b><br>白猫抱着小狗<br><span class="t">撒娇</span></figcaption></figure>
-<figure data-e="夸奖" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_50.png" alt="「你是天使！」"><figcaption><b>手机微信表情包</b><br>「你是天使！」<br><span class="t">夸奖</span></figcaption></figure>
-<figure data-e="尴尬" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_51.png" alt="小狗「感到难为情」"><figcaption><b>手机微信表情包</b><br>小狗「感到难为情」<br><span class="t">尴尬</span></figcaption></figure>
-<figure data-e="得意" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_52.png" alt="小狗「胜利之姿」"><figcaption><b>手机微信表情包</b><br>小狗「胜利之姿」<br><span class="t">得意</span></figcaption></figure>
-<figure data-e="干饭" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_53.png" alt="小狗「你好，请吃」"><figcaption><b>手机微信表情包</b><br>小狗「你好，请吃」<br><span class="t">干饭</span></figcaption></figure>
-<figure data-e="摆烂" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_54.png" alt="小狗「酥服！」"><figcaption><b>手机微信表情包</b><br>小狗「酥服！」<br><span class="t">摆烂</span></figcaption></figure>
-<figure data-e="喜欢" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_55.png" alt="小狗抱爱心"><figcaption><b>手机微信表情包</b><br>小狗抱爱心<br><span class="t">喜欢</span></figcaption></figure>
-<figure data-e="开心" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_56.png" alt="小狗「宝宝巴适」"><figcaption><b>手机微信表情包</b><br>小狗「宝宝巴适」<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="开心" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_57.png" alt="小狗张嘴大笑"><figcaption><b>手机微信表情包</b><br>小狗张嘴大笑<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="喜欢" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_58.png" alt="小狗「我要和你好，我来了」"><figcaption><b>手机微信表情包</b><br>小狗「我要和你好，我来了」<br><span class="t">喜欢</span></figcaption></figure>
-<figure data-e="难过" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_59.png" alt="小狗挨打"><figcaption><b>手机微信表情包</b><br>小狗挨打<br><span class="t">难过</span></figcaption></figure>
-<figure data-e="疑问" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_60.png" alt="小狗「怎么了呢」"><figcaption><b>手机微信表情包</b><br>小狗「怎么了呢」<br><span class="t">疑问</span></figcaption></figure>
-<figure data-e="摆烂" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_61.png" alt="小狗对着蓝屏电脑"><figcaption><b>手机微信表情包</b><br>小狗对着蓝屏电脑<br><span class="t">摆烂</span></figcaption></figure>
-<figure data-e="撒娇" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_62.png" alt="小狗「木嘛嘛」"><figcaption><b>手机微信表情包</b><br>小狗「木嘛嘛」<br><span class="t">撒娇</span></figcaption></figure>
-<figure data-e="尴尬" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_63.png" alt="小狗「错…错了…」"><figcaption><b>手机微信表情包</b><br>小狗「错…错了…」<br><span class="t">尴尬</span></figcaption></figure>
-<figure data-e="摆烂" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_64.png" alt="小狗「已老实」"><figcaption><b>手机微信表情包</b><br>小狗「已老实」<br><span class="t">摆烂</span></figcaption></figure>
-<figure data-e="无语" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_65.png" alt="小狗「施工中」"><figcaption><b>手机微信表情包</b><br>小狗「施工中」<br><span class="t">无语</span></figcaption></figure>
-<figure data-e="加油" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_66.png" alt="小狗「我缓缓等待」"><figcaption><b>手机微信表情包</b><br>小狗「我缓缓等待」<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="加油" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_67.png" alt="小狗「击掌 give me five」"><figcaption><b>手机微信表情包</b><br>小狗「击掌 give me five」<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="喜欢" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_68.png" alt="小狗「我好想你呀！」"><figcaption><b>手机微信表情包</b><br>小狗「我好想你呀！」<br><span class="t">喜欢</span></figcaption></figure>
-<figure data-e="无语" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_69.png" alt="小狗「那咋了…」"><figcaption><b>手机微信表情包</b><br>小狗「那咋了…」<br><span class="t">无语</span></figcaption></figure>
-<figure data-e="喜欢" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_70.png" alt="小狗「喜欢～」"><figcaption><b>手机微信表情包</b><br>小狗「喜欢～」<br><span class="t">喜欢</span></figcaption></figure>
-<figure data-e="难过" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_71.png" alt="小狗哎呀"><figcaption><b>手机微信表情包</b><br>小狗哎呀<br><span class="t">难过</span></figcaption></figure>
-<figure data-e="撒娇" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_72.png" alt="小狗「啵啵啵」"><figcaption><b>手机微信表情包</b><br>小狗「啵啵啵」<br><span class="t">撒娇</span></figcaption></figure>
-<figure data-e="撒娇" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_73.png" alt="小狗「来…抱抱！」"><figcaption><b>手机微信表情包</b><br>小狗「来…抱抱！」<br><span class="t">撒娇</span></figcaption></figure>
-<figure data-e="睡觉" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_74.png" alt="小狗「Zzz」"><figcaption><b>手机微信表情包</b><br>小狗「Zzz」<br><span class="t">睡觉</span></figcaption></figure>
-<figure data-e="加油" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_75.png" alt="小狗「中！！」"><figcaption><b>手机微信表情包</b><br>小狗「中！！」<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="加油" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_76.png" alt="小狗「行。」"><figcaption><b>手机微信表情包</b><br>小狗「行。」<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="钱" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_77.png" alt="小狗「请给我一点钱」"><figcaption><b>手机微信表情包</b><br>小狗「请给我一点钱」<br><span class="t">钱</span></figcaption></figure>
-<figure data-e="夸奖" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_78.png" alt="「摸摸头」"><figcaption><b>手机微信表情包</b><br>「摸摸头」<br><span class="t">夸奖</span></figcaption></figure>
-<figure data-e="生气" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_79.png" alt="小狗「挎起个狗脸」"><figcaption><b>手机微信表情包</b><br>小狗「挎起个狗脸」<br><span class="t">生气</span></figcaption></figure>
-<figure data-e="问候" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_80.png" alt="小狗「谢谢」"><figcaption><b>手机微信表情包</b><br>小狗「谢谢」<br><span class="t">问候</span></figcaption></figure>
-<figure data-e="撒娇" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_81.png" alt="猫咪亲小狗"><figcaption><b>手机微信表情包</b><br>猫咪亲小狗<br><span class="t">撒娇</span></figcaption></figure>
-<figure data-e="喜欢" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_82.png" alt="小狗抱爱心比心"><figcaption><b>手机微信表情包</b><br>小狗抱爱心比心<br><span class="t">喜欢</span></figcaption></figure>
-<figure data-e="震惊" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_83.png" alt="小狗张嘴震惊"><figcaption><b>手机微信表情包</b><br>小狗张嘴震惊<br><span class="t">震惊</span></figcaption></figure>
-<figure data-e="搞笑" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_84.png" alt="小狗「大明星跑路」"><figcaption><b>手机微信表情包</b><br>小狗「大明星跑路」<br><span class="t">搞笑</span></figcaption></figure>
-<figure data-e="摆烂" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_85.png" alt="小狗「充电中」"><figcaption><b>手机微信表情包</b><br>小狗「充电中」<br><span class="t">摆烂</span></figcaption></figure>
-<figure data-e="加油" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_86.png" alt="小狗「期待状」"><figcaption><b>手机微信表情包</b><br>小狗「期待状」<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="摆烂" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_87.png" alt="小狗「随随便便」"><figcaption><b>手机微信表情包</b><br>小狗「随随便便」<br><span class="t">摆烂</span></figcaption></figure>
-<figure data-e="撒娇" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_88.png" alt="小狗「发出被窝共享邀请」"><figcaption><b>手机微信表情包</b><br>小狗「发出被窝共享邀请」<br><span class="t">撒娇</span></figcaption></figure>
-<figure data-e="得意" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_89.png" alt="小狗「拿捏」"><figcaption><b>手机微信表情包</b><br>小狗「拿捏」<br><span class="t">得意</span></figcaption></figure>
-<figure data-e="开心" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_90.png" alt="小狗「幸福了」"><figcaption><b>手机微信表情包</b><br>小狗「幸福了」<br><span class="t">开心</span></figcaption></figure>
-<figure data-e="难过" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_91.png" alt="「只是雨天心碎的狗」"><figcaption><b>手机微信表情包</b><br>「只是雨天心碎的狗」<br><span class="t">难过</span></figcaption></figure>
-<figure data-e="摆烂" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_92.png" alt="小狗躺着看手机"><figcaption><b>手机微信表情包</b><br>小狗躺着看手机<br><span class="t">摆烂</span></figcaption></figure>
-<figure data-e="自嘲" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_93.png" alt="「我吗？我只是一只小狗」"><figcaption><b>手机微信表情包</b><br>「我吗？我只是一只小狗」<br><span class="t">自嘲</span></figcaption></figure>
-<figure data-e="喜欢" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_94.png" alt="小狗「这个…好想要…」"><figcaption><b>手机微信表情包</b><br>小狗「这个…好想要…」<br><span class="t">喜欢</span></figcaption></figure>
-<figure data-e="夸奖" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_95.png" alt="小狗「幸苦幸苦」"><figcaption><b>手机微信表情包</b><br>小狗「幸苦幸苦」<br><span class="t">夸奖</span></figcaption></figure>
-<figure data-e="难过" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_96.png" alt="小狗「呜哇」"><figcaption><b>手机微信表情包</b><br>小狗「呜哇」<br><span class="t">难过</span></figcaption></figure>
-<figure data-e="喜欢" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_97.png" alt="小狗「我要追随你！」"><figcaption><b>手机微信表情包</b><br>小狗「我要追随你！」<br><span class="t">喜欢</span></figcaption></figure>
-<figure data-e="摆烂" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_98.png" alt="小狗「摆烂了」"><figcaption><b>手机微信表情包</b><br>小狗「摆烂了」<br><span class="t">摆烂</span></figcaption></figure>
-<figure data-e="加油" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_99.png" alt="小狗「知豆了！！」"><figcaption><b>手机微信表情包</b><br>小狗「知豆了！！」<br><span class="t">加油</span></figcaption></figure>
-<figure data-e="沙雕" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_100.png" alt="兔兔转圈圈"><figcaption><b>手机微信表情包</b><br>兔兔转圈圈<br><span class="t">沙雕</span></figcaption></figure>
-<figure data-e="搞笑" data-s="手机微信表情包"><img loading="lazy" src="stickers/ph_101.png" alt="小狗吐舌搞怪"><figcaption><b>手机微信表情包</b><br>小狗吐舌搞怪<br><span class="t">搞笑</span></figcaption></figure></main>
+<main id="g"><figure data-e="震惊" data-s="北方栖姬" data-id="beifang_01"><img loading="lazy" src="stickers/beifang_01.jpg" alt="那个世界居然有如此美丽的人"><figcaption><b class="id">beifang_01</b><br>那个世界居然有如此美丽的人<br><span class="t">震惊</span></figcaption></figure>
+<figure data-e="日常" data-s="北方栖姬" data-id="beifang_02"><img loading="lazy" src="stickers/beifang_02.jpg" alt="开黑吗我很卡也很坑"><figcaption><b class="id">beifang_02</b><br>开黑吗我很卡也很坑<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="北方栖姬" data-id="beifang_03"><img loading="lazy" src="stickers/beifang_03.jpg" alt="你个坏家伙"><figcaption><b class="id">beifang_03</b><br>你个坏家伙<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="北方栖姬" data-id="beifang_04"><img loading="lazy" src="stickers/beifang_04.jpg" alt="这些锅我背了"><figcaption><b class="id">beifang_04</b><br>这些锅我背了<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="北方栖姬" data-id="beifang_05"><img loading="lazy" src="stickers/beifang_05.jpg" alt="拿MVP很难"><figcaption><b class="id">beifang_05</b><br>拿MVP很难<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="北方栖姬" data-id="beifang_06"><img loading="lazy" src="stickers/beifang_06.jpg" alt="哦"><figcaption><b class="id">beifang_06</b><br>哦<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="钱" data-s="北方栖姬" data-id="beifang_07"><img loading="lazy" src="stickers/beifang_07.jpg" alt="多少钱说吧今晚包了你"><figcaption><b class="id">beifang_07</b><br>多少钱说吧今晚包了你<br><span class="t">钱</span></figcaption></figure>
+<figure data-e="干饭 吃瓜" data-s="北方栖姬" data-id="beifang_08"><img loading="lazy" src="stickers/beifang_08.jpg" alt="不明真相的吃瓜群众围观"><figcaption><b class="id">beifang_08</b><br>不明真相的吃瓜群众围观<br><span class="t">干饭 吃瓜</span></figcaption></figure>
+<figure data-e="难过 摆烂 喜欢" data-s="北方栖姬" data-id="beifang_09"><img loading="lazy" src="stickers/beifang_09.jpg" alt="心好累"><figcaption><b class="id">beifang_09</b><br>心好累<br><span class="t">难过 摆烂 喜欢</span></figcaption></figure>
+<figure data-e="夸奖" data-s="北方栖姬" data-id="beifang_10"><img loading="lazy" src="stickers/beifang_10.jpg" alt="世界那么大为何偏偏最帅是我"><figcaption><b class="id">beifang_10</b><br>世界那么大为何偏偏最帅是我<br><span class="t">夸奖</span></figcaption></figure>
+<figure data-e="日常" data-s="北方栖姬" data-id="beifang_11"><img loading="lazy" src="stickers/beifang_11.jpg" alt="无聊啊"><figcaption><b class="id">beifang_11</b><br>无聊啊<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="北方栖姬" data-id="beifang_12"><img loading="lazy" src="stickers/beifang_12.jpg" alt="滑稽"><figcaption><b class="id">beifang_12</b><br>滑稽<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="求助 钱" data-s="喵星人" data-id="cat_01"><img loading="lazy" src="stickers/cat_01.jpg" alt="给我5块钱猫"><figcaption><b class="id">cat_01</b><br>给我5块钱猫<br><span class="t">求助 钱</span></figcaption></figure>
+<figure data-e="难过" data-s="喵星人" data-id="cat_02"><img loading="lazy" src="stickers/cat_02.jpg" alt="我是不是马上要死了猫"><figcaption><b class="id">cat_02</b><br>我是不是马上要死了猫<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="日常" data-s="喵星人" data-id="cat_03"><img loading="lazy" src="stickers/cat_03.gif" alt="开车猫"><figcaption><b class="id">cat_03</b><br>开车猫<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="喵星人" data-id="cat_04"><img loading="lazy" src="stickers/cat_04.jpg" alt="汤姆的情人猫"><figcaption><b class="id">cat_04</b><br>汤姆的情人猫<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="喵星人" data-id="cat_05"><img loading="lazy" src="stickers/cat_05.jpg" alt="嚯好大的口气猫"><figcaption><b class="id">cat_05</b><br>嚯好大的口气猫<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="喵星人" data-id="cat_06"><img loading="lazy" src="stickers/cat_06.jpg" alt="歪头看猫"><figcaption><b class="id">cat_06</b><br>歪头看猫<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="开心" data-s="喵星人" data-id="cat_07"><img loading="lazy" src="stickers/cat_07.jpg" alt="行叭猫"><figcaption><b class="id">cat_07</b><br>行叭猫<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="开心 难过" data-s="喵星人" data-id="cat_08"><img loading="lazy" src="stickers/cat_08.jpg" alt="我的快乐已经死了-在我精神涣散智力低下羞愧又按钮的十七岁这年猫"><figcaption><b class="id">cat_08</b><br>我的快乐已经死了-在我精神涣散智力低下羞愧又按钮的十七岁这年猫<br><span class="t">开心 难过</span></figcaption></figure>
+<figure data-e="生气" data-s="喵星人" data-id="cat_09"><img loading="lazy" src="stickers/cat_09.jpg" alt="接下来你是不是要凶我了猫"><figcaption><b class="id">cat_09</b><br>接下来你是不是要凶我了猫<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="日常" data-s="喵星人" data-id="cat_11"><img loading="lazy" src="stickers/cat_11.jpg" alt="拽猫"><figcaption><b class="id">cat_11</b><br>拽猫<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="开心 嘲讽" data-s="喵星人" data-id="cat_12"><img loading="lazy" src="stickers/cat_12.jpg" alt="脸上泛起了婊里婊气的笑容猫"><figcaption><b class="id">cat_12</b><br>脸上泛起了婊里婊气的笑容猫<br><span class="t">开心 嘲讽</span></figcaption></figure>
+<figure data-e="可爱 撒娇" data-s="小幺鸡" data-id="chicken_01"><img loading="lazy" src="stickers/chicken_01.gif" alt="（小幺鸡表情）"><figcaption><b class="id">chicken_01</b><br>（小幺鸡表情）<br><span class="t">可爱 撒娇</span></figcaption></figure>
+<figure data-e="尴尬" data-s="小幺鸡" data-id="chicken_02"><img loading="lazy" src="stickers/chicken_02.jpg" alt="（小幺鸡表情）"><figcaption><b class="id">chicken_02</b><br>（小幺鸡表情）<br><span class="t">尴尬</span></figcaption></figure>
+<figure data-e="可爱 害羞" data-s="小幺鸡" data-id="chicken_03"><img loading="lazy" src="stickers/chicken_03.gif" alt="（小幺鸡表情）"><figcaption><b class="id">chicken_03</b><br>（小幺鸡表情）<br><span class="t">可爱 害羞</span></figcaption></figure>
+<figure data-e="震惊" data-s="小幺鸡" data-id="chicken_04"><img loading="lazy" src="stickers/chicken_04.jpg" alt="（小幺鸡表情）"><figcaption><b class="id">chicken_04</b><br>（小幺鸡表情）<br><span class="t">震惊</span></figcaption></figure>
+<figure data-e="难过" data-s="小幺鸡" data-id="chicken_05"><img loading="lazy" src="stickers/chicken_05.jpg" alt="（小幺鸡表情）"><figcaption><b class="id">chicken_05</b><br>（小幺鸡表情）<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="开心" data-s="小幺鸡" data-id="chicken_06"><img loading="lazy" src="stickers/chicken_06.jpg" alt="（小幺鸡表情）"><figcaption><b class="id">chicken_06</b><br>（小幺鸡表情）<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="开心 搞笑" data-s="小幺鸡" data-id="chicken_07"><img loading="lazy" src="stickers/chicken_07.jpg" alt="（小幺鸡表情）"><figcaption><b class="id">chicken_07</b><br>（小幺鸡表情）<br><span class="t">开心 搞笑</span></figcaption></figure>
+<figure data-e="沙雕 开心" data-s="小幺鸡" data-id="chicken_08"><img loading="lazy" src="stickers/chicken_08.jpg" alt="13"><figcaption><b class="id">chicken_08</b><br>13<br><span class="t">沙雕 开心</span></figcaption></figure>
+<figure data-e="沙雕 开心" data-s="小幺鸡" data-id="chicken_09"><img loading="lazy" src="stickers/chicken_09.jpg" alt="2"><figcaption><b class="id">chicken_09</b><br>2<br><span class="t">沙雕 开心</span></figcaption></figure>
+<figure data-e="沙雕 开心" data-s="小幺鸡" data-id="chicken_10"><img loading="lazy" src="stickers/chicken_10.jpg" alt="4"><figcaption><b class="id">chicken_10</b><br>4<br><span class="t">沙雕 开心</span></figcaption></figure>
+<figure data-e="问候" data-s="春节" data-id="cny_01"><img loading="lazy" src="stickers/cny_01.jpg" alt="给您拜年了"><figcaption><b class="id">cny_01</b><br>给您拜年了<br><span class="t">问候</span></figcaption></figure>
+<figure data-e="开心 钱 问候" data-s="春节" data-id="cny_02"><img loading="lazy" src="stickers/cny_02.jpg" alt="新年快乐祝在新的一年里您的钱比您的表情包还多"><figcaption><b class="id">cny_02</b><br>新年快乐祝在新的一年里您的钱比您的表情包还多<br><span class="t">开心 钱 问候</span></figcaption></figure>
+<figure data-e="求助 拒绝 摆烂 钱" data-s="春节" data-id="cny_03"><img loading="lazy" src="stickers/cny_03.jpg" alt="别废话了红包呢"><figcaption><b class="id">cny_03</b><br>别废话了红包呢<br><span class="t">求助 拒绝 摆烂 钱</span></figcaption></figure>
+<figure data-e="求助 钱" data-s="春节" data-id="cny_04"><img loading="lazy" src="stickers/cny_04.jpg" alt="红包"><figcaption><b class="id">cny_04</b><br>红包<br><span class="t">求助 钱</span></figcaption></figure>
+<figure data-e="钱" data-s="春节" data-id="cny_05"><img loading="lazy" src="stickers/cny_05.png" alt="能者多梦我呀一夜暴富君需百年光阴"><figcaption><b class="id">cny_05</b><br>能者多梦我呀一夜暴富君需百年光阴<br><span class="t">钱</span></figcaption></figure>
+<figure data-e="日常" data-s="春节" data-id="cny_06"><img loading="lazy" src="stickers/cny_06.png" alt="明年一定是个好年"><figcaption><b class="id">cny_06</b><br>明年一定是个好年<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="程序员" data-id="coder_01"><img loading="lazy" src="stickers/coder_01.png" alt="其实我觉得吧压力也没那么大"><figcaption><b class="id">coder_01</b><br>其实我觉得吧压力也没那么大<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="疑问" data-s="程序员" data-id="coder_02"><img loading="lazy" src="stickers/coder_02.png" alt="妈妈说你什么都好就不该是个程序员"><figcaption><b class="id">coder_02</b><br>妈妈说你什么都好就不该是个程序员<br><span class="t">疑问</span></figcaption></figure>
+<figure data-e="自嘲" data-s="程序员" data-id="coder_03"><img loading="lazy" src="stickers/coder_03.jpg" alt="产品经理说让App根据用户秃顶程度来控制手机刘海"><figcaption><b class="id">coder_03</b><br>产品经理说让App根据用户秃顶程度来控制手机刘海<br><span class="t">自嘲</span></figcaption></figure>
+<figure data-e="自嘲" data-s="程序员" data-id="coder_04"><img loading="lazy" src="stickers/coder_04.jpg" alt="你胡说我才没脱发"><figcaption><b class="id">coder_04</b><br>你胡说我才没脱发<br><span class="t">自嘲</span></figcaption></figure>
+<figure data-e="拒绝 加油" data-s="程序员" data-id="coder_05"><img loading="lazy" src="stickers/coder_05.jpg" alt="你别急等我剪完这个头发再修BUG"><figcaption><b class="id">coder_05</b><br>你别急等我剪完这个头发再修BUG<br><span class="t">拒绝 加油</span></figcaption></figure>
+<figure data-e="难过 自嘲" data-s="程序员" data-id="coder_06"><img loading="lazy" src="stickers/coder_06.jpg" alt="留下了没技术的泪水"><figcaption><b class="id">coder_06</b><br>留下了没技术的泪水<br><span class="t">难过 自嘲</span></figcaption></figure>
+<figure data-e="日常" data-s="程序员" data-id="coder_07"><img loading="lazy" src="stickers/coder_07.jpg" alt="Star皆空"><figcaption><b class="id">coder_07</b><br>Star皆空<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="程序员" data-id="coder_08"><img loading="lazy" src="stickers/coder_08.jpg" alt="AiIfElse"><figcaption><b class="id">coder_08</b><br>AiIfElse<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="程序员" data-id="coder_10"><img loading="lazy" src="stickers/coder_10.png" alt="骚年出招吧哥让你三行代码"><figcaption><b class="id">coder_10</b><br>骚年出招吧哥让你三行代码<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="黑人抬棺" data-id="coffin_01"><img loading="lazy" src="stickers/coffin_01.gif" alt="可以请你跳支舞吗"><figcaption><b class="id">coffin_01</b><br>可以请你跳支舞吗<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="摆烂" data-s="黑人抬棺" data-id="coffin_02"><img loading="lazy" src="stickers/coffin_02.jpg" alt="躺好"><figcaption><b class="id">coffin_02</b><br>躺好<br><span class="t">摆烂</span></figcaption></figure>
+<figure data-e="威胁" data-s="黑人抬棺" data-id="coffin_03"><img loading="lazy" src="stickers/coffin_03.jpg" alt="坐地抬棺"><figcaption><b class="id">coffin_03</b><br>坐地抬棺<br><span class="t">威胁</span></figcaption></figure>
+<figure data-e="威胁" data-s="黑人抬棺" data-id="coffin_05"><img loading="lazy" src="stickers/coffin_05.jpg" alt="医生抬不抬给个准信儿"><figcaption><b class="id">coffin_05</b><br>医生抬不抬给个准信儿<br><span class="t">威胁</span></figcaption></figure>
+<figure data-e="威胁" data-s="黑人抬棺" data-id="coffin_06"><img loading="lazy" src="stickers/coffin_06.gif" alt="黑人和棺材都为你准备好了"><figcaption><b class="id">coffin_06</b><br>黑人和棺材都为你准备好了<br><span class="t">威胁</span></figcaption></figure>
+<figure data-e="开心 喜欢 自嘲" data-s="狗" data-id="dog_01"><img loading="lazy" src="stickers/dog_01.gif" alt="全世界都充满了恋爱的酸臭味只有我散发着单身狗的清香"><figcaption><b class="id">dog_01</b><br>全世界都充满了恋爱的酸臭味只有我散发着单身狗的清香<br><span class="t">开心 喜欢 自嘲</span></figcaption></figure>
+<figure data-e="日常" data-s="狗" data-id="dog_02"><img loading="lazy" src="stickers/dog_02.png" alt="大家都听我说-我们都是狗"><figcaption><b class="id">dog_02</b><br>大家都听我说-我们都是狗<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="撒娇" data-s="狗" data-id="dog_03"><img loading="lazy" src="stickers/dog_03.png" alt="壁咚"><figcaption><b class="id">dog_03</b><br>壁咚<br><span class="t">撒娇</span></figcaption></figure>
+<figure data-e="撒娇" data-s="狗" data-id="dog_04"><img loading="lazy" src="stickers/dog_04.png" alt="捏脸"><figcaption><b class="id">dog_04</b><br>捏脸<br><span class="t">撒娇</span></figcaption></figure>
+<figure data-e="开心" data-s="狗" data-id="dog_05"><img loading="lazy" src="stickers/dog_05.jpg" alt="微笑"><figcaption><b class="id">dog_05</b><br>微笑<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="日常" data-s="狗" data-id="dog_06"><img loading="lazy" src="stickers/dog_06.jpg" alt="裹紧我俩的小被子"><figcaption><b class="id">dog_06</b><br>裹紧我俩的小被子<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="狗" data-id="dog_07"><img loading="lazy" src="stickers/dog_07.jpg" alt="我被咬到了"><figcaption><b class="id">dog_07</b><br>我被咬到了<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="拒绝" data-s="狗" data-id="dog_08"><img loading="lazy" src="stickers/dog_08.jpg" alt="好了你不要再说了"><figcaption><b class="id">dog_08</b><br>好了你不要再说了<br><span class="t">拒绝</span></figcaption></figure>
+<figure data-e="自嘲" data-s="狗" data-id="dog_09"><img loading="lazy" src="stickers/dog_09.jpg" alt="被命运卡住喉咙"><figcaption><b class="id">dog_09</b><br>被命运卡住喉咙<br><span class="t">自嘲</span></figcaption></figure>
+<figure data-e="日常" data-s="狗" data-id="dog_10"><img loading="lazy" src="stickers/dog_10.jpg" alt="真让人头大"><figcaption><b class="id">dog_10</b><br>真让人头大<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="无语" data-s="狗" data-id="dog_11"><img loading="lazy" src="stickers/dog_11.jpg" alt="愣住"><figcaption><b class="id">dog_11</b><br>愣住<br><span class="t">无语</span></figcaption></figure>
+<figure data-e="日常" data-s="狗" data-id="dog_12"><img loading="lazy" src="stickers/dog_12.jpg" alt="我来啦-接住"><figcaption><b class="id">dog_12</b><br>我来啦-接住<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="开心鸭" data-id="duck2_01"><img loading="lazy" src="stickers/duck2_01.gif" alt="翻车了鸭"><figcaption><b class="id">duck2_01</b><br>翻车了鸭<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="喜欢" data-s="开心鸭" data-id="duck2_02"><img loading="lazy" src="stickers/duck2_02.gif" alt="今天也要开心鸭"><figcaption><b class="id">duck2_02</b><br>今天也要开心鸭<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="日常" data-s="开心鸭" data-id="duck2_03"><img loading="lazy" src="stickers/duck2_03.gif" alt="你在干嘛鸭"><figcaption><b class="id">duck2_03</b><br>你在干嘛鸭<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="撒娇" data-s="开心鸭" data-id="duck2_04"><img loading="lazy" src="stickers/duck2_04.gif" alt="亲我一口鸭"><figcaption><b class="id">duck2_04</b><br>亲我一口鸭<br><span class="t">撒娇</span></figcaption></figure>
+<figure data-e="日常" data-s="开心鸭" data-id="duck2_05"><img loading="lazy" src="stickers/duck2_05.jpg" alt="哎鸭"><figcaption><b class="id">duck2_05</b><br>哎鸭<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="开心鸭" data-id="duck2_06"><img loading="lazy" src="stickers/duck2_06.jpg" alt="对不起鸭"><figcaption><b class="id">duck2_06</b><br>对不起鸭<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="自嘲" data-s="开心鸭" data-id="duck_01"><img loading="lazy" src="stickers/duck_01.jpg" alt="来自底层的仰望"><figcaption><b class="id">duck_01</b><br>来自底层的仰望<br><span class="t">自嘲</span></figcaption></figure>
+<figure data-e="开心" data-s="开心鸭" data-id="duck_02"><img loading="lazy" src="stickers/duck_02.jpg" alt="爽翻了"><figcaption><b class="id">duck_02</b><br>爽翻了<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="日常" data-s="开心鸭" data-id="duck_03"><img loading="lazy" src="stickers/duck_03.jpg" alt="你在干嘛鸭"><figcaption><b class="id">duck_03</b><br>你在干嘛鸭<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="开心鸭" data-id="duck_04"><img loading="lazy" src="stickers/duck_04.jpg" alt="你是魔鬼吗"><figcaption><b class="id">duck_04</b><br>你是魔鬼吗<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="开心鸭" data-id="duck_05"><img loading="lazy" src="stickers/duck_05.jpg" alt="大坏蛋咬死你"><figcaption><b class="id">duck_05</b><br>大坏蛋咬死你<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="钱" data-s="开心鸭" data-id="duck_06"><img loading="lazy" src="stickers/duck_06.jpg" alt="多年的积蓄"><figcaption><b class="id">duck_06</b><br>多年的积蓄<br><span class="t">钱</span></figcaption></figure>
+<figure data-e="喜欢" data-s="开心鸭" data-id="duck_07"><img loading="lazy" src="stickers/duck_07.jpg" alt="今天也要开心鸭"><figcaption><b class="id">duck_07</b><br>今天也要开心鸭<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="干饭" data-s="开心鸭" data-id="duck_08"><img loading="lazy" src="stickers/duck_08.jpg" alt="吃太撑了鸭"><figcaption><b class="id">duck_08</b><br>吃太撑了鸭<br><span class="t">干饭</span></figcaption></figure>
+<figure data-e="疑问" data-s="开心鸭" data-id="duck_09"><img loading="lazy" src="stickers/duck_09.jpg" alt="为什么这样对鸭鸭"><figcaption><b class="id">duck_09</b><br>为什么这样对鸭鸭<br><span class="t">疑问</span></figcaption></figure>
+<figure data-e="日常" data-s="开心鸭" data-id="duck_10"><img loading="lazy" src="stickers/duck_10.jpg" alt="又胖了鸭"><figcaption><b class="id">duck_10</b><br>又胖了鸭<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="拒绝" data-s="Emoji" data-id="emoji_01"><img loading="lazy" src="stickers/emoji_01.jpg" alt="公共场所禁止呲牙咧嘴"><figcaption><b class="id">emoji_01</b><br>公共场所禁止呲牙咧嘴<br><span class="t">拒绝</span></figcaption></figure>
+<figure data-e="日常" data-s="Emoji" data-id="emoji_02"><img loading="lazy" src="stickers/emoji_02.jpg" alt="能饮一杯么"><figcaption><b class="id">emoji_02</b><br>能饮一杯么<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="Emoji" data-id="emoji_03"><img loading="lazy" src="stickers/emoji_03.jpg" alt="A罩杯"><figcaption><b class="id">emoji_03</b><br>A罩杯<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="无语" data-s="Emoji" data-id="emoji_06"><img loading="lazy" src="stickers/emoji_06.jpg" alt="让人怪不好意思的"><figcaption><b class="id">emoji_06</b><br>让人怪不好意思的<br><span class="t">无语</span></figcaption></figure>
+<figure data-e="日常" data-s="Emoji" data-id="emoji_07"><img loading="lazy" src="stickers/emoji_07.jpg" alt="你送我的帽子真好看"><figcaption><b class="id">emoji_07</b><br>你送我的帽子真好看<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="开心" data-s="Emoji" data-id="emoji_08"><img loading="lazy" src="stickers/emoji_08.jpg" alt="行吧"><figcaption><b class="id">emoji_08</b><br>行吧<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="开心" data-s="Emoji" data-id="emoji_09"><img loading="lazy" src="stickers/emoji_09.jpg" alt="要我一直笑吗"><figcaption><b class="id">emoji_09</b><br>要我一直笑吗<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="生气 喜欢" data-s="Emoji" data-id="emoji_10"><img loading="lazy" src="stickers/emoji_10.jpg" alt="你对我越凶我就越喜欢"><figcaption><b class="id">emoji_10</b><br>你对我越凶我就越喜欢<br><span class="t">生气 喜欢</span></figcaption></figure>
+<figure data-e="开心 撒娇 喜欢 得意" data-s="Emoji" data-id="emoji_11"><img loading="lazy" src="stickers/emoji_11.jpg" alt="好可爱不愧是我最喜欢的人"><figcaption><b class="id">emoji_11</b><br>好可爱不愧是我最喜欢的人<br><span class="t">开心 撒娇 喜欢 得意</span></figcaption></figure>
+<figure data-e="拒绝" data-s="Emoji" data-id="emoji_15"><img loading="lazy" src="stickers/emoji_15.gif" alt="不听不听王八念经"><figcaption><b class="id">emoji_15</b><br>不听不听王八念经<br><span class="t">拒绝</span></figcaption></figure>
+<figure data-e="开心" data-s="Emoji" data-id="emoji_16"><img loading="lazy" src="stickers/emoji_16.jpg" alt="相视一笑"><figcaption><b class="id">emoji_16</b><br>相视一笑<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="嘲讽" data-s="滑稽" data-id="huaji_01"><img loading="lazy" src="stickers/huaji_01.gif" alt="360度鄙视你"><figcaption><b class="id">huaji_01</b><br>360度鄙视你<br><span class="t">嘲讽</span></figcaption></figure>
+<figure data-e="日常" data-s="滑稽" data-id="huaji_02"><img loading="lazy" src="stickers/huaji_02.gif" alt="打不着-打不到"><figcaption><b class="id">huaji_02</b><br>打不着-打不到<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="干饭" data-s="滑稽" data-id="huaji_03"><img loading="lazy" src="stickers/huaji_03.jpg" alt="喝咖啡-咖啡"><figcaption><b class="id">huaji_03</b><br>喝咖啡-咖啡<br><span class="t">干饭</span></figcaption></figure>
+<figure data-e="日常" data-s="滑稽" data-id="huaji_04"><img loading="lazy" src="stickers/huaji_04.gif" alt="浪里个浪"><figcaption><b class="id">huaji_04</b><br>浪里个浪<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="滑稽" data-id="huaji_05"><img loading="lazy" src="stickers/huaji_05.gif" alt="扭屁股-变色-内裤"><figcaption><b class="id">huaji_05</b><br>扭屁股-变色-内裤<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="滑稽" data-id="huaji_06"><img loading="lazy" src="stickers/huaji_06.jpg" alt="投降"><figcaption><b class="id">huaji_06</b><br>投降<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="滑稽" data-id="huaji_07"><img loading="lazy" src="stickers/huaji_07.jpg" alt="妖孽看法宝"><figcaption><b class="id">huaji_07</b><br>妖孽看法宝<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="滑稽" data-id="huaji_08"><img loading="lazy" src="stickers/huaji_08.jpg" alt="警察是不会听你解释的"><figcaption><b class="id">huaji_08</b><br>警察是不会听你解释的<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="滑稽" data-id="huaji_09"><img loading="lazy" src="stickers/huaji_09.jpg" alt="送给你"><figcaption><b class="id">huaji_09</b><br>送给你<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="吃瓜" data-s="滑稽" data-id="huaji_10"><img loading="lazy" src="stickers/huaji_10.jpg" alt="暗中观察"><figcaption><b class="id">huaji_10</b><br>暗中观察<br><span class="t">吃瓜</span></figcaption></figure>
+<figure data-e="震惊" data-s="滑稽" data-id="huaji_11"><img loading="lazy" src="stickers/huaji_11.jpg" alt="我开始慌了"><figcaption><b class="id">huaji_11</b><br>我开始慌了<br><span class="t">震惊</span></figcaption></figure>
+<figure data-e="夸奖" data-s="滑稽" data-id="huaji_12"><img loading="lazy" src="stickers/huaji_12.jpg" alt="萌新拿起了搬准备和大佬肛道理"><figcaption><b class="id">huaji_12</b><br>萌新拿起了搬准备和大佬肛道理<br><span class="t">夸奖</span></figcaption></figure>
+<figure data-e="震惊" data-s="滑稽" data-id="huaji_13"><img loading="lazy" src="stickers/huaji_13.jpg" alt="滑稽震惊"><figcaption><b class="id">huaji_13</b><br>滑稽震惊<br><span class="t">震惊</span></figcaption></figure>
+<figure data-e="无语" data-s="滑稽" data-id="huaji_14"><img loading="lazy" src="stickers/huaji_14.jpg" alt="不是很懂"><figcaption><b class="id">huaji_14</b><br>不是很懂<br><span class="t">无语</span></figcaption></figure>
+<figure data-e="日常" data-s="滑稽" data-id="huaji_15"><img loading="lazy" src="stickers/huaji_15.jpg" alt="拽走小被几"><figcaption><b class="id">huaji_15</b><br>拽走小被几<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="滑稽" data-id="huaji_16"><img loading="lazy" src="stickers/huaji_16.jpg" alt="滑稽遗照"><figcaption><b class="id">huaji_16</b><br>滑稽遗照<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="威胁 拒绝" data-s="滑稽" data-id="huaji_17"><img loading="lazy" src="stickers/huaji_17.jpg" alt="队长别开枪是我"><figcaption><b class="id">huaji_17</b><br>队长别开枪是我<br><span class="t">威胁 拒绝</span></figcaption></figure>
+<figure data-e="生气 威胁" data-s="滑稽" data-id="huaji_18"><img loading="lazy" src="stickers/huaji_18.jpg" alt="你完蛋了"><figcaption><b class="id">huaji_18</b><br>你完蛋了<br><span class="t">生气 威胁</span></figcaption></figure>
+<figure data-e="日常" data-s="熊本熊" data-id="kumamoto_01"><img loading="lazy" src="stickers/kumamoto_01.gif" alt="我们去哪里"><figcaption><b class="id">kumamoto_01</b><br>我们去哪里<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="开心 干饭" data-s="熊本熊" data-id="kumamoto_02"><img loading="lazy" src="stickers/kumamoto_02.gif" alt="次饱了-吃饱了"><figcaption><b class="id">kumamoto_02</b><br>次饱了-吃饱了<br><span class="t">开心 干饭</span></figcaption></figure>
+<figure data-e="日常" data-s="熊本熊" data-id="kumamoto_03"><img loading="lazy" src="stickers/kumamoto_03.gif" alt="你在哪"><figcaption><b class="id">kumamoto_03</b><br>你在哪<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="熊本熊" data-id="kumamoto_04"><img loading="lazy" src="stickers/kumamoto_04.gif" alt="马上来"><figcaption><b class="id">kumamoto_04</b><br>马上来<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="生气" data-s="熊本熊" data-id="kumamoto_05"><img loading="lazy" src="stickers/kumamoto_05.gif" alt="我打死你-哎呀"><figcaption><b class="id">kumamoto_05</b><br>我打死你-哎呀<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="求助 钱" data-s="熊本熊" data-id="kumamoto_06"><img loading="lazy" src="stickers/kumamoto_06.gif" alt="大红包呢"><figcaption><b class="id">kumamoto_06</b><br>大红包呢<br><span class="t">求助 钱</span></figcaption></figure>
+<figure data-e="疑问" data-s="熊本熊" data-id="kumamoto_07"><img loading="lazy" src="stickers/kumamoto_07.gif" alt="起床是什么"><figcaption><b class="id">kumamoto_07</b><br>起床是什么<br><span class="t">疑问</span></figcaption></figure>
+<figure data-e="开心 喜欢" data-s="熊本熊" data-id="kumamoto_08"><img loading="lazy" src="stickers/kumamoto_08.gif" alt="嘴上笑嘻嘻-心中MMP-脸上笑嘻嘻-心里妈卖批"><figcaption><b class="id">kumamoto_08</b><br>嘴上笑嘻嘻-心中MMP-脸上笑嘻嘻-心里妈卖批<br><span class="t">开心 喜欢</span></figcaption></figure>
+<figure data-e="嘲讽" data-s="罗翔" data-id="luoxiang_01"><img loading="lazy" src="stickers/luoxiang_01.png" alt="你在干嘛你是在丢我们性犯罪人的脸"><figcaption><b class="id">luoxiang_01</b><br>你在干嘛你是在丢我们性犯罪人的脸<br><span class="t">嘲讽</span></figcaption></figure>
+<figure data-e="疑问" data-s="罗翔" data-id="luoxiang_02"><img loading="lazy" src="stickers/luoxiang_02.png" alt="是这样嘛"><figcaption><b class="id">luoxiang_02</b><br>是这样嘛<br><span class="t">疑问</span></figcaption></figure>
+<figure data-e="日常" data-s="罗翔" data-id="luoxiang_03"><img loading="lazy" src="stickers/luoxiang_03.png" alt="那个女的不是一般的女的她是一个阴阳人"><figcaption><b class="id">luoxiang_03</b><br>那个女的不是一般的女的她是一个阴阳人<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="问候" data-s="罗翔" data-id="luoxiang_04"><img loading="lazy" src="stickers/luoxiang_04.png" alt="你好狗啊"><figcaption><b class="id">luoxiang_04</b><br>你好狗啊<br><span class="t">问候</span></figcaption></figure>
+<figure data-e="日常" data-s="罗翔" data-id="luoxiang_05"><img loading="lazy" src="stickers/luoxiang_05.jpg" alt="青春型精神病俗称花痴"><figcaption><b class="id">luoxiang_05</b><br>青春型精神病俗称花痴<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="生气" data-s="罗翔" data-id="luoxiang_06"><img loading="lazy" src="stickers/luoxiang_06.jpg" alt="我觉得你唯一回复就是滚"><figcaption><b class="id">luoxiang_06</b><br>我觉得你唯一回复就是滚<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="开心 嘲讽" data-s="罗翔" data-id="luoxiang_07"><img loading="lazy" src="stickers/luoxiang_07.jpg" alt="我不是针对谁我是说在座的各位都是乐色"><figcaption><b class="id">luoxiang_07</b><br>我不是针对谁我是说在座的各位都是乐色<br><span class="t">开心 嘲讽</span></figcaption></figure>
+<figure data-e="日常" data-s="罗翔" data-id="luoxiang_08"><img loading="lazy" src="stickers/luoxiang_08.jpg" alt="总有一天会出事"><figcaption><b class="id">luoxiang_08</b><br>总有一天会出事<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="罗翔" data-id="luoxiang_09"><img loading="lazy" src="stickers/luoxiang_09.jpg" alt="我说也可以也不是完全不可以"><figcaption><b class="id">luoxiang_09</b><br>我说也可以也不是完全不可以<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="生气 威胁" data-s="罗翔" data-id="luoxiang_10"><img loading="lazy" src="stickers/luoxiang_10.jpeg" alt="我准备放火把宿舍楼烧了"><figcaption><b class="id">luoxiang_10</b><br>我准备放火把宿舍楼烧了<br><span class="t">生气 威胁</span></figcaption></figure>
+<figure data-e="生气 威胁" data-s="罗翔" data-id="luoxiang_11"><img loading="lazy" src="stickers/luoxiang_11.jpg" alt="老子拿砖砸他头"><figcaption><b class="id">luoxiang_11</b><br>老子拿砖砸他头<br><span class="t">生气 威胁</span></figcaption></figure>
+<figure data-e="日常" data-s="罗翔" data-id="luoxiang_12"><img loading="lazy" src="stickers/luoxiang_12.jpg" alt="一点都不怕 直接把坟给挖了"><figcaption><b class="id">luoxiang_12</b><br>一点都不怕 直接把坟给挖了<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="鲁迅" data-id="luxun_01"><img loading="lazy" src="stickers/luxun_01.jpg" alt="我确实说过这句话"><figcaption><b class="id">luxun_01</b><br>我确实说过这句话<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="鲁迅" data-id="luxun_02"><img loading="lazy" src="stickers/luxun_02.jpg" alt="我没说过这句话"><figcaption><b class="id">luxun_02</b><br>我没说过这句话<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="开心" data-s="鲁迅" data-id="luxun_03"><img loading="lazy" src="stickers/luxun_03.jpg" alt="那你很棒棒啊"><figcaption><b class="id">luxun_03</b><br>那你很棒棒啊<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="自嘲" data-s="鲁迅" data-id="luxun_04"><img loading="lazy" src="stickers/luxun_04.jpg" alt="我用生命写文章后人却用它来留作业"><figcaption><b class="id">luxun_04</b><br>我用生命写文章后人却用它来留作业<br><span class="t">自嘲</span></figcaption></figure>
+<figure data-e="日常" data-s="鲁迅" data-id="luxun_05"><img loading="lazy" src="stickers/luxun_05.jpg" alt="我他妈的没说过这句话"><figcaption><b class="id">luxun_05</b><br>我他妈的没说过这句话<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="鲁迅" data-id="luxun_06"><img loading="lazy" src="stickers/luxun_06.jpg" alt="网上百分之九十五的名人名言都是瞎掰的"><figcaption><b class="id">luxun_06</b><br>网上百分之九十五的名人名言都是瞎掰的<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="鲁迅" data-id="luxun_07"><img loading="lazy" src="stickers/luxun_07.jpg" alt="妮可妮可妮"><figcaption><b class="id">luxun_07</b><br>妮可妮可妮<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="拒绝" data-s="鲁迅" data-id="luxun_08"><img loading="lazy" src="stickers/luxun_08.jpg" alt="我实在没有说过这样一句话"><figcaption><b class="id">luxun_08</b><br>我实在没有说过这样一句话<br><span class="t">拒绝</span></figcaption></figure>
+<figure data-e="日常" data-s="奇妙猫" data-id="murcat_01"><img loading="lazy" src="stickers/murcat_01.jpg" alt="宇宙数学猫"><figcaption><b class="id">murcat_01</b><br>宇宙数学猫<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="震惊 疑问" data-s="奇妙猫" data-id="murcat_02"><img loading="lazy" src="stickers/murcat_02.jpg" alt="问号"><figcaption><b class="id">murcat_02</b><br>问号<br><span class="t">震惊 疑问</span></figcaption></figure>
+<figure data-e="日常" data-s="奇妙猫" data-id="murcat_03"><img loading="lazy" src="stickers/murcat_03.gif" alt="眼中星河"><figcaption><b class="id">murcat_03</b><br>眼中星河<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="奇妙猫" data-id="murcat_04"><img loading="lazy" src="stickers/murcat_04.jpg" alt="暗夜黑猫"><figcaption><b class="id">murcat_04</b><br>暗夜黑猫<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="奇妙猫" data-id="murcat_05"><img loading="lazy" src="stickers/murcat_05.jpg" alt="思维升华"><figcaption><b class="id">murcat_05</b><br>思维升华<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="奇妙猫" data-id="murcat_06"><img loading="lazy" src="stickers/murcat_06.jpg" alt="奇怪的知识增加了"><figcaption><b class="id">murcat_06</b><br>奇怪的知识增加了<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="奇妙猫" data-id="murcat_07"><img loading="lazy" src="stickers/murcat_07.jpg" alt="防御和特防上升了"><figcaption><b class="id">murcat_07</b><br>防御和特防上升了<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="金馆长熊猫" data-id="panda_01"><img loading="lazy" src="stickers/panda_01.png" alt="玩蛋去"><figcaption><b class="id">panda_01</b><br>玩蛋去<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="拒绝 疑问" data-s="金馆长熊猫" data-id="panda_02"><img loading="lazy" src="stickers/panda_02.jpg" alt="别艾特我了我TM一个敲代码的我拿知道阳痿怎么治"><figcaption><b class="id">panda_02</b><br>别艾特我了我TM一个敲代码的我拿知道阳痿怎么治<br><span class="t">拒绝 疑问</span></figcaption></figure>
+<figure data-e="日常" data-s="金馆长熊猫" data-id="panda_03"><img loading="lazy" src="stickers/panda_03.gif" alt="摸头耳朵"><figcaption><b class="id">panda_03</b><br>摸头耳朵<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="无语" data-s="金馆长熊猫" data-id="panda_04"><img loading="lazy" src="stickers/panda_04.jpg" alt="无语"><figcaption><b class="id">panda_04</b><br>无语<br><span class="t">无语</span></figcaption></figure>
+<figure data-e="干饭 疑问" data-s="金馆长熊猫" data-id="panda_05"><img loading="lazy" src="stickers/panda_05.jpg" alt="直男又咋了喝水呀"><figcaption><b class="id">panda_05</b><br>直男又咋了喝水呀<br><span class="t">干饭 疑问</span></figcaption></figure>
+<figure data-e="日常" data-s="金馆长熊猫" data-id="panda_06"><img loading="lazy" src="stickers/panda_06.gif" alt="眼神朦胧"><figcaption><b class="id">panda_06</b><br>眼神朦胧<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="金馆长熊猫" data-id="panda_07"><img loading="lazy" src="stickers/panda_07.gif" alt="挠头"><figcaption><b class="id">panda_07</b><br>挠头<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="金馆长熊猫" data-id="panda_08"><img loading="lazy" src="stickers/panda_08.gif" alt="读书人"><figcaption><b class="id">panda_08</b><br>读书人<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="金馆长熊猫" data-id="panda_09"><img loading="lazy" src="stickers/panda_09.gif" alt="你有个缺点缺点我"><figcaption><b class="id">panda_09</b><br>你有个缺点缺点我<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="金馆长熊猫" data-id="panda_10"><img loading="lazy" src="stickers/panda_10.gif" alt="西天取经-我娶你"><figcaption><b class="id">panda_10</b><br>西天取经-我娶你<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="开心 拒绝" data-s="金馆长熊猫" data-id="panda_11"><img loading="lazy" src="stickers/panda_11.gif" alt="哈哈哈哈哈哈没有啦"><figcaption><b class="id">panda_11</b><br>哈哈哈哈哈哈没有啦<br><span class="t">开心 拒绝</span></figcaption></figure>
+<figure data-e="难过" data-s="金馆长熊猫" data-id="panda_12"><img loading="lazy" src="stickers/panda_12.gif" alt="进入委屈模式"><figcaption><b class="id">panda_12</b><br>进入委屈模式<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="得意" data-s="金馆长熊猫" data-id="panda_13"><img loading="lazy" src="stickers/panda_13.gif" alt="我这个人看人很准的-你这个人-我一看就是知道是我的人"><figcaption><b class="id">panda_13</b><br>我这个人看人很准的-你这个人-我一看就是知道是我的人<br><span class="t">得意</span></figcaption></figure>
+<figure data-e="日常" data-s="金馆长熊猫" data-id="panda_15"><img loading="lazy" src="stickers/panda_15.gif" alt="真真好"><figcaption><b class="id">panda_15</b><br>真真好<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="金馆长熊猫" data-id="panda_16"><img loading="lazy" src="stickers/panda_16.gif" alt="太刺激了"><figcaption><b class="id">panda_16</b><br>太刺激了<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="撒娇" data-s="金馆长熊猫" data-id="panda_17"><img loading="lazy" src="stickers/panda_17.gif" alt="我偏无理取闹除非你抱抱"><figcaption><b class="id">panda_17</b><br>我偏无理取闹除非你抱抱<br><span class="t">撒娇</span></figcaption></figure>
+<figure data-e="开心 撒娇" data-s="金馆长熊猫" data-id="panda_18"><img loading="lazy" src="stickers/panda_18.gif" alt="你要是不高兴-完全可以亲我啊"><figcaption><b class="id">panda_18</b><br>你要是不高兴-完全可以亲我啊<br><span class="t">开心 撒娇</span></figcaption></figure>
+<figure data-e="开心 干饭" data-s="金馆长熊猫" data-id="panda_19"><img loading="lazy" src="stickers/panda_19.jpg" alt="提醒喝可乐小助手"><figcaption><b class="id">panda_19</b><br>提醒喝可乐小助手<br><span class="t">开心 干饭</span></figcaption></figure>
+<figure data-e="日常" data-s="金馆长熊猫" data-id="panda_20"><img loading="lazy" src="stickers/panda_20.jpg" alt="双手挠头"><figcaption><b class="id">panda_20</b><br>双手挠头<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="疑问" data-s="金馆长熊猫" data-id="panda_21"><img loading="lazy" src="stickers/panda_21.png" alt="能说的再详细点吗我没见过世面"><figcaption><b class="id">panda_21</b><br>能说的再详细点吗我没见过世面<br><span class="t">疑问</span></figcaption></figure>
+<figure data-e="嘲讽" data-s="金馆长熊猫" data-id="panda_22"><img loading="lazy" src="stickers/panda_22.jpg" alt="垃圾"><figcaption><b class="id">panda_22</b><br>垃圾<br><span class="t">嘲讽</span></figcaption></figure>
+<figure data-e="沙雕" data-s="沙雕企鹅" data-id="penguin_01"><img loading="lazy" src="stickers/penguin_01.gif" alt="（沙雕企鹅表情）"><figcaption><b class="id">penguin_01</b><br>（沙雕企鹅表情）<br><span class="t">沙雕</span></figcaption></figure>
+<figure data-e="搞笑" data-s="沙雕企鹅" data-id="penguin_02"><img loading="lazy" src="stickers/penguin_02.gif" alt="（沙雕企鹅表情）"><figcaption><b class="id">penguin_02</b><br>（沙雕企鹅表情）<br><span class="t">搞笑</span></figcaption></figure>
+<figure data-e="尴尬" data-s="沙雕企鹅" data-id="penguin_03"><img loading="lazy" src="stickers/penguin_03.gif" alt="（沙雕企鹅表情）"><figcaption><b class="id">penguin_03</b><br>（沙雕企鹅表情）<br><span class="t">尴尬</span></figcaption></figure>
+<figure data-e="震惊" data-s="沙雕企鹅" data-id="penguin_04"><img loading="lazy" src="stickers/penguin_04.gif" alt="（沙雕企鹅表情）"><figcaption><b class="id">penguin_04</b><br>（沙雕企鹅表情）<br><span class="t">震惊</span></figcaption></figure>
+<figure data-e="吃瓜" data-s="沙雕企鹅" data-id="penguin_05"><img loading="lazy" src="stickers/penguin_05.gif" alt="（沙雕企鹅表情）"><figcaption><b class="id">penguin_05</b><br>（沙雕企鹅表情）<br><span class="t">吃瓜</span></figcaption></figure>
+<figure data-e="开心" data-s="沙雕企鹅" data-id="penguin_06"><img loading="lazy" src="stickers/penguin_06.gif" alt="（沙雕企鹅表情）"><figcaption><b class="id">penguin_06</b><br>（沙雕企鹅表情）<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="睡觉" data-s="沙雕企鹅" data-id="penguin_07"><img loading="lazy" src="stickers/penguin_07.gif" alt="（沙雕企鹅表情）"><figcaption><b class="id">penguin_07</b><br>（沙雕企鹅表情）<br><span class="t">睡觉</span></figcaption></figure>
+<figure data-e="加油" data-s="沙雕企鹅" data-id="penguin_08"><img loading="lazy" src="stickers/penguin_08.gif" alt="（沙雕企鹅表情）"><figcaption><b class="id">penguin_08</b><br>（沙雕企鹅表情）<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="日常" data-s="沙雕企鹅" data-id="penguin_09"><img loading="lazy" src="stickers/penguin_09.gif" alt="（沙雕企鹅表情）"><figcaption><b class="id">penguin_09</b><br>（沙雕企鹅表情）<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="开心" data-s="沙雕企鹅" data-id="penguin_10"><img loading="lazy" src="stickers/penguin_10.gif" alt="（沙雕企鹅表情）"><figcaption><b class="id">penguin_10</b><br>（沙雕企鹅表情）<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="无语" data-s="猪" data-id="pig_01"><img loading="lazy" src="stickers/pig_01.jpg" alt="emmm"><figcaption><b class="id">pig_01</b><br>emmm<br><span class="t">无语</span></figcaption></figure>
+<figure data-e="日常" data-s="猪" data-id="pig_02"><img loading="lazy" src="stickers/pig_02.jpg" alt="盯"><figcaption><b class="id">pig_02</b><br>盯<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="摆烂" data-s="猪" data-id="pig_03"><img loading="lazy" src="stickers/pig_03.jpg" alt="我是一只猪我办不到"><figcaption><b class="id">pig_03</b><br>我是一只猪我办不到<br><span class="t">摆烂</span></figcaption></figure>
+<figure data-e="睡觉" data-s="猪" data-id="pig_04"><img loading="lazy" src="stickers/pig_04.jpg" alt="晚安睡了"><figcaption><b class="id">pig_04</b><br>晚安睡了<br><span class="t">睡觉</span></figcaption></figure>
+<figure data-e="生气 威胁" data-s="猪" data-id="pig_05"><img loading="lazy" src="stickers/pig_05.jpg" alt="打你"><figcaption><b class="id">pig_05</b><br>打你<br><span class="t">生气 威胁</span></figcaption></figure>
+<figure data-e="撒娇" data-s="猪" data-id="pig_06"><img loading="lazy" src="stickers/pig_06.jpg" alt="黑白猪mua"><figcaption><b class="id">pig_06</b><br>黑白猪mua<br><span class="t">撒娇</span></figcaption></figure>
+<figure data-e="喜欢" data-s="猪" data-id="pig_07"><img loading="lazy" src="stickers/pig_07.jpg" alt="你是我全世界最喜欢的猪"><figcaption><b class="id">pig_07</b><br>你是我全世界最喜欢的猪<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="生气" data-s="猪" data-id="pig_08"><img loading="lazy" src="stickers/pig_08.jpg" alt="你住口"><figcaption><b class="id">pig_08</b><br>你住口<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="疑问" data-s="鸽子" data-id="pigeon_01"><img loading="lazy" src="stickers/pigeon_01.jpg" alt="当鸽的怎么能骗你呢"><figcaption><b class="id">pigeon_01</b><br>当鸽的怎么能骗你呢<br><span class="t">疑问</span></figcaption></figure>
+<figure data-e="日常" data-s="鸽子" data-id="pigeon_02"><img loading="lazy" src="stickers/pigeon_02.jpg" alt="我在鸽的边缘试探"><figcaption><b class="id">pigeon_02</b><br>我在鸽的边缘试探<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="吃瓜" data-s="鸽子" data-id="pigeon_03"><img loading="lazy" src="stickers/pigeon_03.jpg" alt="一位冷酷的鸽子路过"><figcaption><b class="id">pigeon_03</b><br>一位冷酷的鸽子路过<br><span class="t">吃瓜</span></figcaption></figure>
+<figure data-e="日常" data-s="鸽子" data-id="pigeon_04"><img loading="lazy" src="stickers/pigeon_04.png" alt="小鸽子"><figcaption><b class="id">pigeon_04</b><br>小鸽子<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="夸奖" data-s="鸽子" data-id="pigeon_05"><img loading="lazy" src="stickers/pigeon_05.jpg" alt="不愧是你"><figcaption><b class="id">pigeon_05</b><br>不愧是你<br><span class="t">夸奖</span></figcaption></figure>
+<figure data-e="日常" data-s="鸽子" data-id="pigeon_06"><img loading="lazy" src="stickers/pigeon_06.jpg" alt="好的-ok-OK-Ok"><figcaption><b class="id">pigeon_06</b><br>好的-ok-OK-Ok<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="加油" data-s="鸽子" data-id="pigeon_07"><img loading="lazy" src="stickers/pigeon_07.jpg" alt="好的一定来-ok好哒"><figcaption><b class="id">pigeon_07</b><br>好的一定来-ok好哒<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="加油" data-s="鸽子" data-id="pigeon_08"><img loading="lazy" src="stickers/pigeon_08.png" alt="准时参加好的我一定来-说好了哟不来不是人"><figcaption><b class="id">pigeon_08</b><br>准时参加好的我一定来-说好了哟不来不是人<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="日常" data-s="演奏" data-id="play_01"><img loading="lazy" src="stickers/play_01.gif" alt="弹琴"><figcaption><b class="id">play_01</b><br>弹琴<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="演奏" data-id="play_02"><img loading="lazy" src="stickers/play_02.gif" alt="敲鼓"><figcaption><b class="id">play_02</b><br>敲鼓<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="演奏" data-id="play_03"><img loading="lazy" src="stickers/play_03.gif" alt="弹竖琴"><figcaption><b class="id">play_03</b><br>弹竖琴<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="演奏" data-id="play_04"><img loading="lazy" src="stickers/play_04.gif" alt="吹葫芦丝"><figcaption><b class="id">play_04</b><br>吹葫芦丝<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="演奏" data-id="play_05"><img loading="lazy" src="stickers/play_05.gif" alt="蒙眼二泉映月"><figcaption><b class="id">play_05</b><br>蒙眼二泉映月<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="演奏" data-id="play_06"><img loading="lazy" src="stickers/play_06.gif" alt="二泉映月"><figcaption><b class="id">play_06</b><br>二泉映月<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="演奏" data-id="play_07"><img loading="lazy" src="stickers/play_07.gif" alt="红发葫芦丝"><figcaption><b class="id">play_07</b><br>红发葫芦丝<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="演奏" data-id="play_08"><img loading="lazy" src="stickers/play_08.gif" alt="弹棉花"><figcaption><b class="id">play_08</b><br>弹棉花<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="莲蓬头男孩" data-id="shower_01"><img loading="lazy" src="stickers/shower_01.gif" alt="全都一起上吧"><figcaption><b class="id">shower_01</b><br>全都一起上吧<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="莲蓬头男孩" data-id="shower_02"><img loading="lazy" src="stickers/shower_02.gif" alt="摊手"><figcaption><b class="id">shower_02</b><br>摊手<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="喜欢" data-s="莲蓬头男孩" data-id="shower_03"><img loading="lazy" src="stickers/shower_03.gif" alt="你现在不喜欢我"><figcaption><b class="id">shower_03</b><br>你现在不喜欢我<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="离开" data-s="莲蓬头男孩" data-id="shower_04"><img loading="lazy" src="stickers/shower_04.gif" alt="我在下个村等你"><figcaption><b class="id">shower_04</b><br>我在下个村等你<br><span class="t">离开</span></figcaption></figure>
+<figure data-e="摆烂" data-s="莲蓬头男孩" data-id="shower_05"><img loading="lazy" src="stickers/shower_05.jpg" alt="关机下班80到手"><figcaption><b class="id">shower_05</b><br>关机下班80到手<br><span class="t">摆烂</span></figcaption></figure>
+<figure data-e="拒绝" data-s="莲蓬头男孩" data-id="shower_06"><img loading="lazy" src="stickers/shower_06.jpg" alt="没有下一个"><figcaption><b class="id">shower_06</b><br>没有下一个<br><span class="t">拒绝</span></figcaption></figure>
+<figure data-e="日常" data-s="莲蓬头男孩" data-id="shower_07"><img loading="lazy" src="stickers/shower_07.png" alt="事实就是这样"><figcaption><b class="id">shower_07</b><br>事实就是这样<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="莲蓬头男孩" data-id="shower_08"><img loading="lazy" src="stickers/shower_08.jpg" alt="转圈圈"><figcaption><b class="id">shower_08</b><br>转圈圈<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="加油" data-s="喷雾" data-id="spray_01"><img loading="lazy" src="stickers/spray_01.jpg" alt="变傻喷雾"><figcaption><b class="id">spray_01</b><br>变傻喷雾<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="加油" data-s="喷雾" data-id="spray_02"><img loading="lazy" src="stickers/spray_02.gif" alt="变美喷雾"><figcaption><b class="id">spray_02</b><br>变美喷雾<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="加油" data-s="喷雾" data-id="spray_03"><img loading="lazy" src="stickers/spray_03.gif" alt="满分喷雾"><figcaption><b class="id">spray_03</b><br>满分喷雾<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="加油" data-s="喷雾" data-id="spray_04"><img loading="lazy" src="stickers/spray_04.gif" alt="去污喷雾"><figcaption><b class="id">spray_04</b><br>去污喷雾<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="加油" data-s="喷雾" data-id="spray_05"><img loading="lazy" src="stickers/spray_05.gif" alt="蒙的全对喷雾"><figcaption><b class="id">spray_05</b><br>蒙的全对喷雾<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="加油" data-s="喷雾" data-id="spray_06"><img loading="lazy" src="stickers/spray_06.gif" alt="没bug喷雾"><figcaption><b class="id">spray_06</b><br>没bug喷雾<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="加油" data-s="喷雾" data-id="spray_07"><img loading="lazy" src="stickers/spray_07.gif" alt="变傻喷雾"><figcaption><b class="id">spray_07</b><br>变傻喷雾<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="搞笑" data-s="喷雾" data-id="spray_08"><img loading="lazy" src="stickers/spray_08.gif" alt="（喷雾表情）"><figcaption><b class="id">spray_08</b><br>（喷雾表情）<br><span class="t">搞笑</span></figcaption></figure>
+<figure data-e="震惊" data-s="杰尼龟" data-id="squirtle_01"><img loading="lazy" src="stickers/squirtle_01.jpg" alt="给爷整懵了"><figcaption><b class="id">squirtle_01</b><br>给爷整懵了<br><span class="t">震惊</span></figcaption></figure>
+<figure data-e="夸奖" data-s="杰尼龟" data-id="squirtle_02"><img loading="lazy" src="stickers/squirtle_02.jpg" alt="好兄弟"><figcaption><b class="id">squirtle_02</b><br>好兄弟<br><span class="t">夸奖</span></figcaption></figure>
+<figure data-e="加油" data-s="杰尼龟" data-id="squirtle_03"><img loading="lazy" src="stickers/squirtle_03.jpg" alt="给我冲"><figcaption><b class="id">squirtle_03</b><br>给我冲<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="摆烂" data-s="杰尼龟" data-id="squirtle_04"><img loading="lazy" src="stickers/squirtle_04.jpg" alt="就是TM的扛不住哇"><figcaption><b class="id">squirtle_04</b><br>就是TM的扛不住哇<br><span class="t">摆烂</span></figcaption></figure>
+<figure data-e="开心 生气 拒绝" data-s="杰尼龟" data-id="squirtle_05"><img loading="lazy" src="stickers/squirtle_05.jpg" alt="不要试图和爷叫嚣可笑"><figcaption><b class="id">squirtle_05</b><br>不要试图和爷叫嚣可笑<br><span class="t">开心 生气 拒绝</span></figcaption></figure>
+<figure data-e="无语 摆烂" data-s="杰尼龟" data-id="squirtle_06"><img loading="lazy" src="stickers/squirtle_06.jpg" alt="我都不想说我认识你"><figcaption><b class="id">squirtle_06</b><br>我都不想说我认识你<br><span class="t">无语 摆烂</span></figcaption></figure>
+<figure data-e="日常" data-s="杰尼龟" data-id="squirtle_07"><img loading="lazy" src="stickers/squirtle_07.jpg" alt="憨憨的春天"><figcaption><b class="id">squirtle_07</b><br>憨憨的春天<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="疑问" data-s="杰尼龟" data-id="squirtle_08"><img loading="lazy" src="stickers/squirtle_08.jpg" alt="我哪敢说话呀"><figcaption><b class="id">squirtle_08</b><br>我哪敢说话呀<br><span class="t">疑问</span></figcaption></figure>
+<figure data-e="开心 得意" data-s="杰尼龟" data-id="squirtle_09"><img loading="lazy" src="stickers/squirtle_09.jpg" alt="爷又快乐咯"><figcaption><b class="id">squirtle_09</b><br>爷又快乐咯<br><span class="t">开心 得意</span></figcaption></figure>
+<figure data-e="自嘲" data-s="杰尼龟" data-id="squirtle_10"><img loading="lazy" src="stickers/squirtle_10.jpg" alt="冷冷的狗粮胡乱往嘴里塞"><figcaption><b class="id">squirtle_10</b><br>冷冷的狗粮胡乱往嘴里塞<br><span class="t">自嘲</span></figcaption></figure>
+<figure data-e="吃瓜" data-s="苏大强" data-id="sudq_01"><img loading="lazy" src="stickers/sudq_01.gif" alt="暗中观察"><figcaption><b class="id">sudq_01</b><br>暗中观察<br><span class="t">吃瓜</span></figcaption></figure>
+<figure data-e="难过" data-s="苏大强" data-id="sudq_02"><img loading="lazy" src="stickers/sudq_02.gif" alt="委屈"><figcaption><b class="id">sudq_02</b><br>委屈<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="生气" data-s="苏大强" data-id="sudq_03"><img loading="lazy" src="stickers/sudq_03.gif" alt="嘻嘻你个小兔崽子"><figcaption><b class="id">sudq_03</b><br>嘻嘻你个小兔崽子<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="夸奖 生气" data-s="苏大强" data-id="sudq_04"><img loading="lazy" src="stickers/sudq_04.gif" alt="苏大强的愤怒"><figcaption><b class="id">sudq_04</b><br>苏大强的愤怒<br><span class="t">夸奖 生气</span></figcaption></figure>
+<figure data-e="夸奖" data-s="苏大强" data-id="sudq_05"><img loading="lazy" src="stickers/sudq_05.gif" alt="苏大强的凝视"><figcaption><b class="id">sudq_05</b><br>苏大强的凝视<br><span class="t">夸奖</span></figcaption></figure>
+<figure data-e="震惊" data-s="苏大强" data-id="sudq_06"><img loading="lazy" src="stickers/sudq_06.gif" alt="吓懵了"><figcaption><b class="id">sudq_06</b><br>吓懵了<br><span class="t">震惊</span></figcaption></figure>
+<figure data-e="震惊" data-s="苏大强" data-id="sudq_07"><img loading="lazy" src="stickers/sudq_07.gif" alt="不妙不妙不妙"><figcaption><b class="id">sudq_07</b><br>不妙不妙不妙<br><span class="t">震惊</span></figcaption></figure>
+<figure data-e="干饭" data-s="苏大强" data-id="sudq_08"><img loading="lazy" src="stickers/sudq_08.gif" alt="我想喝手磨咖啡"><figcaption><b class="id">sudq_08</b><br>我想喝手磨咖啡<br><span class="t">干饭</span></figcaption></figure>
+<figure data-e="得意" data-s="胖虎" data-id="tiger_01"><img loading="lazy" src="stickers/tiger_01.gif" alt="意气风发"><figcaption><b class="id">tiger_01</b><br>意气风发<br><span class="t">得意</span></figcaption></figure>
+<figure data-e="得意" data-s="胖虎" data-id="tiger_02"><img loading="lazy" src="stickers/tiger_02.gif" alt="我真的很不错"><figcaption><b class="id">tiger_02</b><br>我真的很不错<br><span class="t">得意</span></figcaption></figure>
+<figure data-e="威胁 搞笑" data-s="胖虎" data-id="tiger_03"><img loading="lazy" src="stickers/tiger_03.gif" alt="（胖虎表情）"><figcaption><b class="id">tiger_03</b><br>（胖虎表情）<br><span class="t">威胁 搞笑</span></figcaption></figure>
+<figure data-e="搞笑 得意" data-s="胖虎" data-id="tiger_04"><img loading="lazy" src="stickers/tiger_04.gif" alt="胖虎射线biubiu"><figcaption><b class="id">tiger_04</b><br>胖虎射线biubiu<br><span class="t">搞笑 得意</span></figcaption></figure>
+<figure data-e="生气 威胁" data-s="胖虎" data-id="tiger_05"><img loading="lazy" src="stickers/tiger_05.gif" alt="我胖虎经不起刁难-你刁难我-我就打你"><figcaption><b class="id">tiger_05</b><br>我胖虎经不起刁难-你刁难我-我就打你<br><span class="t">生气 威胁</span></figcaption></figure>
+<figure data-e="生气 威胁" data-s="胖虎" data-id="tiger_06"><img loading="lazy" src="stickers/tiger_06.gif" alt="你要跟我胖虎作对吗"><figcaption><b class="id">tiger_06</b><br>你要跟我胖虎作对吗<br><span class="t">生气 威胁</span></figcaption></figure>
+<figure data-e="搞笑 得意" data-s="胖虎" data-id="tiger_07"><img loading="lazy" src="stickers/tiger_07.gif" alt="看我干不干你就完事了"><figcaption><b class="id">tiger_07</b><br>看我干不干你就完事了<br><span class="t">搞笑 得意</span></figcaption></figure>
+<figure data-e="生气 威胁 求助 钱" data-s="胖虎" data-id="tiger_08"><img loading="lazy" src="stickers/tiger_08.gif" alt="我胖虎出去抽根烟-回来要看见八个红包，不然锤死在座各位"><figcaption><b class="id">tiger_08</b><br>我胖虎出去抽根烟-回来要看见八个红包，不然锤死在座各位<br><span class="t">生气 威胁 求助 钱</span></figcaption></figure>
+<figure data-e="撒娇 喜欢" data-s="胖虎" data-id="tiger_09"><img loading="lazy" src="stickers/tiger_09.gif" alt="我是你的双马尾小宝贝吗"><figcaption><b class="id">tiger_09</b><br>我是你的双马尾小宝贝吗<br><span class="t">撒娇 喜欢</span></figcaption></figure>
+<figure data-e="生气" data-s="胖虎" data-id="tiger_10"><img loading="lazy" src="stickers/tiger_10.gif" alt="我看-你他妈就是刁难我胖虎"><figcaption><b class="id">tiger_10</b><br>我看-你他妈就是刁难我胖虎<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="疑问" data-s="胖虎" data-id="tiger_11"><img loading="lazy" src="stickers/tiger_11.gif" alt="你胖虎算什么东西-我是你爸爸"><figcaption><b class="id">tiger_11</b><br>你胖虎算什么东西-我是你爸爸<br><span class="t">疑问</span></figcaption></figure>
+<figure data-e="搞笑 得意" data-s="胖虎" data-id="tiger_12"><img loading="lazy" src="stickers/tiger_12.gif" alt="胖你妈的虎-老子叫刚田武"><figcaption><b class="id">tiger_12</b><br>胖你妈的虎-老子叫刚田武<br><span class="t">搞笑 得意</span></figcaption></figure>
+<figure data-e="喜欢" data-s="猫和老鼠" data-id="tom_01"><img loading="lazy" src="stickers/tom_01.jpg" alt="比心给你"><figcaption><b class="id">tom_01</b><br>比心给你<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="撒娇 喜欢" data-s="猫和老鼠" data-id="tom_02"><img loading="lazy" src="stickers/tom_02.jpg" alt="妈妈爱你"><figcaption><b class="id">tom_02</b><br>妈妈爱你<br><span class="t">撒娇 喜欢</span></figcaption></figure>
+<figure data-e="睡觉 离开" data-s="猫和老鼠" data-id="tom_03"><img loading="lazy" src="stickers/tom_03.jpg" alt="我先睡了"><figcaption><b class="id">tom_03</b><br>我先睡了<br><span class="t">睡觉 离开</span></figcaption></figure>
+<figure data-e="难过" data-s="猫和老鼠" data-id="tom_04"><img loading="lazy" src="stickers/tom_04.jpg" alt="没脸见人了"><figcaption><b class="id">tom_04</b><br>没脸见人了<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="日常" data-s="猫和老鼠" data-id="tom_05"><img loading="lazy" src="stickers/tom_05.jpg" alt="达成共识"><figcaption><b class="id">tom_05</b><br>达成共识<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="拒绝" data-s="猫和老鼠" data-id="tom_06"><img loading="lazy" src="stickers/tom_06.jpg" alt="别打扰我学习"><figcaption><b class="id">tom_06</b><br>别打扰我学习<br><span class="t">拒绝</span></figcaption></figure>
+<figure data-e="睡觉" data-s="猫和老鼠" data-id="tom_07"><img loading="lazy" src="stickers/tom_07.jpg" alt="你看吧我睡了"><figcaption><b class="id">tom_07</b><br>你看吧我睡了<br><span class="t">睡觉</span></figcaption></figure>
+<figure data-e="生气" data-s="猫和老鼠" data-id="tom_08"><img loading="lazy" src="stickers/tom_08.jpg" alt="气成个锤子"><figcaption><b class="id">tom_08</b><br>气成个锤子<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="震惊 疑问" data-s="猫和老鼠" data-id="tom_09"><img loading="lazy" src="stickers/tom_09.jpg" alt="疑问问号"><figcaption><b class="id">tom_09</b><br>疑问问号<br><span class="t">震惊 疑问</span></figcaption></figure>
+<figure data-e="生气 威胁" data-s="猫和老鼠" data-id="tom_10"><img loading="lazy" src="stickers/tom_10.jpg" alt="老子毒死你"><figcaption><b class="id">tom_10</b><br>老子毒死你<br><span class="t">生气 威胁</span></figcaption></figure>
+<figure data-e="开心 难过" data-s="猫和老鼠" data-id="tom_11"><img loading="lazy" src="stickers/tom_11.jpg" alt="哇哇大哭"><figcaption><b class="id">tom_11</b><br>哇哇大哭<br><span class="t">开心 难过</span></figcaption></figure>
+<figure data-e="威胁" data-s="猫和老鼠" data-id="tom_12"><img loading="lazy" src="stickers/tom_12.jpg" alt="不服你顺着网线来打我啊"><figcaption><b class="id">tom_12</b><br>不服你顺着网线来打我啊<br><span class="t">威胁</span></figcaption></figure>
+<figure data-e="日常" data-s="猫和老鼠" data-id="tom_13"><img loading="lazy" src="stickers/tom_13.jpg" alt="送你小花花"><figcaption><b class="id">tom_13</b><br>送你小花花<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="撒娇 自嘲" data-s="猫和老鼠" data-id="tom_14"><img loading="lazy" src="stickers/tom_14.gif" alt="我命令你现在亲我脸"><figcaption><b class="id">tom_14</b><br>我命令你现在亲我脸<br><span class="t">撒娇 自嘲</span></figcaption></figure>
+<figure data-e="震惊" data-s="猫和老鼠" data-id="tom_15"><img loading="lazy" src="stickers/tom_15.gif" alt="害怕"><figcaption><b class="id">tom_15</b><br>害怕<br><span class="t">震惊</span></figcaption></figure>
+<figure data-e="自嘲" data-s="猫和老鼠" data-id="tom_16"><img loading="lazy" src="stickers/tom_16.gif" alt="这就是命吧"><figcaption><b class="id">tom_16</b><br>这就是命吧<br><span class="t">自嘲</span></figcaption></figure>
+<figure data-e="吃瓜 疑问" data-s="猫和老鼠" data-id="tom_17"><img loading="lazy" src="stickers/tom_17.gif" alt="你瞅啥瞅你咋滴"><figcaption><b class="id">tom_17</b><br>你瞅啥瞅你咋滴<br><span class="t">吃瓜 疑问</span></figcaption></figure>
+<figure data-e="嘲讽" data-s="猫和老鼠" data-id="tom_18"><img loading="lazy" src="stickers/tom_18.gif" alt="他真像个傻逼"><figcaption><b class="id">tom_18</b><br>他真像个傻逼<br><span class="t">嘲讽</span></figcaption></figure>
+<figure data-e="威胁" data-s="猫和老鼠" data-id="tom_19"><img loading="lazy" src="stickers/tom_19.gif" alt="来打我呀"><figcaption><b class="id">tom_19</b><br>来打我呀<br><span class="t">威胁</span></figcaption></figure>
+<figure data-e="嘲讽" data-s="猫和老鼠" data-id="tom_20"><img loading="lazy" src="stickers/tom_20.gif" alt="啧啧啧"><figcaption><b class="id">tom_20</b><br>啧啧啧<br><span class="t">嘲讽</span></figcaption></figure>
+<figure data-e="夸奖 嘲讽 拒绝" data-s="同福客栈" data-id="tongfu_01"><img loading="lazy" src="stickers/tongfu_01.jpg" alt="不要叫我大佬"><figcaption><b class="id">tongfu_01</b><br>不要叫我大佬<br><span class="t">夸奖 嘲讽 拒绝</span></figcaption></figure>
+<figure data-e="无语 生气" data-s="同福客栈" data-id="tongfu_02"><img loading="lazy" src="stickers/tongfu_02.jpg" alt="算了生气伤身体"><figcaption><b class="id">tongfu_02</b><br>算了生气伤身体<br><span class="t">无语 生气</span></figcaption></figure>
+<figure data-e="生气" data-s="同福客栈" data-id="tongfu_03"><img loading="lazy" src="stickers/tongfu_03.jpg" alt="气死本仙女了"><figcaption><b class="id">tongfu_03</b><br>气死本仙女了<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="吃瓜" data-s="同福客栈" data-id="tongfu_04"><img loading="lazy" src="stickers/tongfu_04.jpg" alt="八卦的眼神"><figcaption><b class="id">tongfu_04</b><br>八卦的眼神<br><span class="t">吃瓜</span></figcaption></figure>
+<figure data-e="开心 嘲讽" data-s="同福客栈" data-id="tongfu_05"><img loading="lazy" src="stickers/tongfu_05.jpg" alt="亲切而猥琐的笑容"><figcaption><b class="id">tongfu_05</b><br>亲切而猥琐的笑容<br><span class="t">开心 嘲讽</span></figcaption></figure>
+<figure data-e="拒绝" data-s="同福客栈" data-id="tongfu_06"><img loading="lazy" src="stickers/tongfu_06.jpg" alt="你是不是脑子出了问题啊要不要紧啊"><figcaption><b class="id">tongfu_06</b><br>你是不是脑子出了问题啊要不要紧啊<br><span class="t">拒绝</span></figcaption></figure>
+<figure data-e="拒绝 疑问" data-s="同福客栈" data-id="tongfu_07"><img loading="lazy" src="stickers/tongfu_07.jpg" alt="她咋不去死啊"><figcaption><b class="id">tongfu_07</b><br>她咋不去死啊<br><span class="t">拒绝 疑问</span></figcaption></figure>
+<figure data-e="开心 钱" data-s="同福客栈" data-id="tongfu_08"><img loading="lazy" src="stickers/tongfu_08.jpg" alt="我原本可以过得很快乐是没钱害了我"><figcaption><b class="id">tongfu_08</b><br>我原本可以过得很快乐是没钱害了我<br><span class="t">开心 钱</span></figcaption></figure>
+<figure data-e="生气" data-s="同福客栈" data-id="tongfu_09"><img loading="lazy" src="stickers/tongfu_09.jpg" alt="您这边滚"><figcaption><b class="id">tongfu_09</b><br>您这边滚<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="吃瓜" data-s="同福客栈" data-id="tongfu_10"><img loading="lazy" src="stickers/tongfu_10.jpg" alt="真是一场好戏"><figcaption><b class="id">tongfu_10</b><br>真是一场好戏<br><span class="t">吃瓜</span></figcaption></figure>
+<figure data-e="无语 摆烂" data-s="同福客栈" data-id="tongfu_11"><img loading="lazy" src="stickers/tongfu_11.jpg" alt="我不困"><figcaption><b class="id">tongfu_11</b><br>我不困<br><span class="t">无语 摆烂</span></figcaption></figure>
+<figure data-e="难过" data-s="同福客栈" data-id="tongfu_12"><img loading="lazy" src="stickers/tongfu_12.jpg" alt="我受点委屈没关系"><figcaption><b class="id">tongfu_12</b><br>我受点委屈没关系<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="夸奖" data-s="汪蛋" data-id="wangdan_01"><img loading="lazy" src="stickers/wangdan_01.gif" alt="鼓掌"><figcaption><b class="id">wangdan_01</b><br>鼓掌<br><span class="t">夸奖</span></figcaption></figure>
+<figure data-e="日常" data-s="汪蛋" data-id="wangdan_02"><img loading="lazy" src="stickers/wangdan_02.gif" alt="扮鬼脸略略略"><figcaption><b class="id">wangdan_02</b><br>扮鬼脸略略略<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="汪蛋" data-id="wangdan_03"><img loading="lazy" src="stickers/wangdan_03.gif" alt="嗷"><figcaption><b class="id">wangdan_03</b><br>嗷<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="汪蛋" data-id="wangdan_05"><img loading="lazy" src="stickers/wangdan_05.gif" alt="掏耳朵"><figcaption><b class="id">wangdan_05</b><br>掏耳朵<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="问候" data-s="汪蛋" data-id="wangdan_06"><img loading="lazy" src="stickers/wangdan_06.gif" alt="早上好"><figcaption><b class="id">wangdan_06</b><br>早上好<br><span class="t">问候</span></figcaption></figure>
+<figure data-e="震惊" data-s="汪蛋" data-id="wangdan_07"><img loading="lazy" src="stickers/wangdan_07.gif" alt="惊恐"><figcaption><b class="id">wangdan_07</b><br>惊恐<br><span class="t">震惊</span></figcaption></figure>
+<figure data-e="日常" data-s="汪蛋" data-id="wangdan_08"><img loading="lazy" src="stickers/wangdan_08.gif" alt="揉脸"><figcaption><b class="id">wangdan_08</b><br>揉脸<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="汪蛋" data-id="wangdan_09"><img loading="lazy" src="stickers/wangdan_09.gif" alt="左右摇晃"><figcaption><b class="id">wangdan_09</b><br>左右摇晃<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="震惊" data-s="汪蛋" data-id="wangdan_10"><img loading="lazy" src="stickers/wangdan_10.gif" alt="震惊"><figcaption><b class="id">wangdan_10</b><br>震惊<br><span class="t">震惊</span></figcaption></figure>
+<figure data-e="撒娇" data-s="汪蛋" data-id="wangdan_11"><img loading="lazy" src="stickers/wangdan_11.gif" alt="亲亲"><figcaption><b class="id">wangdan_11</b><br>亲亲<br><span class="t">撒娇</span></figcaption></figure>
+<figure data-e="日常" data-s="汪蛋" data-id="wangdan_12"><img loading="lazy" src="stickers/wangdan_12.gif" alt="你走不走"><figcaption><b class="id">wangdan_12</b><br>你走不走<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="可爱" data-s="白色小人" data-id="white_01"><img loading="lazy" src="stickers/white_01.png" alt="（白色小人表情）"><figcaption><b class="id">white_01</b><br>（白色小人表情）<br><span class="t">可爱</span></figcaption></figure>
+<figure data-e="生气" data-s="白色小人" data-id="white_02"><img loading="lazy" src="stickers/white_02.png" alt="（白色小人表情）"><figcaption><b class="id">white_02</b><br>（白色小人表情）<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="开心" data-s="白色小人" data-id="white_03"><img loading="lazy" src="stickers/white_03.png" alt="（白色小人表情）"><figcaption><b class="id">white_03</b><br>（白色小人表情）<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="开心" data-s="白色小人" data-id="white_04"><img loading="lazy" src="stickers/white_04.png" alt="（白色小人表情）"><figcaption><b class="id">white_04</b><br>（白色小人表情）<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="摆烂" data-s="白色小人" data-id="white_05"><img loading="lazy" src="stickers/white_05.jpg" alt="（白色小人表情）"><figcaption><b class="id">white_05</b><br>（白色小人表情）<br><span class="t">摆烂</span></figcaption></figure>
+<figure data-e="撒娇" data-s="白色小人" data-id="white_06"><img loading="lazy" src="stickers/white_06.gif" alt="（白色小人表情）"><figcaption><b class="id">white_06</b><br>（白色小人表情）<br><span class="t">撒娇</span></figcaption></figure>
+<figure data-e="得意" data-s="白色小人" data-id="white_07"><img loading="lazy" src="stickers/white_07.jpg" alt="（白色小人表情）"><figcaption><b class="id">white_07</b><br>（白色小人表情）<br><span class="t">得意</span></figcaption></figure>
+<figure data-e="无语" data-s="白色小人" data-id="white_08"><img loading="lazy" src="stickers/white_08.gif" alt="（白色小人表情）"><figcaption><b class="id">white_08</b><br>（白色小人表情）<br><span class="t">无语</span></figcaption></figure>
+<figure data-e="开心" data-s="白色小人" data-id="white_09"><img loading="lazy" src="stickers/white_09.png" alt="（白色小人表情）"><figcaption><b class="id">white_09</b><br>（白色小人表情）<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="开心" data-s="白色小人" data-id="white_10"><img loading="lazy" src="stickers/white_10.gif" alt="（白色小人表情）"><figcaption><b class="id">white_10</b><br>（白色小人表情）<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="嘲讽" data-s="甄嬛传" data-id="zhenhuan_01"><img loading="lazy" src="stickers/zhenhuan_01.jpeg" alt="你这个毒妇"><figcaption><b class="id">zhenhuan_01</b><br>你这个毒妇<br><span class="t">嘲讽</span></figcaption></figure>
+<figure data-e="日常" data-s="甄嬛传" data-id="zhenhuan_02"><img loading="lazy" src="stickers/zhenhuan_02.jpg" alt="你我母子之间不必说这些"><figcaption><b class="id">zhenhuan_02</b><br>你我母子之间不必说这些<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="求助 钱" data-s="甄嬛传" data-id="zhenhuan_03"><img loading="lazy" src="stickers/zhenhuan_03.jpg" alt="只求荣华富贵不求一丝真情"><figcaption><b class="id">zhenhuan_03</b><br>只求荣华富贵不求一丝真情<br><span class="t">求助 钱</span></figcaption></figure>
+<figure data-e="嘲讽" data-s="甄嬛传" data-id="zhenhuan_04"><img loading="lazy" src="stickers/zhenhuan_04.jpg" alt="你也配"><figcaption><b class="id">zhenhuan_04</b><br>你也配<br><span class="t">嘲讽</span></figcaption></figure>
+<figure data-e="日常" data-s="甄嬛传" data-id="zhenhuan_05"><img loading="lazy" src="stickers/zhenhuan_05.jpg" alt="死的透透的了"><figcaption><b class="id">zhenhuan_05</b><br>死的透透的了<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="日常" data-s="甄嬛传" data-id="zhenhuan_06"><img loading="lazy" src="stickers/zhenhuan_06.jpeg" alt="退骚药"><figcaption><b class="id">zhenhuan_06</b><br>退骚药<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="难过 喜欢" data-s="甄嬛传" data-id="zhenhuan_07"><img loading="lazy" src="stickers/zhenhuan_07.jpeg" alt="男人都会让女人伤心的"><figcaption><b class="id">zhenhuan_07</b><br>男人都会让女人伤心的<br><span class="t">难过 喜欢</span></figcaption></figure>
+<figure data-e="嘲讽 喜欢" data-s="甄嬛传" data-id="zhenhuan_08"><img loading="lazy" src="stickers/zhenhuan_08.jpeg" alt="都让我觉得无比恶心"><figcaption><b class="id">zhenhuan_08</b><br>都让我觉得无比恶心<br><span class="t">嘲讽 喜欢</span></figcaption></figure>
+<figure data-e="开心" data-s="手机微信表情包" data-id="ph_01"><img loading="lazy" src="stickers/ph_01.png" alt="小狗抱着生日蛋糕"><figcaption><b class="id">ph_01</b><br>小狗抱着生日蛋糕<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="加油" data-s="手机微信表情包" data-id="ph_02"><img loading="lazy" src="stickers/ph_02.png" alt="小狗「好～」"><figcaption><b class="id">ph_02</b><br>小狗「好～」<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="开心" data-s="手机微信表情包" data-id="ph_03"><img loading="lazy" src="stickers/ph_03.png" alt="小狗生日快乐小旗"><figcaption><b class="id">ph_03</b><br>小狗生日快乐小旗<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="摆烂" data-s="手机微信表情包" data-id="ph_04"><img loading="lazy" src="stickers/ph_04.png" alt="小狗听完躺平"><figcaption><b class="id">ph_04</b><br>小狗听完躺平<br><span class="t">摆烂</span></figcaption></figure>
+<figure data-e="搞笑 求助" data-s="手机微信表情包" data-id="ph_05"><img loading="lazy" src="stickers/ph_05.png" alt="「呐 拿去」它说它想去你家"><figcaption><b class="id">ph_05</b><br>「呐 拿去」它说它想去你家<br><span class="t">搞笑 求助</span></figcaption></figure>
+<figure data-e="加油" data-s="手机微信表情包" data-id="ph_06"><img loading="lazy" src="stickers/ph_06.png" alt="偶像小狗开始工作"><figcaption><b class="id">ph_06</b><br>偶像小狗开始工作<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="加油" data-s="手机微信表情包" data-id="ph_07"><img loading="lazy" src="stickers/ph_07.png" alt="小狗「就快好了」"><figcaption><b class="id">ph_07</b><br>小狗「就快好了」<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="喜欢" data-s="手机微信表情包" data-id="ph_08"><img loading="lazy" src="stickers/ph_08.png" alt="猫咪抱爱心"><figcaption><b class="id">ph_08</b><br>猫咪抱爱心<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="开心" data-s="手机微信表情包" data-id="ph_09"><img loading="lazy" src="stickers/ph_09.png" alt="白猫抱着礼物"><figcaption><b class="id">ph_09</b><br>白猫抱着礼物<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="可爱" data-s="手机微信表情包" data-id="ph_10"><img loading="lazy" src="stickers/ph_10.png" alt="揉揉小脸蛋"><figcaption><b class="id">ph_10</b><br>揉揉小脸蛋<br><span class="t">可爱</span></figcaption></figure>
+<figure data-e="夸奖" data-s="手机微信表情包" data-id="ph_11"><img loading="lazy" src="stickers/ph_11.png" alt="猫天使"><figcaption><b class="id">ph_11</b><br>猫天使<br><span class="t">夸奖</span></figcaption></figure>
+<figure data-e="加油" data-s="手机微信表情包" data-id="ph_12"><img loading="lazy" src="stickers/ph_12.png" alt="小狗期待的眼神"><figcaption><b class="id">ph_12</b><br>小狗期待的眼神<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="加油" data-s="手机微信表情包" data-id="ph_13"><img loading="lazy" src="stickers/ph_13.png" alt="小狗奔跑"><figcaption><b class="id">ph_13</b><br>小狗奔跑<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="喜欢" data-s="手机微信表情包" data-id="ph_14"><img loading="lazy" src="stickers/ph_14.png" alt="兔兔抱爱心"><figcaption><b class="id">ph_14</b><br>兔兔抱爱心<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="尴尬" data-s="手机微信表情包" data-id="ph_15"><img loading="lazy" src="stickers/ph_15.png" alt="小狗「sorry」"><figcaption><b class="id">ph_15</b><br>小狗「sorry」<br><span class="t">尴尬</span></figcaption></figure>
+<figure data-e="撒娇" data-s="手机微信表情包" data-id="ph_16"><img loading="lazy" src="stickers/ph_16.png" alt="小狗抱着枕头"><figcaption><b class="id">ph_16</b><br>小狗抱着枕头<br><span class="t">撒娇</span></figcaption></figure>
+<figure data-e="得意" data-s="手机微信表情包" data-id="ph_17"><img loading="lazy" src="stickers/ph_17.png" alt="小狗「骄傲」"><figcaption><b class="id">ph_17</b><br>小狗「骄傲」<br><span class="t">得意</span></figcaption></figure>
+<figure data-e="难过" data-s="手机微信表情包" data-id="ph_18"><img loading="lazy" src="stickers/ph_18.png" alt="小狗跪地大哭"><figcaption><b class="id">ph_18</b><br>小狗跪地大哭<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="摆烂" data-s="手机微信表情包" data-id="ph_19"><img loading="lazy" src="stickers/ph_19.png" alt="小狗「已归西」"><figcaption><b class="id">ph_19</b><br>小狗「已归西」<br><span class="t">摆烂</span></figcaption></figure>
+<figure data-e="求助" data-s="手机微信表情包" data-id="ph_20"><img loading="lazy" src="stickers/ph_20.png" alt="小狗双手合十祈祷"><figcaption><b class="id">ph_20</b><br>小狗双手合十祈祷<br><span class="t">求助</span></figcaption></figure>
+<figure data-e="日常" data-s="手机微信表情包" data-id="ph_21"><img loading="lazy" src="stickers/ph_21.png" alt="小狗「刷牙！」"><figcaption><b class="id">ph_21</b><br>小狗「刷牙！」<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="无语" data-s="手机微信表情包" data-id="ph_22"><img loading="lazy" src="stickers/ph_22.png" alt="小狗「蓝的盆」"><figcaption><b class="id">ph_22</b><br>小狗「蓝的盆」<br><span class="t">无语</span></figcaption></figure>
+<figure data-e="得意" data-s="手机微信表情包" data-id="ph_23"><img loading="lazy" src="stickers/ph_23.png" alt="小狗得意洋洋"><figcaption><b class="id">ph_23</b><br>小狗得意洋洋<br><span class="t">得意</span></figcaption></figure>
+<figure data-e="加油" data-s="手机微信表情包" data-id="ph_24"><img loading="lazy" src="stickers/ph_24.png" alt="小狗「期待的眼神」"><figcaption><b class="id">ph_24</b><br>小狗「期待的眼神」<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="生气" data-s="手机微信表情包" data-id="ph_25"><img loading="lazy" src="stickers/ph_25.png" alt="小狗生气咬人"><figcaption><b class="id">ph_25</b><br>小狗生气咬人<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="加油" data-s="手机微信表情包" data-id="ph_26"><img loading="lazy" src="stickers/ph_26.png" alt="小狗往前冲"><figcaption><b class="id">ph_26</b><br>小狗往前冲<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="干饭" data-s="手机微信表情包" data-id="ph_27"><img loading="lazy" src="stickers/ph_27.png" alt="小狗抱奶茶"><figcaption><b class="id">ph_27</b><br>小狗抱奶茶<br><span class="t">干饭</span></figcaption></figure>
+<figure data-e="搞笑" data-s="手机微信表情包" data-id="ph_28"><img loading="lazy" src="stickers/ph_28.png" alt="「耳洞打这里对么」"><figcaption><b class="id">ph_28</b><br>「耳洞打这里对么」<br><span class="t">搞笑</span></figcaption></figure>
+<figure data-e="沙雕" data-s="手机微信表情包" data-id="ph_29"><img loading="lazy" src="stickers/ph_29.png" alt="小狗「咻哒」"><figcaption><b class="id">ph_29</b><br>小狗「咻哒」<br><span class="t">沙雕</span></figcaption></figure>
+<figure data-e="撒娇" data-s="手机微信表情包" data-id="ph_30"><img loading="lazy" src="stickers/ph_30.png" alt="猫咪「PrPr」"><figcaption><b class="id">ph_30</b><br>猫咪「PrPr」<br><span class="t">撒娇</span></figcaption></figure>
+<figure data-e="得意" data-s="手机微信表情包" data-id="ph_31"><img loading="lazy" src="stickers/ph_31.png" alt="小狗「我有1个good idea」"><figcaption><b class="id">ph_31</b><br>小狗「我有1个good idea」<br><span class="t">得意</span></figcaption></figure>
+<figure data-e="求助" data-s="手机微信表情包" data-id="ph_32"><img loading="lazy" src="stickers/ph_32.png" alt="「求求你了哇哇哇 就当喂狗了」"><figcaption><b class="id">ph_32</b><br>「求求你了哇哇哇 就当喂狗了」<br><span class="t">求助</span></figcaption></figure>
+<figure data-e="无语" data-s="手机微信表情包" data-id="ph_33"><img loading="lazy" src="stickers/ph_33.png" alt="白猫无语"><figcaption><b class="id">ph_33</b><br>白猫无语<br><span class="t">无语</span></figcaption></figure>
+<figure data-e="撒娇" data-s="手机微信表情包" data-id="ph_34"><img loading="lazy" src="stickers/ph_34.png" alt="「贴贴」"><figcaption><b class="id">ph_34</b><br>「贴贴」<br><span class="t">撒娇</span></figcaption></figure>
+<figure data-e="求助" data-s="手机微信表情包" data-id="ph_35"><img loading="lazy" src="stickers/ph_35.png" alt="「老师，问问进度」"><figcaption><b class="id">ph_35</b><br>「老师，问问进度」<br><span class="t">求助</span></figcaption></figure>
+<figure data-e="尴尬" data-s="手机微信表情包" data-id="ph_36"><img loading="lazy" src="stickers/ph_36.png" alt="小狗捂脸"><figcaption><b class="id">ph_36</b><br>小狗捂脸<br><span class="t">尴尬</span></figcaption></figure>
+<figure data-e="搞笑" data-s="手机微信表情包" data-id="ph_37"><img loading="lazy" src="stickers/ph_37.png" alt="「Oiii 我走了，回去拉粑粑了」"><figcaption><b class="id">ph_37</b><br>「Oiii 我走了，回去拉粑粑了」<br><span class="t">搞笑</span></figcaption></figure>
+<figure data-e="搞笑" data-s="手机微信表情包" data-id="ph_38"><img loading="lazy" src="stickers/ph_38.png" alt="「你是一只小狗」"><figcaption><b class="id">ph_38</b><br>「你是一只小狗」<br><span class="t">搞笑</span></figcaption></figure>
+<figure data-e="求助" data-s="手机微信表情包" data-id="ph_39"><img loading="lazy" src="stickers/ph_39.png" alt="「别时！看看我！」"><figcaption><b class="id">ph_39</b><br>「别时！看看我！」<br><span class="t">求助</span></figcaption></figure>
+<figure data-e="喜欢" data-s="手机微信表情包" data-id="ph_40"><img loading="lazy" src="stickers/ph_40.png" alt="小狗「请和我约会」"><figcaption><b class="id">ph_40</b><br>小狗「请和我约会」<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="无语" data-s="手机微信表情包" data-id="ph_41"><img loading="lazy" src="stickers/ph_41.png" alt="小狗发呆"><figcaption><b class="id">ph_41</b><br>小狗发呆<br><span class="t">无语</span></figcaption></figure>
+<figure data-e="摆烂" data-s="手机微信表情包" data-id="ph_42"><img loading="lazy" src="stickers/ph_42.png" alt="「躲进下水道」"><figcaption><b class="id">ph_42</b><br>「躲进下水道」<br><span class="t">摆烂</span></figcaption></figure>
+<figure data-e="得意" data-s="手机微信表情包" data-id="ph_43"><img loading="lazy" src="stickers/ph_43.png" alt="小狗眯眼坏笑"><figcaption><b class="id">ph_43</b><br>小狗眯眼坏笑<br><span class="t">得意</span></figcaption></figure>
+<figure data-e="得意" data-s="手机微信表情包" data-id="ph_44"><img loading="lazy" src="stickers/ph_44.png" alt="小狗戴墨镜"><figcaption><b class="id">ph_44</b><br>小狗戴墨镜<br><span class="t">得意</span></figcaption></figure>
+<figure data-e="生气" data-s="手机微信表情包" data-id="ph_45"><img loading="lazy" src="stickers/ph_45.png" alt="小狗伸手「给我。」"><figcaption><b class="id">ph_45</b><br>小狗伸手「给我。」<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="搞笑" data-s="手机微信表情包" data-id="ph_46"><img loading="lazy" src="stickers/ph_46.png" alt="「拿吧我偷老大钱养你」"><figcaption><b class="id">ph_46</b><br>「拿吧我偷老大钱养你」<br><span class="t">搞笑</span></figcaption></figure>
+<figure data-e="开心" data-s="手机微信表情包" data-id="ph_47"><img loading="lazy" src="stickers/ph_47.png" alt="小狗「一起玩！」"><figcaption><b class="id">ph_47</b><br>小狗「一起玩！」<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="生气" data-s="手机微信表情包" data-id="ph_48"><img loading="lazy" src="stickers/ph_48.png" alt="小狗「啊啊啊！」"><figcaption><b class="id">ph_48</b><br>小狗「啊啊啊！」<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="撒娇" data-s="手机微信表情包" data-id="ph_49"><img loading="lazy" src="stickers/ph_49.png" alt="白猫抱着小狗"><figcaption><b class="id">ph_49</b><br>白猫抱着小狗<br><span class="t">撒娇</span></figcaption></figure>
+<figure data-e="夸奖" data-s="手机微信表情包" data-id="ph_50"><img loading="lazy" src="stickers/ph_50.png" alt="「你是天使！」"><figcaption><b class="id">ph_50</b><br>「你是天使！」<br><span class="t">夸奖</span></figcaption></figure>
+<figure data-e="尴尬" data-s="手机微信表情包" data-id="ph_51"><img loading="lazy" src="stickers/ph_51.png" alt="小狗「感到难为情」"><figcaption><b class="id">ph_51</b><br>小狗「感到难为情」<br><span class="t">尴尬</span></figcaption></figure>
+<figure data-e="得意" data-s="手机微信表情包" data-id="ph_52"><img loading="lazy" src="stickers/ph_52.png" alt="小狗「胜利之姿」"><figcaption><b class="id">ph_52</b><br>小狗「胜利之姿」<br><span class="t">得意</span></figcaption></figure>
+<figure data-e="干饭" data-s="手机微信表情包" data-id="ph_53"><img loading="lazy" src="stickers/ph_53.png" alt="小狗「你好，请吃」"><figcaption><b class="id">ph_53</b><br>小狗「你好，请吃」<br><span class="t">干饭</span></figcaption></figure>
+<figure data-e="摆烂" data-s="手机微信表情包" data-id="ph_54"><img loading="lazy" src="stickers/ph_54.png" alt="小狗「酥服！」"><figcaption><b class="id">ph_54</b><br>小狗「酥服！」<br><span class="t">摆烂</span></figcaption></figure>
+<figure data-e="喜欢" data-s="手机微信表情包" data-id="ph_55"><img loading="lazy" src="stickers/ph_55.png" alt="小狗抱爱心"><figcaption><b class="id">ph_55</b><br>小狗抱爱心<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="开心" data-s="手机微信表情包" data-id="ph_56"><img loading="lazy" src="stickers/ph_56.png" alt="小狗「宝宝巴适」"><figcaption><b class="id">ph_56</b><br>小狗「宝宝巴适」<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="开心" data-s="手机微信表情包" data-id="ph_57"><img loading="lazy" src="stickers/ph_57.png" alt="小狗张嘴大笑"><figcaption><b class="id">ph_57</b><br>小狗张嘴大笑<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="喜欢" data-s="手机微信表情包" data-id="ph_58"><img loading="lazy" src="stickers/ph_58.png" alt="小狗「我要和你好，我来了」"><figcaption><b class="id">ph_58</b><br>小狗「我要和你好，我来了」<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="难过" data-s="手机微信表情包" data-id="ph_59"><img loading="lazy" src="stickers/ph_59.png" alt="小狗挨打"><figcaption><b class="id">ph_59</b><br>小狗挨打<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="疑问" data-s="手机微信表情包" data-id="ph_60"><img loading="lazy" src="stickers/ph_60.png" alt="小狗「怎么了呢」"><figcaption><b class="id">ph_60</b><br>小狗「怎么了呢」<br><span class="t">疑问</span></figcaption></figure>
+<figure data-e="摆烂" data-s="手机微信表情包" data-id="ph_61"><img loading="lazy" src="stickers/ph_61.png" alt="小狗对着蓝屏电脑"><figcaption><b class="id">ph_61</b><br>小狗对着蓝屏电脑<br><span class="t">摆烂</span></figcaption></figure>
+<figure data-e="撒娇" data-s="手机微信表情包" data-id="ph_62"><img loading="lazy" src="stickers/ph_62.png" alt="小狗「木嘛嘛」"><figcaption><b class="id">ph_62</b><br>小狗「木嘛嘛」<br><span class="t">撒娇</span></figcaption></figure>
+<figure data-e="尴尬" data-s="手机微信表情包" data-id="ph_63"><img loading="lazy" src="stickers/ph_63.png" alt="小狗「错…错了…」"><figcaption><b class="id">ph_63</b><br>小狗「错…错了…」<br><span class="t">尴尬</span></figcaption></figure>
+<figure data-e="摆烂" data-s="手机微信表情包" data-id="ph_64"><img loading="lazy" src="stickers/ph_64.png" alt="小狗「已老实」"><figcaption><b class="id">ph_64</b><br>小狗「已老实」<br><span class="t">摆烂</span></figcaption></figure>
+<figure data-e="无语" data-s="手机微信表情包" data-id="ph_65"><img loading="lazy" src="stickers/ph_65.png" alt="小狗「施工中」"><figcaption><b class="id">ph_65</b><br>小狗「施工中」<br><span class="t">无语</span></figcaption></figure>
+<figure data-e="加油" data-s="手机微信表情包" data-id="ph_66"><img loading="lazy" src="stickers/ph_66.png" alt="小狗「我缓缓等待」"><figcaption><b class="id">ph_66</b><br>小狗「我缓缓等待」<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="加油" data-s="手机微信表情包" data-id="ph_67"><img loading="lazy" src="stickers/ph_67.png" alt="小狗「击掌 give me five」"><figcaption><b class="id">ph_67</b><br>小狗「击掌 give me five」<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="喜欢" data-s="手机微信表情包" data-id="ph_68"><img loading="lazy" src="stickers/ph_68.png" alt="小狗「我好想你呀！」"><figcaption><b class="id">ph_68</b><br>小狗「我好想你呀！」<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="无语" data-s="手机微信表情包" data-id="ph_69"><img loading="lazy" src="stickers/ph_69.png" alt="小狗「那咋了…」"><figcaption><b class="id">ph_69</b><br>小狗「那咋了…」<br><span class="t">无语</span></figcaption></figure>
+<figure data-e="喜欢" data-s="手机微信表情包" data-id="ph_70"><img loading="lazy" src="stickers/ph_70.png" alt="小狗「喜欢～」"><figcaption><b class="id">ph_70</b><br>小狗「喜欢～」<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="难过" data-s="手机微信表情包" data-id="ph_71"><img loading="lazy" src="stickers/ph_71.png" alt="小狗哎呀"><figcaption><b class="id">ph_71</b><br>小狗哎呀<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="撒娇" data-s="手机微信表情包" data-id="ph_72"><img loading="lazy" src="stickers/ph_72.png" alt="小狗「啵啵啵」"><figcaption><b class="id">ph_72</b><br>小狗「啵啵啵」<br><span class="t">撒娇</span></figcaption></figure>
+<figure data-e="撒娇" data-s="手机微信表情包" data-id="ph_73"><img loading="lazy" src="stickers/ph_73.png" alt="小狗「来…抱抱！」"><figcaption><b class="id">ph_73</b><br>小狗「来…抱抱！」<br><span class="t">撒娇</span></figcaption></figure>
+<figure data-e="睡觉" data-s="手机微信表情包" data-id="ph_74"><img loading="lazy" src="stickers/ph_74.png" alt="小狗「Zzz」"><figcaption><b class="id">ph_74</b><br>小狗「Zzz」<br><span class="t">睡觉</span></figcaption></figure>
+<figure data-e="加油" data-s="手机微信表情包" data-id="ph_75"><img loading="lazy" src="stickers/ph_75.png" alt="小狗「中！！」"><figcaption><b class="id">ph_75</b><br>小狗「中！！」<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="加油" data-s="手机微信表情包" data-id="ph_76"><img loading="lazy" src="stickers/ph_76.png" alt="小狗「行。」"><figcaption><b class="id">ph_76</b><br>小狗「行。」<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="钱" data-s="手机微信表情包" data-id="ph_77"><img loading="lazy" src="stickers/ph_77.png" alt="小狗「请给我一点钱」"><figcaption><b class="id">ph_77</b><br>小狗「请给我一点钱」<br><span class="t">钱</span></figcaption></figure>
+<figure data-e="夸奖" data-s="手机微信表情包" data-id="ph_78"><img loading="lazy" src="stickers/ph_78.png" alt="「摸摸头」"><figcaption><b class="id">ph_78</b><br>「摸摸头」<br><span class="t">夸奖</span></figcaption></figure>
+<figure data-e="生气" data-s="手机微信表情包" data-id="ph_79"><img loading="lazy" src="stickers/ph_79.png" alt="小狗「挎起个狗脸」"><figcaption><b class="id">ph_79</b><br>小狗「挎起个狗脸」<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="问候" data-s="手机微信表情包" data-id="ph_80"><img loading="lazy" src="stickers/ph_80.png" alt="小狗「谢谢」"><figcaption><b class="id">ph_80</b><br>小狗「谢谢」<br><span class="t">问候</span></figcaption></figure>
+<figure data-e="撒娇" data-s="手机微信表情包" data-id="ph_81"><img loading="lazy" src="stickers/ph_81.png" alt="猫咪亲小狗"><figcaption><b class="id">ph_81</b><br>猫咪亲小狗<br><span class="t">撒娇</span></figcaption></figure>
+<figure data-e="喜欢" data-s="手机微信表情包" data-id="ph_82"><img loading="lazy" src="stickers/ph_82.png" alt="小狗抱爱心比心"><figcaption><b class="id">ph_82</b><br>小狗抱爱心比心<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="震惊" data-s="手机微信表情包" data-id="ph_83"><img loading="lazy" src="stickers/ph_83.png" alt="小狗张嘴震惊"><figcaption><b class="id">ph_83</b><br>小狗张嘴震惊<br><span class="t">震惊</span></figcaption></figure>
+<figure data-e="搞笑" data-s="手机微信表情包" data-id="ph_84"><img loading="lazy" src="stickers/ph_84.png" alt="小狗「大明星跑路」"><figcaption><b class="id">ph_84</b><br>小狗「大明星跑路」<br><span class="t">搞笑</span></figcaption></figure>
+<figure data-e="摆烂" data-s="手机微信表情包" data-id="ph_85"><img loading="lazy" src="stickers/ph_85.png" alt="小狗「充电中」"><figcaption><b class="id">ph_85</b><br>小狗「充电中」<br><span class="t">摆烂</span></figcaption></figure>
+<figure data-e="加油" data-s="手机微信表情包" data-id="ph_86"><img loading="lazy" src="stickers/ph_86.png" alt="小狗「期待状」"><figcaption><b class="id">ph_86</b><br>小狗「期待状」<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="摆烂" data-s="手机微信表情包" data-id="ph_87"><img loading="lazy" src="stickers/ph_87.png" alt="小狗「随随便便」"><figcaption><b class="id">ph_87</b><br>小狗「随随便便」<br><span class="t">摆烂</span></figcaption></figure>
+<figure data-e="撒娇" data-s="手机微信表情包" data-id="ph_88"><img loading="lazy" src="stickers/ph_88.png" alt="小狗「发出被窝共享邀请」"><figcaption><b class="id">ph_88</b><br>小狗「发出被窝共享邀请」<br><span class="t">撒娇</span></figcaption></figure>
+<figure data-e="得意" data-s="手机微信表情包" data-id="ph_89"><img loading="lazy" src="stickers/ph_89.png" alt="小狗「拿捏」"><figcaption><b class="id">ph_89</b><br>小狗「拿捏」<br><span class="t">得意</span></figcaption></figure>
+<figure data-e="开心" data-s="手机微信表情包" data-id="ph_90"><img loading="lazy" src="stickers/ph_90.png" alt="小狗「幸福了」"><figcaption><b class="id">ph_90</b><br>小狗「幸福了」<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="难过" data-s="手机微信表情包" data-id="ph_91"><img loading="lazy" src="stickers/ph_91.png" alt="「只是雨天心碎的狗」"><figcaption><b class="id">ph_91</b><br>「只是雨天心碎的狗」<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="摆烂" data-s="手机微信表情包" data-id="ph_92"><img loading="lazy" src="stickers/ph_92.png" alt="小狗躺着看手机"><figcaption><b class="id">ph_92</b><br>小狗躺着看手机<br><span class="t">摆烂</span></figcaption></figure>
+<figure data-e="自嘲" data-s="手机微信表情包" data-id="ph_93"><img loading="lazy" src="stickers/ph_93.png" alt="「我吗？我只是一只小狗」"><figcaption><b class="id">ph_93</b><br>「我吗？我只是一只小狗」<br><span class="t">自嘲</span></figcaption></figure>
+<figure data-e="喜欢" data-s="手机微信表情包" data-id="ph_94"><img loading="lazy" src="stickers/ph_94.png" alt="小狗「这个…好想要…」"><figcaption><b class="id">ph_94</b><br>小狗「这个…好想要…」<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="夸奖" data-s="手机微信表情包" data-id="ph_95"><img loading="lazy" src="stickers/ph_95.png" alt="小狗「幸苦幸苦」"><figcaption><b class="id">ph_95</b><br>小狗「幸苦幸苦」<br><span class="t">夸奖</span></figcaption></figure>
+<figure data-e="难过" data-s="手机微信表情包" data-id="ph_96"><img loading="lazy" src="stickers/ph_96.png" alt="小狗「呜哇」"><figcaption><b class="id">ph_96</b><br>小狗「呜哇」<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="喜欢" data-s="手机微信表情包" data-id="ph_97"><img loading="lazy" src="stickers/ph_97.png" alt="小狗「我要追随你！」"><figcaption><b class="id">ph_97</b><br>小狗「我要追随你！」<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="摆烂" data-s="手机微信表情包" data-id="ph_98"><img loading="lazy" src="stickers/ph_98.png" alt="小狗「摆烂了」"><figcaption><b class="id">ph_98</b><br>小狗「摆烂了」<br><span class="t">摆烂</span></figcaption></figure>
+<figure data-e="加油" data-s="手机微信表情包" data-id="ph_99"><img loading="lazy" src="stickers/ph_99.png" alt="小狗「知豆了！！」"><figcaption><b class="id">ph_99</b><br>小狗「知豆了！！」<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="沙雕" data-s="手机微信表情包" data-id="ph_100"><img loading="lazy" src="stickers/ph_100.png" alt="兔兔转圈圈"><figcaption><b class="id">ph_100</b><br>兔兔转圈圈<br><span class="t">沙雕</span></figcaption></figure>
+<figure data-e="搞笑" data-s="手机微信表情包" data-id="ph_101"><img loading="lazy" src="stickers/ph_101.png" alt="小狗吐舌搞怪"><figcaption><b class="id">ph_101</b><br>小狗吐舌搞怪<br><span class="t">搞笑</span></figcaption></figure>
+<figure data-e="摆烂" data-s="手机微信表情包" data-id="ph_102"><img loading="lazy" src="stickers/ph_102.png" alt="白猫躺着摆烂"><figcaption><b class="id">ph_102</b><br>白猫躺着摆烂<br><span class="t">摆烂</span></figcaption></figure>
+<figure data-e="睡觉" data-s="手机微信表情包" data-id="ph_103"><img loading="lazy" src="stickers/ph_103.png" alt="猫咪挂起来睡觉"><figcaption><b class="id">ph_103</b><br>猫咪挂起来睡觉<br><span class="t">睡觉</span></figcaption></figure>
+<figure data-e="沙雕" data-s="手机微信表情包" data-id="ph_104"><img loading="lazy" src="stickers/ph_104.png" alt="猫咪抓水"><figcaption><b class="id">ph_104</b><br>猫咪抓水<br><span class="t">沙雕</span></figcaption></figure>
+<figure data-e="喜欢" data-s="手机微信表情包" data-id="ph_105"><img loading="lazy" src="stickers/ph_105.png" alt="小狗抱爱心"><figcaption><b class="id">ph_105</b><br>小狗抱爱心<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="生气" data-s="手机微信表情包" data-id="ph_106"><img loading="lazy" src="stickers/ph_106.png" alt="白猫生气"><figcaption><b class="id">ph_106</b><br>白猫生气<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="干饭" data-s="手机微信表情包" data-id="ph_107"><img loading="lazy" src="stickers/ph_107.png" alt="小狗埋头干饭"><figcaption><b class="id">ph_107</b><br>小狗埋头干饭<br><span class="t">干饭</span></figcaption></figure>
+<figure data-e="加油" data-s="手机微信表情包" data-id="ph_108"><img loading="lazy" src="stickers/ph_108.png" alt="小狗伸爪指路"><figcaption><b class="id">ph_108</b><br>小狗伸爪指路<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="难过" data-s="手机微信表情包" data-id="ph_109"><img loading="lazy" src="stickers/ph_109.png" alt="小狗抱着碗哭"><figcaption><b class="id">ph_109</b><br>小狗抱着碗哭<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="震惊" data-s="手机微信表情包" data-id="ph_110"><img loading="lazy" src="stickers/ph_110.png" alt="白猫惊讶"><figcaption><b class="id">ph_110</b><br>白猫惊讶<br><span class="t">震惊</span></figcaption></figure>
+<figure data-e="开心" data-s="手机微信表情包" data-id="ph_111"><img loading="lazy" src="stickers/ph_111.png" alt="小狗被摸摸头"><figcaption><b class="id">ph_111</b><br>小狗被摸摸头<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="日常" data-s="手机微信表情包" data-id="ph_112"><img loading="lazy" src="stickers/ph_112.png" alt="白猫放空"><figcaption><b class="id">ph_112</b><br>白猫放空<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="生气" data-s="手机微信表情包" data-id="ph_113"><img loading="lazy" src="stickers/ph_113.png" alt="白猫生气炸毛"><figcaption><b class="id">ph_113</b><br>白猫生气炸毛<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="睡觉" data-s="手机微信表情包" data-id="ph_114"><img loading="lazy" src="stickers/ph_114.png" alt="白猫趴着睡觉"><figcaption><b class="id">ph_114</b><br>白猫趴着睡觉<br><span class="t">睡觉</span></figcaption></figure>
+<figure data-e="加油" data-s="手机微信表情包" data-id="ph_115"><img loading="lazy" src="stickers/ph_115.png" alt="白猫「ok」"><figcaption><b class="id">ph_115</b><br>白猫「ok」<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="开心" data-s="手机微信表情包" data-id="ph_116"><img loading="lazy" src="stickers/ph_116.png" alt="小狗开心躺床"><figcaption><b class="id">ph_116</b><br>小狗开心躺床<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="沙雕" data-s="手机微信表情包" data-id="ph_117"><img loading="lazy" src="stickers/ph_117.png" alt="小狗戴帽子「喵—」"><figcaption><b class="id">ph_117</b><br>小狗戴帽子「喵—」<br><span class="t">沙雕</span></figcaption></figure>
+<figure data-e="生气" data-s="手机微信表情包" data-id="ph_118"><img loading="lazy" src="stickers/ph_118.png" alt="白猫咬东西"><figcaption><b class="id">ph_118</b><br>白猫咬东西<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="日常" data-s="手机微信表情包" data-id="ph_119"><img loading="lazy" src="stickers/ph_119.png" alt="小狗举着手机"><figcaption><b class="id">ph_119</b><br>小狗举着手机<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="问候" data-s="手机微信表情包" data-id="ph_120"><img loading="lazy" src="stickers/ph_120.png" alt="小狗张嘴叫"><figcaption><b class="id">ph_120</b><br>小狗张嘴叫<br><span class="t">问候</span></figcaption></figure>
+<figure data-e="求助" data-s="手机微信表情包" data-id="ph_121"><img loading="lazy" src="stickers/ph_121.png" alt="小狗哭着举手"><figcaption><b class="id">ph_121</b><br>小狗哭着举手<br><span class="t">求助</span></figcaption></figure>
+<figure data-e="日常" data-s="手机微信表情包" data-id="ph_122"><img loading="lazy" src="stickers/ph_122.png" alt="白猫发呆"><figcaption><b class="id">ph_122</b><br>白猫发呆<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="摆烂" data-s="手机微信表情包" data-id="ph_123"><img loading="lazy" src="stickers/ph_123.png" alt="白猫趴着"><figcaption><b class="id">ph_123</b><br>白猫趴着<br><span class="t">摆烂</span></figcaption></figure>
+<figure data-e="无语" data-s="手机微信表情包" data-id="ph_124"><img loading="lazy" src="stickers/ph_124.png" alt="小狗「嘶。」"><figcaption><b class="id">ph_124</b><br>小狗「嘶。」<br><span class="t">无语</span></figcaption></figure>
+<figure data-e="难过" data-s="手机微信表情包" data-id="ph_125"><img loading="lazy" src="stickers/ph_125.png" alt="小狗嚎啕大哭"><figcaption><b class="id">ph_125</b><br>小狗嚎啕大哭<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="尴尬" data-s="手机微信表情包" data-id="ph_126"><img loading="lazy" src="stickers/ph_126.png" alt="小狗揉脸"><figcaption><b class="id">ph_126</b><br>小狗揉脸<br><span class="t">尴尬</span></figcaption></figure>
+<figure data-e="难过" data-s="手机微信表情包" data-id="ph_127"><img loading="lazy" src="stickers/ph_127.png" alt="小狗咳嗽"><figcaption><b class="id">ph_127</b><br>小狗咳嗽<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="难过" data-s="手机微信表情包" data-id="ph_128"><img loading="lazy" src="stickers/ph_128.png" alt="小狗掉眼泪"><figcaption><b class="id">ph_128</b><br>小狗掉眼泪<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="难过" data-s="手机微信表情包" data-id="ph_129"><img loading="lazy" src="stickers/ph_129.png" alt="小狗哭"><figcaption><b class="id">ph_129</b><br>小狗哭<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="开心" data-s="手机微信表情包" data-id="ph_130"><img loading="lazy" src="stickers/ph_130.png" alt="小狗被摸摸头"><figcaption><b class="id">ph_130</b><br>小狗被摸摸头<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="疑问" data-s="手机微信表情包" data-id="ph_131"><img loading="lazy" src="stickers/ph_131.png" alt="白猫冒问号"><figcaption><b class="id">ph_131</b><br>白猫冒问号<br><span class="t">疑问</span></figcaption></figure>
+<figure data-e="摆烂" data-s="手机微信表情包" data-id="ph_132"><img loading="lazy" src="stickers/ph_132.png" alt="白猫躺平"><figcaption><b class="id">ph_132</b><br>白猫躺平<br><span class="t">摆烂</span></figcaption></figure>
+<figure data-e="求助" data-s="手机微信表情包" data-id="ph_133"><img loading="lazy" src="stickers/ph_133.png" alt="小狗「求求你了」"><figcaption><b class="id">ph_133</b><br>小狗「求求你了」<br><span class="t">求助</span></figcaption></figure>
+<figure data-e="喜欢" data-s="手机微信表情包" data-id="ph_134"><img loading="lazy" src="stickers/ph_134.png" alt="小狗抱爱心"><figcaption><b class="id">ph_134</b><br>小狗抱爱心<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="日常" data-s="手机微信表情包" data-id="ph_135"><img loading="lazy" src="stickers/ph_135.png" alt="白猫站着"><figcaption><b class="id">ph_135</b><br>白猫站着<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="干饭" data-s="手机微信表情包" data-id="ph_136"><img loading="lazy" src="stickers/ph_136.png" alt="小狗吃东西"><figcaption><b class="id">ph_136</b><br>小狗吃东西<br><span class="t">干饭</span></figcaption></figure>
+<figure data-e="干饭" data-s="手机微信表情包" data-id="ph_137"><img loading="lazy" src="stickers/ph_137.png" alt="小狗「吃。」"><figcaption><b class="id">ph_137</b><br>小狗「吃。」<br><span class="t">干饭</span></figcaption></figure>
+<figure data-e="生气" data-s="手机微信表情包" data-id="ph_138"><img loading="lazy" src="stickers/ph_138.png" alt="小狗气鼓鼓"><figcaption><b class="id">ph_138</b><br>小狗气鼓鼓<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="喜欢" data-s="手机微信表情包" data-id="ph_139"><img loading="lazy" src="stickers/ph_139.png" alt="小狗比心"><figcaption><b class="id">ph_139</b><br>小狗比心<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="生气" data-s="手机微信表情包" data-id="ph_140"><img loading="lazy" src="stickers/ph_140.png" alt="白猫咬手"><figcaption><b class="id">ph_140</b><br>白猫咬手<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="开心" data-s="手机微信表情包" data-id="ph_141"><img loading="lazy" src="stickers/ph_141.png" alt="小狗「呀哈！」"><figcaption><b class="id">ph_141</b><br>小狗「呀哈！」<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="睡觉" data-s="手机微信表情包" data-id="ph_142"><img loading="lazy" src="stickers/ph_142.png" alt="白猫躺床上"><figcaption><b class="id">ph_142</b><br>白猫躺床上<br><span class="t">睡觉</span></figcaption></figure>
+<figure data-e="问候" data-s="手机微信表情包" data-id="ph_143"><img loading="lazy" src="stickers/ph_143.png" alt="小狗「汪」"><figcaption><b class="id">ph_143</b><br>小狗「汪」<br><span class="t">问候</span></figcaption></figure>
+<figure data-e="开心" data-s="手机微信表情包" data-id="ph_144"><img loading="lazy" src="stickers/ph_144.png" alt="小狗抱着星星"><figcaption><b class="id">ph_144</b><br>小狗抱着星星<br><span class="t">开心</span></figcaption></figure>
+<figure data-e="干饭" data-s="手机微信表情包" data-id="ph_145"><img loading="lazy" src="stickers/ph_145.png" alt="小狗边吃边气"><figcaption><b class="id">ph_145</b><br>小狗边吃边气<br><span class="t">干饭</span></figcaption></figure>
+<figure data-e="搞笑" data-s="手机微信表情包" data-id="ph_146"><img loading="lazy" src="stickers/ph_146.png" alt="小狗拿着手机跑了"><figcaption><b class="id">ph_146</b><br>小狗拿着手机跑了<br><span class="t">搞笑</span></figcaption></figure>
+<figure data-e="喜欢" data-s="手机微信表情包" data-id="ph_147"><img loading="lazy" src="stickers/ph_147.png" alt="小狗星星眼"><figcaption><b class="id">ph_147</b><br>小狗星星眼<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="撒娇" data-s="手机微信表情包" data-id="ph_148"><img loading="lazy" src="stickers/ph_148.png" alt="小狗亲亲「妈咪」"><figcaption><b class="id">ph_148</b><br>小狗亲亲「妈咪」<br><span class="t">撒娇</span></figcaption></figure>
+<figure data-e="难过" data-s="手机微信表情包" data-id="ph_149"><img loading="lazy" src="stickers/ph_149.png" alt="小狗哭唧唧"><figcaption><b class="id">ph_149</b><br>小狗哭唧唧<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="喜欢" data-s="手机微信表情包" data-id="ph_150"><img loading="lazy" src="stickers/ph_150.png" alt="小狗递爱心「请收下」"><figcaption><b class="id">ph_150</b><br>小狗递爱心「请收下」<br><span class="t">喜欢</span></figcaption></figure>
+<figure data-e="日常" data-s="手机微信表情包" data-id="ph_151"><img loading="lazy" src="stickers/ph_151.png" alt="白猫缩成一团"><figcaption><b class="id">ph_151</b><br>白猫缩成一团<br><span class="t">日常</span></figcaption></figure>
+<figure data-e="难过" data-s="手机微信表情包" data-id="ph_152"><img loading="lazy" src="stickers/ph_152.png" alt="小狗「哎呀，摔倒了」"><figcaption><b class="id">ph_152</b><br>小狗「哎呀，摔倒了」<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="生气" data-s="手机微信表情包" data-id="ph_153"><img loading="lazy" src="stickers/ph_153.png" alt="小狗生气"><figcaption><b class="id">ph_153</b><br>小狗生气<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="加油" data-s="手机微信表情包" data-id="ph_154"><img loading="lazy" src="stickers/ph_154.png" alt="小狗「嗯」"><figcaption><b class="id">ph_154</b><br>小狗「嗯」<br><span class="t">加油</span></figcaption></figure>
+<figure data-e="难过" data-s="手机微信表情包" data-id="ph_155"><img loading="lazy" src="stickers/ph_155.png" alt="小狗揉脸哭"><figcaption><b class="id">ph_155</b><br>小狗揉脸哭<br><span class="t">难过</span></figcaption></figure>
+<figure data-e="无语" data-s="手机微信表情包" data-id="ph_156"><img loading="lazy" src="stickers/ph_156.png" alt="白猫无奈"><figcaption><b class="id">ph_156</b><br>白猫无奈<br><span class="t">无语</span></figcaption></figure>
+<figure data-e="生气" data-s="手机微信表情包" data-id="ph_157"><img loading="lazy" src="stickers/ph_157.png" alt="小狗气呼呼"><figcaption><b class="id">ph_157</b><br>小狗气呼呼<br><span class="t">生气</span></figcaption></figure>
+<figure data-e="疑问" data-s="手机微信表情包" data-id="ph_158"><img loading="lazy" src="stickers/ph_158.png" alt="小狗「？」"><figcaption><b class="id">ph_158</b><br>小狗「？」<br><span class="t">疑问</span></figcaption></figure></main>
+<div id="bar"><span>已选 <b id="n">0</b> 张</span>
+ <button id="cp">复制清单</button><button class="gray" id="cl">清空</button></div>
+<div id="toast"></div>
 <script>
-const q=document.getElementById('q');
-const chips=document.getElementById('chips');
+const q=document.getElementById('q'), chips=document.getElementById('chips');
 let cur='';
 ['全部',...["震惊", "日常", "钱", "干饭", "吃瓜", "难过", "摆烂", "喜欢", "夸奖", "求助", "开心", "生气", "嘲讽", "可爱", "撒娇", "尴尬", "害羞", "搞笑", "沙雕", "问候", "拒绝", "疑问", "自嘲", "加油", "威胁", "无语", "得意", "睡觉", "离开"]].forEach((e,i)=>{
  const b=document.createElement('span'); b.className='chip'+(i===0?' on':''); b.textContent=e;
@@ -443,4 +512,21 @@ function flt(){const s=q.value.toLowerCase();
   const t=(f.dataset.e+' '+f.dataset.s+' '+f.textContent).toLowerCase();
   f.style.display=((!cur||f.dataset.e.includes(cur))&&(!s||t.includes(s)))?'':'none';});}
 q.oninput=flt;
+
+const nEl=document.getElementById('n');
+function nSel(){return [...document.querySelectorAll('figure.del')].map(f=>f.dataset.id);}
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.style.display='block';
+ setTimeout(()=>t.style.display='none',1400);}
+document.getElementById('g').addEventListener('click',e=>{
+ const f=e.target.closest('figure'); if(!f)return;
+ f.classList.toggle('del'); nEl.textContent=nSel().length;});
+document.getElementById('cl').onclick=()=>{
+ document.querySelectorAll('figure.del').forEach(f=>f.classList.remove('del'));
+ nEl.textContent=0;};
+document.getElementById('cp').onclick=async()=>{
+ const ids=nSel(); if(!ids.length){toast('还没选任何表情包');return;}
+ const txt=ids.join('\n');
+ try{await navigator.clipboard.writeText(txt); toast('已复制 '+ids.length+' 个编号，粘到 要删的表情包.txt 即可');}
+ catch(err){prompt('复制下面这串编号：',txt);}
+};
 </script></body></html>

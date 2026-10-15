@@ -3,7 +3,7 @@
  "owner": "bahati073",
  "repo": "bahati073/stickers",
  "updated": "2026-10-15",
- "count": 408,
+ "count": 465,
  "cdn_base": "https://cdn.jsdelivr.net/gh/bahati073/stickers@main/",
  "raw_base": "https://raw.githubusercontent.com/bahati073/stickers/main/",
  "proxy_base": "https://gh-proxy.com/https://raw.githubusercontent.com/bahati073/stickers/main/",
@@ -17,6 +17,7 @@
    "huaji_13",
    "murcat_02",
    "penguin_04",
+   "ph_110",
    "ph_83",
    "squirtle_01",
    "sudq_06",
@@ -100,6 +101,11 @@
    "panda_16",
    "panda_20",
    "penguin_09",
+   "ph_112",
+   "ph_119",
+   "ph_122",
+   "ph_135",
+   "ph_151",
    "ph_21",
    "pig_02",
    "pigeon_02",
@@ -151,6 +157,10 @@
    "kumamoto_02",
    "panda_05",
    "panda_19",
+   "ph_107",
+   "ph_136",
+   "ph_137",
+   "ph_145",
    "ph_27",
    "ph_53",
    "sudq_08"
@@ -172,6 +182,14 @@
    "chicken_05",
    "coder_06",
    "panda_12",
+   "ph_109",
+   "ph_125",
+   "ph_127",
+   "ph_128",
+   "ph_129",
+   "ph_149",
+   "ph_152",
+   "ph_155",
    "ph_18",
    "ph_59",
    "ph_71",
@@ -188,6 +206,9 @@
    "cny_03",
    "coffin_02",
    "ph_04",
+   "ph_102",
+   "ph_123",
+   "ph_132",
    "ph_19",
    "ph_42",
    "ph_54",
@@ -213,7 +234,12 @@
    "emoji_11",
    "kumamoto_08",
    "ph_08",
+   "ph_105",
+   "ph_134",
+   "ph_139",
    "ph_14",
+   "ph_147",
+   "ph_150",
    "ph_40",
    "ph_55",
    "ph_58",
@@ -250,6 +276,8 @@
    "cny_04",
    "kumamoto_06",
    "ph_05",
+   "ph_121",
+   "ph_133",
    "ph_20",
    "ph_32",
    "ph_35",
@@ -286,6 +314,11 @@
    "ph_01",
    "ph_03",
    "ph_09",
+   "ph_111",
+   "ph_116",
+   "ph_130",
+   "ph_141",
+   "ph_144",
    "ph_47",
    "ph_56",
    "ph_57",
@@ -308,6 +341,13 @@
    "luoxiang_06",
    "luoxiang_10",
    "luoxiang_11",
+   "ph_106",
+   "ph_113",
+   "ph_118",
+   "ph_138",
+   "ph_140",
+   "ph_153",
+   "ph_157",
    "ph_25",
    "ph_45",
    "ph_48",
@@ -356,6 +396,7 @@
    "emoji_11",
    "panda_17",
    "panda_18",
+   "ph_148",
    "ph_16",
    "ph_30",
    "ph_34",
@@ -375,6 +416,7 @@
   "尴尬": [
    "chicken_02",
    "penguin_03",
+   "ph_126",
    "ph_15",
    "ph_36",
    "ph_51",
@@ -388,6 +430,7 @@
    "penguin_02",
    "ph_05",
    "ph_101",
+   "ph_146",
    "ph_28",
    "ph_37",
    "ph_38",
@@ -405,12 +448,16 @@
    "chicken_10",
    "penguin_01",
    "ph_100",
+   "ph_104",
+   "ph_117",
    "ph_29"
   ],
   "问候": [
    "cny_01",
    "cny_02",
    "luoxiang_04",
+   "ph_120",
+   "ph_143",
    "ph_80",
    "wangdan_06"
   ],
@@ -440,6 +487,8 @@
    "panda_02",
    "panda_05",
    "panda_21",
+   "ph_131",
+   "ph_158",
    "ph_60",
    "pigeon_01",
    "squirtle_08",
@@ -467,8 +516,11 @@
    "ph_02",
    "ph_06",
    "ph_07",
+   "ph_108",
+   "ph_115",
    "ph_12",
    "ph_13",
+   "ph_154",
    "ph_24",
    "ph_26",
    "ph_66",
@@ -510,6 +562,8 @@
    "emoji_06",
    "huaji_14",
    "panda_04",
+   "ph_124",
+   "ph_156",
    "ph_22",
    "ph_33",
    "ph_41",
@@ -541,6 +595,9 @@
   ],
   "睡觉": [
    "penguin_07",
+   "ph_103",
+   "ph_114",
+   "ph_142",
    "ph_74",
    "pig_04",
    "tom_03",
@@ -930,11 +987,68 @@
    "ph_10",
    "ph_100",
    "ph_101",
+   "ph_102",
+   "ph_103",
+   "ph_104",
+   "ph_105",
+   "ph_106",
+   "ph_107",
+   "ph_108",
+   "ph_109",
    "ph_11",
+   "ph_110",
+   "ph_111",
+   "ph_112",
+   "ph_113",
+   "ph_114",
+   "ph_115",
+   "ph_116",
+   "ph_117",
+   "ph_118",
+   "ph_119",
    "ph_12",
+   "ph_120",
+   "ph_121",
+   "ph_122",
+   "ph_123",
+   "ph_124",
+   "ph_125",
+   "ph_126",
+   "ph_127",
+   "ph_128",
+   "ph_129",
    "ph_13",
+   "ph_130",
+   "ph_131",
+   "ph_132",
+   "ph_133",
+   "ph_134",
+   "ph_135",
+   "ph_136",
+   "ph_137",
+   "ph_138",
+   "ph_139",
    "ph_14",
+   "ph_140",
+   "ph_141",
+   "ph_142",
+   "ph_143",
+   "ph_144",
+   "ph_145",
+   "ph_146",
+   "ph_147",
+   "ph_148",
+   "ph_149",
    "ph_15",
+   "ph_150",
+   "ph_151",
+   "ph_152",
+   "ph_153",
+   "ph_154",
+   "ph_155",
+   "ph_156",
+   "ph_157",
+   "ph_158",
    "ph_16",
    "ph_17",
    "ph_18",
@@ -5991,6 +6105,690 @@
    "animated": false,
    "bytes": 48891,
    "src": "phone/com.tencent.mm emoji (N157 / idx475)"
+  },
+  {
+   "id": "ph_102",
+   "file": "stickers/ph_102.png",
+   "series": "手机微信表情包",
+   "desc": "白猫躺着摆烂",
+   "emotion": [
+    "摆烂"
+   ],
+   "animated": false,
+   "bytes": 12927,
+   "src": "phone/com.tencent.mm emoji (N8 / idx125)"
+  },
+  {
+   "id": "ph_103",
+   "file": "stickers/ph_103.png",
+   "series": "手机微信表情包",
+   "desc": "猫咪挂起来睡觉",
+   "emotion": [
+    "睡觉"
+   ],
+   "animated": false,
+   "bytes": 11639,
+   "src": "phone/com.tencent.mm emoji (N12 / idx131)"
+  },
+  {
+   "id": "ph_104",
+   "file": "stickers/ph_104.png",
+   "series": "手机微信表情包",
+   "desc": "猫咪抓水",
+   "emotion": [
+    "沙雕"
+   ],
+   "animated": false,
+   "bytes": 16061,
+   "src": "phone/com.tencent.mm emoji (N15 / idx139)"
+  },
+  {
+   "id": "ph_105",
+   "file": "stickers/ph_105.png",
+   "series": "手机微信表情包",
+   "desc": "小狗抱爱心",
+   "emotion": [
+    "喜欢"
+   ],
+   "animated": false,
+   "bytes": 16543,
+   "src": "phone/com.tencent.mm emoji (N25 / idx156)"
+  },
+  {
+   "id": "ph_106",
+   "file": "stickers/ph_106.png",
+   "series": "手机微信表情包",
+   "desc": "白猫生气",
+   "emotion": [
+    "生气"
+   ],
+   "animated": false,
+   "bytes": 8494,
+   "src": "phone/com.tencent.mm emoji (N29 / idx166)"
+  },
+  {
+   "id": "ph_107",
+   "file": "stickers/ph_107.png",
+   "series": "手机微信表情包",
+   "desc": "小狗埋头干饭",
+   "emotion": [
+    "干饭"
+   ],
+   "animated": false,
+   "bytes": 19286,
+   "src": "phone/com.tencent.mm emoji (N33 / idx170)"
+  },
+  {
+   "id": "ph_108",
+   "file": "stickers/ph_108.png",
+   "series": "手机微信表情包",
+   "desc": "小狗伸爪指路",
+   "emotion": [
+    "加油"
+   ],
+   "animated": false,
+   "bytes": 15887,
+   "src": "phone/com.tencent.mm emoji (N35 / idx175)"
+  },
+  {
+   "id": "ph_109",
+   "file": "stickers/ph_109.png",
+   "series": "手机微信表情包",
+   "desc": "小狗抱着碗哭",
+   "emotion": [
+    "难过"
+   ],
+   "animated": false,
+   "bytes": 17693,
+   "src": "phone/com.tencent.mm emoji (N39 / idx180)"
+  },
+  {
+   "id": "ph_110",
+   "file": "stickers/ph_110.png",
+   "series": "手机微信表情包",
+   "desc": "白猫惊讶",
+   "emotion": [
+    "震惊"
+   ],
+   "animated": false,
+   "bytes": 9554,
+   "src": "phone/com.tencent.mm emoji (N41 / idx186)"
+  },
+  {
+   "id": "ph_111",
+   "file": "stickers/ph_111.png",
+   "series": "手机微信表情包",
+   "desc": "小狗被摸摸头",
+   "emotion": [
+    "开心"
+   ],
+   "animated": false,
+   "bytes": 20225,
+   "src": "phone/com.tencent.mm emoji (N42 / idx187)"
+  },
+  {
+   "id": "ph_112",
+   "file": "stickers/ph_112.png",
+   "series": "手机微信表情包",
+   "desc": "白猫放空",
+   "emotion": [
+    "日常"
+   ],
+   "animated": false,
+   "bytes": 12573,
+   "src": "phone/com.tencent.mm emoji (N48 / idx196)"
+  },
+  {
+   "id": "ph_113",
+   "file": "stickers/ph_113.png",
+   "series": "手机微信表情包",
+   "desc": "白猫生气炸毛",
+   "emotion": [
+    "生气"
+   ],
+   "animated": false,
+   "bytes": 7191,
+   "src": "phone/com.tencent.mm emoji (N51 / idx203)"
+  },
+  {
+   "id": "ph_114",
+   "file": "stickers/ph_114.png",
+   "series": "手机微信表情包",
+   "desc": "白猫趴着睡觉",
+   "emotion": [
+    "睡觉"
+   ],
+   "animated": false,
+   "bytes": 7788,
+   "src": "phone/com.tencent.mm emoji (N52 / idx204)"
+  },
+  {
+   "id": "ph_115",
+   "file": "stickers/ph_115.png",
+   "series": "手机微信表情包",
+   "desc": "白猫「ok」",
+   "emotion": [
+    "加油"
+   ],
+   "animated": false,
+   "bytes": 9681,
+   "src": "phone/com.tencent.mm emoji (N53 / idx205)"
+  },
+  {
+   "id": "ph_116",
+   "file": "stickers/ph_116.png",
+   "series": "手机微信表情包",
+   "desc": "小狗开心躺床",
+   "emotion": [
+    "开心"
+   ],
+   "animated": false,
+   "bytes": 16284,
+   "src": "phone/com.tencent.mm emoji (N56 / idx209)"
+  },
+  {
+   "id": "ph_117",
+   "file": "stickers/ph_117.png",
+   "series": "手机微信表情包",
+   "desc": "小狗戴帽子「喵—」",
+   "emotion": [
+    "沙雕"
+   ],
+   "animated": false,
+   "bytes": 22872,
+   "src": "phone/com.tencent.mm emoji (N58 / idx215)"
+  },
+  {
+   "id": "ph_118",
+   "file": "stickers/ph_118.png",
+   "series": "手机微信表情包",
+   "desc": "白猫咬东西",
+   "emotion": [
+    "生气"
+   ],
+   "animated": false,
+   "bytes": 6554,
+   "src": "phone/com.tencent.mm emoji (N60 / idx218)"
+  },
+  {
+   "id": "ph_119",
+   "file": "stickers/ph_119.png",
+   "series": "手机微信表情包",
+   "desc": "小狗举着手机",
+   "emotion": [
+    "日常"
+   ],
+   "animated": false,
+   "bytes": 16600,
+   "src": "phone/com.tencent.mm emoji (N62 / idx223)"
+  },
+  {
+   "id": "ph_120",
+   "file": "stickers/ph_120.png",
+   "series": "手机微信表情包",
+   "desc": "小狗张嘴叫",
+   "emotion": [
+    "问候"
+   ],
+   "animated": false,
+   "bytes": 13126,
+   "src": "phone/com.tencent.mm emoji (N63 / idx224)"
+  },
+  {
+   "id": "ph_121",
+   "file": "stickers/ph_121.png",
+   "series": "手机微信表情包",
+   "desc": "小狗哭着举手",
+   "emotion": [
+    "求助"
+   ],
+   "animated": false,
+   "bytes": 19717,
+   "src": "phone/com.tencent.mm emoji (N68 / idx233)"
+  },
+  {
+   "id": "ph_122",
+   "file": "stickers/ph_122.png",
+   "series": "手机微信表情包",
+   "desc": "白猫发呆",
+   "emotion": [
+    "日常"
+   ],
+   "animated": false,
+   "bytes": 8428,
+   "src": "phone/com.tencent.mm emoji (N73 / idx239)"
+  },
+  {
+   "id": "ph_123",
+   "file": "stickers/ph_123.png",
+   "series": "手机微信表情包",
+   "desc": "白猫趴着",
+   "emotion": [
+    "摆烂"
+   ],
+   "animated": false,
+   "bytes": 11863,
+   "src": "phone/com.tencent.mm emoji (N75 / idx242)"
+  },
+  {
+   "id": "ph_124",
+   "file": "stickers/ph_124.png",
+   "series": "手机微信表情包",
+   "desc": "小狗「嘶。」",
+   "emotion": [
+    "无语"
+   ],
+   "animated": false,
+   "bytes": 15028,
+   "src": "phone/com.tencent.mm emoji (N77 / idx246)"
+  },
+  {
+   "id": "ph_125",
+   "file": "stickers/ph_125.png",
+   "series": "手机微信表情包",
+   "desc": "小狗嚎啕大哭",
+   "emotion": [
+    "难过"
+   ],
+   "animated": false,
+   "bytes": 24054,
+   "src": "phone/com.tencent.mm emoji (N79 / idx248)"
+  },
+  {
+   "id": "ph_126",
+   "file": "stickers/ph_126.png",
+   "series": "手机微信表情包",
+   "desc": "小狗揉脸",
+   "emotion": [
+    "尴尬"
+   ],
+   "animated": false,
+   "bytes": 17276,
+   "src": "phone/com.tencent.mm emoji (N80 / idx249)"
+  },
+  {
+   "id": "ph_127",
+   "file": "stickers/ph_127.png",
+   "series": "手机微信表情包",
+   "desc": "小狗咳嗽",
+   "emotion": [
+    "难过"
+   ],
+   "animated": false,
+   "bytes": 19907,
+   "src": "phone/com.tencent.mm emoji (N84 / idx258)"
+  },
+  {
+   "id": "ph_128",
+   "file": "stickers/ph_128.png",
+   "series": "手机微信表情包",
+   "desc": "小狗掉眼泪",
+   "emotion": [
+    "难过"
+   ],
+   "animated": false,
+   "bytes": 22411,
+   "src": "phone/com.tencent.mm emoji (N85 / idx259)"
+  },
+  {
+   "id": "ph_129",
+   "file": "stickers/ph_129.png",
+   "series": "手机微信表情包",
+   "desc": "小狗哭",
+   "emotion": [
+    "难过"
+   ],
+   "animated": false,
+   "bytes": 20125,
+   "src": "phone/com.tencent.mm emoji (N88 / idx265)"
+  },
+  {
+   "id": "ph_130",
+   "file": "stickers/ph_130.png",
+   "series": "手机微信表情包",
+   "desc": "小狗被摸摸头",
+   "emotion": [
+    "开心"
+   ],
+   "animated": false,
+   "bytes": 18301,
+   "src": "phone/com.tencent.mm emoji (N90 / idx270)"
+  },
+  {
+   "id": "ph_131",
+   "file": "stickers/ph_131.png",
+   "series": "手机微信表情包",
+   "desc": "白猫冒问号",
+   "emotion": [
+    "疑问"
+   ],
+   "animated": false,
+   "bytes": 9590,
+   "src": "phone/com.tencent.mm emoji (N92 / idx272)"
+  },
+  {
+   "id": "ph_132",
+   "file": "stickers/ph_132.png",
+   "series": "手机微信表情包",
+   "desc": "白猫躺平",
+   "emotion": [
+    "摆烂"
+   ],
+   "animated": false,
+   "bytes": 6313,
+   "src": "phone/com.tencent.mm emoji (N93 / idx273)"
+  },
+  {
+   "id": "ph_133",
+   "file": "stickers/ph_133.png",
+   "series": "手机微信表情包",
+   "desc": "小狗「求求你了」",
+   "emotion": [
+    "求助"
+   ],
+   "animated": false,
+   "bytes": 14943,
+   "src": "phone/com.tencent.mm emoji (N96 / idx278)"
+  },
+  {
+   "id": "ph_134",
+   "file": "stickers/ph_134.png",
+   "series": "手机微信表情包",
+   "desc": "小狗抱爱心",
+   "emotion": [
+    "喜欢"
+   ],
+   "animated": false,
+   "bytes": 22513,
+   "src": "phone/com.tencent.mm emoji (N98 / idx280)"
+  },
+  {
+   "id": "ph_135",
+   "file": "stickers/ph_135.png",
+   "series": "手机微信表情包",
+   "desc": "白猫站着",
+   "emotion": [
+    "日常"
+   ],
+   "animated": false,
+   "bytes": 15260,
+   "src": "phone/com.tencent.mm emoji (N99 / idx283)"
+  },
+  {
+   "id": "ph_136",
+   "file": "stickers/ph_136.png",
+   "series": "手机微信表情包",
+   "desc": "小狗吃东西",
+   "emotion": [
+    "干饭"
+   ],
+   "animated": false,
+   "bytes": 14787,
+   "src": "phone/com.tencent.mm emoji (N100 / idx284)"
+  },
+  {
+   "id": "ph_137",
+   "file": "stickers/ph_137.png",
+   "series": "手机微信表情包",
+   "desc": "小狗「吃。」",
+   "emotion": [
+    "干饭"
+   ],
+   "animated": false,
+   "bytes": 23871,
+   "src": "phone/com.tencent.mm emoji (N105 / idx294)"
+  },
+  {
+   "id": "ph_138",
+   "file": "stickers/ph_138.png",
+   "series": "手机微信表情包",
+   "desc": "小狗气鼓鼓",
+   "emotion": [
+    "生气"
+   ],
+   "animated": false,
+   "bytes": 8585,
+   "src": "phone/com.tencent.mm emoji (N108 / idx298)"
+  },
+  {
+   "id": "ph_139",
+   "file": "stickers/ph_139.png",
+   "series": "手机微信表情包",
+   "desc": "小狗比心",
+   "emotion": [
+    "喜欢"
+   ],
+   "animated": false,
+   "bytes": 16011,
+   "src": "phone/com.tencent.mm emoji (N109 / idx305)"
+  },
+  {
+   "id": "ph_140",
+   "file": "stickers/ph_140.png",
+   "series": "手机微信表情包",
+   "desc": "白猫咬手",
+   "emotion": [
+    "生气"
+   ],
+   "animated": false,
+   "bytes": 8001,
+   "src": "phone/com.tencent.mm emoji (N117 / idx314)"
+  },
+  {
+   "id": "ph_141",
+   "file": "stickers/ph_141.png",
+   "series": "手机微信表情包",
+   "desc": "小狗「呀哈！」",
+   "emotion": [
+    "开心"
+   ],
+   "animated": false,
+   "bytes": 19275,
+   "src": "phone/com.tencent.mm emoji (N118 / idx316)"
+  },
+  {
+   "id": "ph_142",
+   "file": "stickers/ph_142.png",
+   "series": "手机微信表情包",
+   "desc": "白猫躺床上",
+   "emotion": [
+    "睡觉"
+   ],
+   "animated": false,
+   "bytes": 9115,
+   "src": "phone/com.tencent.mm emoji (N119 / idx325)"
+  },
+  {
+   "id": "ph_143",
+   "file": "stickers/ph_143.png",
+   "series": "手机微信表情包",
+   "desc": "小狗「汪」",
+   "emotion": [
+    "问候"
+   ],
+   "animated": false,
+   "bytes": 14974,
+   "src": "phone/com.tencent.mm emoji (N120 / idx326)"
+  },
+  {
+   "id": "ph_144",
+   "file": "stickers/ph_144.png",
+   "series": "手机微信表情包",
+   "desc": "小狗抱着星星",
+   "emotion": [
+    "开心"
+   ],
+   "animated": false,
+   "bytes": 21709,
+   "src": "phone/com.tencent.mm emoji (N121 / idx329)"
+  },
+  {
+   "id": "ph_145",
+   "file": "stickers/ph_145.png",
+   "series": "手机微信表情包",
+   "desc": "小狗边吃边气",
+   "emotion": [
+    "干饭"
+   ],
+   "animated": false,
+   "bytes": 19779,
+   "src": "phone/com.tencent.mm emoji (N122 / idx330)"
+  },
+  {
+   "id": "ph_146",
+   "file": "stickers/ph_146.png",
+   "series": "手机微信表情包",
+   "desc": "小狗拿着手机跑了",
+   "emotion": [
+    "搞笑"
+   ],
+   "animated": false,
+   "bytes": 11052,
+   "src": "phone/com.tencent.mm emoji (N127 / idx335)"
+  },
+  {
+   "id": "ph_147",
+   "file": "stickers/ph_147.png",
+   "series": "手机微信表情包",
+   "desc": "小狗星星眼",
+   "emotion": [
+    "喜欢"
+   ],
+   "animated": false,
+   "bytes": 19586,
+   "src": "phone/com.tencent.mm emoji (N133 / idx343)"
+  },
+  {
+   "id": "ph_148",
+   "file": "stickers/ph_148.png",
+   "series": "手机微信表情包",
+   "desc": "小狗亲亲「妈咪」",
+   "emotion": [
+    "撒娇"
+   ],
+   "animated": false,
+   "bytes": 29225,
+   "src": "phone/com.tencent.mm emoji (N134 / idx345)"
+  },
+  {
+   "id": "ph_149",
+   "file": "stickers/ph_149.png",
+   "series": "手机微信表情包",
+   "desc": "小狗哭唧唧",
+   "emotion": [
+    "难过"
+   ],
+   "animated": false,
+   "bytes": 15573,
+   "src": "phone/com.tencent.mm emoji (N135 / idx347)"
+  },
+  {
+   "id": "ph_150",
+   "file": "stickers/ph_150.png",
+   "series": "手机微信表情包",
+   "desc": "小狗递爱心「请收下」",
+   "emotion": [
+    "喜欢"
+   ],
+   "animated": false,
+   "bytes": 19611,
+   "src": "phone/com.tencent.mm emoji (N138 / idx355)"
+  },
+  {
+   "id": "ph_151",
+   "file": "stickers/ph_151.png",
+   "series": "手机微信表情包",
+   "desc": "白猫缩成一团",
+   "emotion": [
+    "日常"
+   ],
+   "animated": false,
+   "bytes": 8738,
+   "src": "phone/com.tencent.mm emoji (N139 / idx356)"
+  },
+  {
+   "id": "ph_152",
+   "file": "stickers/ph_152.png",
+   "series": "手机微信表情包",
+   "desc": "小狗「哎呀，摔倒了」",
+   "emotion": [
+    "难过"
+   ],
+   "animated": false,
+   "bytes": 19821,
+   "src": "phone/com.tencent.mm emoji (N140 / idx358)"
+  },
+  {
+   "id": "ph_153",
+   "file": "stickers/ph_153.png",
+   "series": "手机微信表情包",
+   "desc": "小狗生气",
+   "emotion": [
+    "生气"
+   ],
+   "animated": false,
+   "bytes": 7290,
+   "src": "phone/com.tencent.mm emoji (N146 / idx367)"
+  },
+  {
+   "id": "ph_154",
+   "file": "stickers/ph_154.png",
+   "series": "手机微信表情包",
+   "desc": "小狗「嗯」",
+   "emotion": [
+    "加油"
+   ],
+   "animated": false,
+   "bytes": 7805,
+   "src": "phone/com.tencent.mm emoji (N148 / idx370)"
+  },
+  {
+   "id": "ph_155",
+   "file": "stickers/ph_155.png",
+   "series": "手机微信表情包",
+   "desc": "小狗揉脸哭",
+   "emotion": [
+    "难过"
+   ],
+   "animated": false,
+   "bytes": 17518,
+   "src": "phone/com.tencent.mm emoji (N149 / idx375)"
+  },
+  {
+   "id": "ph_156",
+   "file": "stickers/ph_156.png",
+   "series": "手机微信表情包",
+   "desc": "白猫无奈",
+   "emotion": [
+    "无语"
+   ],
+   "animated": false,
+   "bytes": 9389,
+   "src": "phone/com.tencent.mm emoji (N150 / idx378)"
+  },
+  {
+   "id": "ph_157",
+   "file": "stickers/ph_157.png",
+   "series": "手机微信表情包",
+   "desc": "小狗气呼呼",
+   "emotion": [
+    "生气"
+   ],
+   "animated": false,
+   "bytes": 7656,
+   "src": "phone/com.tencent.mm emoji (N153 / idx382)"
+  },
+  {
+   "id": "ph_158",
+   "file": "stickers/ph_158.png",
+   "series": "手机微信表情包",
+   "desc": "小狗「？」",
+   "emotion": [
+    "疑问"
+   ],
+   "animated": false,
+   "bytes": 50233,
+   "src": "phone/com.tencent.mm emoji (N155 / idx424)"
   }
  ]
 }
